@@ -27,56 +27,54 @@ class Disambiguate(object):
                                     self.__sum_log_word_freq]
 
     @exception_handling
-    def __check(self, texts, disambiguate_type, lab=None):
+    def __check(self, texts, disambiguate_type):
         """
         检查函数。检查输入的参数是否符合要求
-        :param texts: <list, tuple> 文本
-        :param disambiguate_type: <str> 消歧类型
-        :param lab: <str> 分词标记
+        :param texts: (list or tuple, mandatory) 文本
+        :param disambiguate_type: (str, mandatory) 消歧类型
         :return:
         """
         if disambiguate_type not in self.__disambiguate_type:
-            raise ParameterError(
-                "disambiguate_type must be is {}, but actually get {}".format(self.__disambiguate_type,
-                                                                              disambiguate_type))
+            raise ParameterError("class:{}, func:{}".format(Disambiguate.__name__, self.__check.__name__),
+                                 "disambiguate_type must be is {}, but actually get {}".format(self.__disambiguate_type,
+                                                                                               disambiguate_type))
 
         if not isinstance(texts, (list, tuple)):
-            raise ParameterError("texts parameter must be is [list,tuple], bug actually get{}".format(type(texts)))
+            raise ParameterError("class:{}, func:{}".format(Disambiguate.__name__, self.__check.__name__),
+                                 "texts parameter must be is [list,tuple], bug actually get{}".format(type(texts)))
 
         if len(texts) == 0:
-            raise ParameterError("texts list or tuple element cannot be empty ")
+            raise ParameterError("class:{}, func:{}".format(Disambiguate.__name__, self.__check.__name__),
+                                 "texts cannot be empty ")
 
         for text in texts:
-            if not isinstance(text, (list, tuple, str)):
-                raise ParameterError(
-                    "texts element type must be is [list,tuple,str], but actually get {}".format(type(text)))
-            if isinstance(text, str) and lab is None:
-                raise ParameterError("texts elements of character type must have lab parameter")
+            if not isinstance(text, (list, tuple)):
+                raise ParameterError("class:{}, func:{}".format(Disambiguate.__name__, self.__check.__name__),
+                                     "texts element type must be is [list,tuple], but actually get {}".format(
+                                         type(text)))
 
-    def __get_score(self, texts, disambiguate_type, lab=None):
+    def __get_score(self, texts, disambiguate_type):
         """
         根据不同消歧类型，对文本进行评分
-        :param texts: <list, tuple> 文本
-        :param lab: <str> 分词标记
-        :param disambiguate_type: <str> 消歧类型
-        :return: <list> 文本评分
+        :param texts: (list or tuple, mandatory) 文本, [["生活","水平"]...]
+        :param disambiguate_type: (str, mandatory) 消歧类型
+        :return: (list) 文本评分
         """
-        self.__check(texts, disambiguate_type, lab)
+        self.__check(texts, disambiguate_type)
 
         text_score = list()
         for text in texts:
-
             # 如果输入的列表元素是字符串，则根据提供的划分标签split_lab进行分词
             # 例如 "生活／水平" 根据 "／" 进行分词。
             # 得到结果为 ["生活","水平"]
-            if isinstance(text, str):
-                new_text = list()
-                words = text.strip().split(lab)
-                for word in words:
-                    if word == '' or word == " " or len(word) == 0 or word == lab:
-                        continue
-                    new_text.append(word)
-                text = new_text
+            # if isinstance(text, str):
+            #     new_text = list()
+            #     words = text.strip().split(lab)
+            #     for word in words:
+            #         if word == '' or word == " " or len(word) == 0 or word == lab:
+            #             continue
+            #         new_text.append(word)
+            #    text = new_text
 
             # 根据消歧类型对句子进行评分
             score = 0
@@ -122,9 +120,9 @@ class Disambiguate(object):
     def __get_result(self, texts, text_score, disambiguate_type):
         """
         根据评分选取文本
-        :param texts: <list, tuple> 文本
-        :param text_score: <list> 文本评分
-        :param disambiguate_type: <str> 消歧类型
+        :param texts: (list or tuple, mandatory) 文本
+        :param text_score: (list, mandatory) 文本评分
+        :param disambiguate_type: (str, mandatory) 消歧类型
         :return: 选取结果
         """
 
@@ -145,55 +143,52 @@ class Disambiguate(object):
 
         return result
 
-    def max_avg_word_length(self, texts, lab=None):
+    def max_avg_word_length(self, texts):
         """
         最大平均词长度消歧义
-        :param texts: <list, tuple> 文本。文本格式可以是[ ["生活","水平"] ] 或 ["生活/水平"] 两种格式，
+        :param texts: (list or tuple, mandatory) 文本。文本格式是[["生活","水平"]...] 格式，
         如果是后者需要提供 lab 即分词标记。如"/" 。
-        :param lab: <str> 分词标记，例如 ["生活/水平"] 分词标记为 "／"
-        :return: <list<dict>> 列表字典对象，字典 {'text': text, 'score': score} ，即每个文本对应各自评分
+        :param lab: (str, optional, default=None) 分词标记，例如 ["生活/水平"] 分词标记为 "／"
+        :return: (dict of list) 列表字典对象，字典 {'text': text, 'score': score} ，即每个文本对应各自评分
         """
-        text_score = self.__get_score(texts, self.__max_avg_word_length, lab)
+        text_score = self.__get_score(texts, self.__max_avg_word_length)
 
         result = self.__get_result(texts, text_score, self.__max_avg_word_length)
 
         return result
 
-    def min_change_word_rate(self, texts, lab=None):
+    def min_change_word_rate(self, texts):
         """
         最小词变化率
-        :param texts:<list, tuple> 文本
-        :param lab: <str> 分词标记
-        :return:list<dict> 列表字典对象，字典 {'text': text, 'score': score}
+        :param texts:(list or tuple, mandatory) 文本
+        :return: (dict of list) 列表字典对象，字典 {'text': text, 'score': score}
         """
-        text_score = self.__get_score(texts, self.__min_change_word_rate, lab)
+        text_score = self.__get_score(texts, self.__min_change_word_rate)
 
         result = self.__get_result(texts, text_score, self.__min_change_word_rate)
 
         return result
 
-    def sum_log_word_freq(self, texts, lab=None):
+    def sum_log_word_freq(self, texts):
         """
         单个词频对数之和
-        :param texts: <list, tuple> 文本
-        :param lab: <str> 分词标记
-        :return: list<dict> 列表字典对象，字典 {'text': text, 'score': score}
+        :param texts: (list or tuple, mandatory) 文本
+        :return: (dict of list) 列表字典对象，字典 {'text': text, 'score': score}
         """
-        text_score = self.__get_score(texts, self.__sum_log_word_freq, lab)
+        text_score = self.__get_score(texts, self.__sum_log_word_freq)
 
         result = self.__get_result(texts, text_score, self.__sum_log_word_freq)
 
         return result
 
-    def disambiguate(self, texts, lab=None, need_score=False):
+    def disambiguate(self, texts, need_score=False):
         """
         消除歧义，结合最大平均词长度、最小词变化率、单个词频对数之和 三种消歧方法进行。
         消歧流程中，如果任一种方法只返回1个结果，则结束返回。如果三种方法返回的结果都超过1个，
         则进行匹配和随机抽取结果。
-        :param texts: <list, tuple> 文本
-        :param lab: <str> 分词标记
-        :param need_score: <bool> 是否需要返回评分
-        :return: <str, list> 如果 need_score = True ,
+        :param texts: (list or tuple, mandatory) 文本
+        :param need_score: (bool, optional, default=False) 是否需要返回评分
+        :return: (str or list) 如果 need_score = True ,
         则返回类似这样的结果 [{'text': '生活/水平', 'score': 2.0, 'rule': 'compare'}]
         否则返回字符串，如 '生活/水平'
         """
@@ -206,17 +201,17 @@ class Disambiguate(object):
                 return result[0][self.__text]
 
         all_result = list()
-        result = self.min_change_word_rate(texts, lab)
+        result = self.min_change_word_rate(texts)
         if len(result) == 1:
             return output(self.__min_change_word_rate)
 
         all_result = all_result + result
-        result = self.sum_log_word_freq(texts, lab)
+        result = self.sum_log_word_freq(texts)
         if len(result) == 1:
             return output(self.__sum_log_word_freq)
 
         all_result = all_result + result
-        result = self.max_avg_word_length(texts, lab)
+        result = self.max_avg_word_length(texts)
         if len(result) == 1:
             return output(self.__max_avg_word_length)
 
@@ -240,28 +235,22 @@ class Disambiguate(object):
         return output("random")
 
 
-def test():
+def test_module_func():
     text = [("生活", "水平"), ("生", "活", "水平"), ("生", "活水", "平"), ("水平", "生活")]
-    # text = ["中国/人民/万岁", "中国人/民/万岁"]
-    # text = ["人/与/自然，人/与/环境", "人/与/自然，人与/环/境"]
     disambiguate = Disambiguate()
 
-    # value = disambiguate.max_avg_word_length(text, lab='/')
     value = disambiguate.max_avg_word_length(text)
     print("max avg word length : ", value)
 
-    # value = disambiguate.min_change_word_rate(text, lab='/')
     value = disambiguate.min_change_word_rate(text)
     print("min change word rate : ", value)
 
-    # value = disambiguate.sum_log_word_freq(text, lab='/')
     value = disambiguate.sum_log_word_freq(text)
     print("sum log word freq : ", value)
 
-    # value = disambiguate.disambiguate(text, lab='/', need_score=True)
     value = disambiguate.disambiguate(text)
     print("value: ", value)
 
 
 if __name__ == "__main__":
-    test()
+    test_module_func()

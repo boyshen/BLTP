@@ -17,7 +17,7 @@ except ModuleNotFoundError:
 
 class Matching(object):
 
-    def __init__(self, dictionary: object, max_matching: object = 10) -> object:
+    def __init__(self, dictionary, max_matching=10):
         self.__dictionary = dictionary
         self.__max_matching = max_matching
 
@@ -29,10 +29,10 @@ class Matching(object):
     def __update(self, text, matching_length, matching_type):
         """
         匹配算法中迭代更新文本和匹配长度
-        :param text: <str> 当前文本
-        :param matching_length: <int> 当前匹配长度
-        :param matching_type: <str> 匹配算法的类型，用于判断截取新文本
-        :return: <str> <int> 新的文本和匹配长度
+        :param text: (str, mandatory) 当前文本
+        :param matching_length: (int, mandatory) 当前匹配长度
+        :param matching_type: (str, mandatory) 匹配算法的类型，用于判断截取新文本
+        :return: (str and int) 新的文本和匹配长度
         """
         if matching_type not in self.__matching_type:
             raise ParameterError("matching type {}".format(self.__matching_type))
@@ -59,9 +59,9 @@ class Matching(object):
     def __matching(self, text, matching_type):
         """
         匹配算法
-        :param text: <str> 匹配文本
-        :param matching_type: <str> 类型，forward 和 reverse 两种类型
-        :return: <tuple> 分词的元祖数据
+        :param text: (str, mandatory) 匹配文本
+        :param matching_type: (str, mandatory) 类型，forward 和 reverse 两种类型
+        :return: (tuple) 分词的元祖数据
         """
         # 检查输出的参数是否有误
         if matching_type not in self.__matching_type:
@@ -89,12 +89,6 @@ class Matching(object):
             elif matching_type is self.__reverse_type:
                 word = new_text[-new_matching_length:]
 
-            # # 空字符跳过
-            # if word == ' ' or word == " ":
-            #     new_matching_length = len(new_text) if len(new_text) < self.__max_matching else self.__max_matching
-            #     new_text = new_text.strip()
-            #     continue
-
             # 单词匹配，判断单词是否在词表中
             if word in self.__dictionary:
                 # 将匹配上的词加入词表
@@ -120,8 +114,8 @@ class Matching(object):
     def forward(self, text):
         """
         正向匹配
-        :param text: <str> 文本数据
-        :return: <tuple> 分词的数据元祖对象
+        :param text: (str, mandatory) 文本数据
+        :return: (tuple) 分词的数据元祖对象
         """
         words = self.__matching(text, self.__forward_type)
         return words
@@ -129,8 +123,8 @@ class Matching(object):
     def reverse(self, text):
         """
         逆向匹配
-        :param text: <str> 文本数据
-        :return: <tuple> 分词的数据元祖对象
+        :param text: (str) 文本数据
+        :return: (tuple) 分词的数据元祖对象
         """
         words = self.__matching(text, self.__reverse_type)
         new_words = list()
@@ -144,7 +138,7 @@ class Matching(object):
     def update_words(self, dictionary):
         """
         更新词典
-        :param dictionary: <list> 词典
+        :param dictionary: (list, mandatory) 词典
         :return:
         """
         self.__dictionary = dictionary

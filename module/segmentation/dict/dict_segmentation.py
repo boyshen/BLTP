@@ -13,7 +13,6 @@
 """
 
 from module.segmentation.dict.word_dictionary import WordDictionary
-from module.core.data_tools import DataTools
 from module.core.exception import exception_handling, ParameterError
 from module.segmentation.dict.disambiguate import Disambiguate
 from module.core.matching import Matching
@@ -32,7 +31,7 @@ class DictSegmentation(Segmentation):
     def __init__(self, max_matching=MAX_MATCHING):
         """
         初始化对象
-        :param max_matching: <int> 词的最大匹配长度。用于在正向匹配和逆向匹配中对词进行划分
+        :param max_matching: (int, optional, default=10) 词的最大匹配长度。用于在正向匹配和逆向匹配中对词进行划分
         """
         self.max_matching = max_matching
         self.words = None
@@ -41,26 +40,14 @@ class DictSegmentation(Segmentation):
         self.disambiguate = Disambiguate()
         self.matching = None
 
-    def fit(self, file, split_lab,
-            save_model="DictSegmentation.pickle",
-            del_start_str=None,
-            del_end_str=None,
-            regular_func=None,
-            ignore_punctuation=True):
+    def fit(self, dataset, save_model="DictSegmentation.pickle"):
         """
         拟合词典
-        :param file: <str> 训练文件
-        :param split_lab: <str> 训练文本中对词的划分标记
-        :param save_model: <str> 保存模型的文件名
-        :param del_start_str: <str> 对于训练数据中的文本句子，是否存在开始标记需要删除，如果有，则输入
-        :param del_end_str: <str> 对于训练数据中的文本句子，是否存在结束标记需要删除，如果有，则输入
-        :param regular_func: <func> 正则化函数
-        :param ignore_punctuation: <bool> 是否忽略训练数据中的标点符号，即是否将标点符号加入到词典中
+        :param dataset: (list of list, mandatory) 训练数据集
+        :param save_model: (str, optional, default=DictSegmentation.pickle) 保存词典
         :return:
         """
-        texts = DataTools.Preprocess.read_file_data(file, del_start_str, del_end_str, regular_func)
-
-        self.word_dictionary.fit(texts, split_lab=split_lab, ignore_punctuation=ignore_punctuation)
+        self.word_dictionary.fit(dataset)
         self.words = self.word_dictionary.get_dictionary()
         self.matching = Matching(self.words, self.max_matching)
 
@@ -68,58 +55,52 @@ class DictSegmentation(Segmentation):
 
         print("word count：", len(self.words))
 
-    def eval(self, file, seg_lab=' ', w_file="test.txt", encoding="utf-8", threads=3, del_start_str=None,
-             del_end_str=None, regular_func=None):
+    def eval(self, dataset, seg_lab=' ', w_file="test.txt", encoding="utf-8", threads=3):
         """
         评估。采用线程并非机制，读取测试数据集，并进行分词
-        :param file: <str> 测试数据文本
-        :param seg_lab: <str> 分词标记。在分词完成之后，需要根据某个字符标记词汇，默认为 " "
-        :param w_file: <str> 分词结果写入的文件名
-        :param encoding: <str> 分词结果写入文件的编码格式
-        :param threads: <int> 启动线程数量
-        :param del_start_str: <str> 对于数据中的文本句子，是否存在开始标记需要删除，如果有，则输入
-        :param del_end_str: <str> 对于数据中的文本句子，是否存在结束标记需要删除，如果有，则输入
-        :param regular_func: <func> 正则化函数
+        :param dataset: (str of list, mandatory) 测试数据.例如：['hello world']
+        :param seg_lab: (str, optional, default=' ') 分词标记。在分词完成之后，需要根据某个字符标记词汇，默认为 " "
+        :param w_file: (str, optional, default='test.txt') 分词结果写入的文件名
+        :param encoding: (str, optional, default='utf-8') 分词结果写入文件的编码格式
+        :param threads: (int, optional, default=3) 启动线程数量
         :return:
         """
 
         # 处理函数。主要使用正向和逆向匹配规则，然后进行消歧义。
         def handle(data, q):
             result = list()
-            for d in data:
-                forward_seg = self.matching.forward(d)
-                reverse_seg = self.matching.reverse(d)
-
-                value = self.disambiguate.disambiguate([forward_seg, reverse_seg])
-                value = seg_lab.join(value)
+            for sent in data:
+                # forward_seg = self.matching.forward(d)
+                # reverse_seg = self.matching.reverse(d)
+                #
+                # value = self.disambiguate.disambiguate([forward_seg, reverse_seg])
+                # value = seg_lab.join(value)
+                value = self.cut(sent, seg_lab)
                 result.append(value)
                 # 处理完一次结果，向消息队列写入 1
                 q.put(1)
             return result
 
         # 预处理文本
-        texts = DataTools.Preprocess.read_file_data(file, del_start_str, del_end_str, regular_func)
+        # texts = DataTools.Preprocess.read_file_data(file, del_start_str, del_end_str, regular_func)
 
         # 多线程处理
         multi_thread = MultiThreading(threads=threads)
-        results = multi_thread.process(texts, handle)
+        results = multi_thread.process(dataset, handle)
 
         # 将结果写入文件
         Writer.writer_file(w_file, results, encoding=encoding)
 
-    def cut(self, text, seg_lab=' ', del_start_str=None, del_end_str=None, regular_func=None):
+    def cut(self, sent, seg_lab=' '):
         """
         输入某个句子或文本，对其进行分词
-        :param text: <str> 句子文本
-        :param seg_lab: <str> 分词完成之后需要通过某个字符对其进行标记，默认为 " "
-        :param del_start_str: <str> 对于文本句子，是否存在开始标记需要删除，如果有，则输入
-        :param del_end_str: <str> 对于文本句子，是否存在结束标记需要删除，如果有，则输入
-        :param regular_func: <func> 正则化函数
-        :return: <str> 分词文本
+        :param sent: (str, mandatory) 句子文本
+        :param seg_lab: (str, optional, default=' ') 分词完成之后需要通过某个字符对其进行标记，默认为 " "
+        :return: (str) 分词文本
         """
-        text = DataTools.Preprocess.processing_text(text, del_start_str, del_end_str, regular_func)
-        forward_seg = self.matching.forward(text)
-        reverse_seg = self.matching.reverse(text)
+        # text = DataTools.Preprocess.processing_text(data)
+        forward_seg = self.matching.forward(sent)
+        reverse_seg = self.matching.reverse(sent)
 
         result = self.disambiguate.disambiguate([forward_seg, reverse_seg])
         return seg_lab.join(result)
@@ -128,9 +109,9 @@ class DictSegmentation(Segmentation):
     def add_word(self, words, is_save=True, model_file='DictSegmentation.pickle'):
         """
         添加词汇到训练词典中
-        :param words: <str, list, tuple> 词汇，可以是字符、列表、元祖
-        :param is_save: <bool> 对于新加的词汇，是否保存词典
-        :param model_file: <str> 需要保存的模型文件名
+        :param words: (str or list or tuple, mandatory) 词汇，可以是字符、列表、元祖
+        :param is_save: (bool, optional, default=True) 对于新加的词汇，是否保存词典
+        :param model_file: (str, optional, default=DictSegmentation.pickle) 需要保存的模型文件名
         :return:
         """
         if not isinstance(words, (str, list, tuple)):
@@ -155,9 +136,9 @@ class DictSegmentation(Segmentation):
     def load(model_file, max_matching=MAX_MATCHING):
         """
         加载词典分词对象
-        :param model_file: <str> 保存的词典文件，也叫模型文件
-        :param max_matching: <int> 最大匹配词长度，用于正向和逆向匹配的最大匹配词长度
-        :return: <DictSegmentation> 词典分词对象
+        :param model_file: (str, mandatory) 保存的词典文件，也叫模型文件
+        :param max_matching: (int, optional, default=10) 最大匹配词长度，用于正向和逆向匹配的最大匹配词长度
+        :return: (DictSegmentation) 词典分词对象
         """
         dict_seg = DictSegmentation(max_matching)
         dict_seg.word_dictionary = WordDictionary.load(model_file)
@@ -167,38 +148,28 @@ class DictSegmentation(Segmentation):
         return dict_seg
 
 
-def test():
-    max_matching = 10
-    train_file = "../../../data/msr_training_debug.utf8"
-    text_file = "../../../data/msr_test_debug.utf8"
-    model_file = "../../../model/dict_segmentation_model_debug.pickle"
-    save_result = "../../../result/msr_test_result.utf8"
+def test_module_func():
+    train_dataset = [['这', '首先', '是', '个', '民族', '问题', '，', '的', '感情', '。'],
+                     ['我', '扔', '了', '两颗', '手榴弹', '，', '他', '一下子', '出', '溜', '下去', '。'],
+                     ['他', '要', '与', '中国人', '合作', '。']
+                     ]
+    test_dataset = ['他要与中国人合作。']
+    model_file = "./dict_segmentation_model_debug.pickle"
 
-    dict_seg = DictSegmentation(max_matching=max_matching)
-    dict_seg.fit(train_file, split_lab=' ', save_model=model_file)
-    dict_seg.eval(text_file, seg_lab='  ', w_file=save_result)
+    dict_seg = DictSegmentation(max_matching=10)
+    dict_seg.fit(train_dataset, save_model=model_file)
+    dict_seg.eval(test_dataset, seg_lab='  ', w_file='./test.txt', threads=1)
 
+    sent = "他来到中国，成为第一个访华的大船主。"
+    print("cut 1: ", dict_seg.cut(sent))
 
-def test_load():
-    max_matching = 10
-    # model_file = "../../../model/dict_segmentation.pickle"
-    model_file = "../../../model/dict_segmentation_model_debug.pickle"
-    text = "他要与中国人合作。"
-    dict_seg = DictSegmentation.load(model_file, max_matching)
+    dict_seg.add_word("中国", model_file=model_file)
+    print("cut 2: ", dict_seg.cut(sent))
 
-    result = dict_seg.cut(text)
-    print("predict result : ", result)
-
-    dict_seg.add_word(('中国人', "要与"), is_save=False)
-    result = dict_seg.cut(text)
-    print("predict result : ", result)
-
-    # text_file = "../../data/icwb2-data/testing/msr_test.utf8"
-    # # text_file = "../../data/msr_test_debug3.utf8"
-    # save_result = "../../result/msr_test_result.utf8"
-    # dict_seg.eval(text_file, seg_lab='  ', threads=5, w_file=save_result)
+    load_dict_seg = DictSegmentation.load(model_file)
+    assert load_dict_seg.cut(sent) == dict_seg.cut(sent), \
+        "{} Error: load model segmentation error".format(DictSegmentation.load.__name__)
 
 
-if __name__ == '__main__':
-    test()
-    # test_load()
+if __name__ == "__main__":
+    test_module_func()

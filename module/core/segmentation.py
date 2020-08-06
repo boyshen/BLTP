@@ -9,15 +9,13 @@
 
 
 class Segmentation(object):
-    def fit(self, file, split_lab, save_model="segmentation.pickle", del_start_str=None, del_end_str=None,
-            regular_func=None):
+    def fit(self, dataset, save_model="segmentation.pickle"):
         pass
 
-    def eval(self, file, seg_lab="  ", w_file="test.txt", encoding="utf-8", del_start_str=None,
-             del_end_str=None, regular_func=None):
+    def eval(self, dataset, seg_lab=" ", w_file="test.txt", encoding="utf-8"):
         pass
 
-    def cut(self, text, seg_lab=' ', del_start_str=None, del_end_str=None, regular_func=None):
+    def cut(self, text, seg_lab=" "):
         pass
 
     @staticmethod

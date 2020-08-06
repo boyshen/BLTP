@@ -37,10 +37,14 @@ class Dictionary(object):
     END = 2
 
     def __init__(self):
-        pass
+        self.init_word_dict = {
+            Dictionary.UNK_TAG: Dictionary.UNK,
+            Dictionary.START_TAG: Dictionary.START,
+            Dictionary.END_TAG: Dictionary.END
+        }
 
-    def fit(self, texts, split_lab):
-        pass
+    # def fit(self, texts, split_lab):
+    #     pass
 
     @staticmethod
     def delete_punctuation(text):

@@ -54,15 +54,15 @@ class MultiThreading(object):
     def process(self, data, handle_func):
         """
         多线程处理数据集
-        :param data: <list, tuple> 数据集
-        :param handle_func: <func> 定义线程处理函数。
+        :param data: (list or tuple, mandatory) 数据集
+        :param handle_func: (func, mandatory) 定义线程处理函数。
         # 函数格式要求有两个参数，一个是处理数据集，一个队列。例如：
         # def handle(data, q):
         #   for d in data:
         #       # 处理数据 d
         #       # q 是队列，这里处理完一次，put(1) 用于显示处理进度
         #       q.put(1)
-        :return: <list> 处理结果
+        :return: (list) 处理结果
         """
         # 预处理文本
         data_num = len(data)

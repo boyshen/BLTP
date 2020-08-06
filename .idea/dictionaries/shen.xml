@@ -1,7 +1,15 @@
 <component name="ProjectDictionaryState">
   <dictionary name="shen">
     <words>
+      <w>bilstm</w>
+      <w>ckpt</w>
       <w>crfsuite</w>
+      <w>dataset</w>
+      <w>identifers</w>
+      <w>lstm</w>
+      <w>maxval</w>
+      <w>preprocess</w>
+      <w>regularizer</w>
       <w>sklearn</w>
       <w>viterbi</w>
     </words>

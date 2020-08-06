@@ -3,7 +3,6 @@ appnope==0.1.0
 astor==0.7.1
 attrs==19.3.0
 backcall==0.1.0
-bleach==3.1.0
 certifi==2019.11.28
 Click==7.0
 cycler==0.10.0
@@ -50,7 +49,6 @@ mock==3.0.5
 more-itertools==8.0.2
 nbconvert==5.6.1
 nbformat==4.4.0
-nltk==3.4.4
 notebook==6.0.2
 numpy==1.16.4
 pandas==0.25.0

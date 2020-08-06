@@ -14513,12 +14513,10 @@ TEST WORDS PRECISION:	0.754
 参战								参战
 的								的
 中国石油天然气管道局一				      |	中国石油天然气管道局
-							      >	一
-、								、
-二								二
-、								、
-三公司							      |	三
-							      >	公司
+、							      |	一、二、三
+二							      |	公司
+、							      <
+三公司							      <
 的								的
 王牌								王牌
 军								军
@@ -14575,14 +14573,14 @@ TEST WORDS PRECISION:	0.754
 抢								抢
 进度								进度
 。								。
-INSERTIONS:	14
-DELETIONS:	0
-SUBSTITUTIONS:	16
-NCHANGE:	30
+INSERTIONS:	12
+DELETIONS:	2
+SUBSTITUTIONS:	17
+NCHANGE:	31
 NTRUTH:	54
-NTEST:	68
-TRUE WORDS RECALL:	0.704
-TEST WORDS PRECISION:	0.559
+NTEST:	64
+TRUE WORDS RECALL:	0.648
+TEST WORDS PRECISION:	0.547
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/dict/msr_test_seg_result.utf8----419
 他们								他们
 响亮								响亮
@@ -39172,8 +39170,8 @@ TEST WORDS PRECISION:	0.800
 的								的
 “								“
 左								左
-”								”
-倾								倾
+”							      |	”倾
+倾							      <
 教条								教条
 宗派主义							宗派主义
 错误								错误
@@ -39193,13 +39191,13 @@ TEST WORDS PRECISION:	0.800
 久								久
 。								。
 INSERTIONS:	8
-DELETIONS:	1
-SUBSTITUTIONS:	5
-NCHANGE:	14
+DELETIONS:	2
+SUBSTITUTIONS:	6
+NCHANGE:	16
 NTRUTH:	111
-NTEST:	118
-TRUE WORDS RECALL:	0.946
-TEST WORDS PRECISION:	0.890
+NTEST:	117
+TRUE WORDS RECALL:	0.928
+TEST WORDS PRECISION:	0.880
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/dict/msr_test_seg_result.utf8----1082
 ９月								９月
 ，								，
@@ -39540,8 +39538,8 @@ TEST WORDS PRECISION:	1.000
 的								的
 “								“
 左								左
-”								”
-倾								倾
+”							      |	”倾
+倾							      <
 蛮干								蛮干
 ，								，
 １９３２年							１９３２年
@@ -39556,13 +39554,13 @@ TEST WORDS PRECISION:	1.000
 被捕								被捕
 。								。
 INSERTIONS:	0
-DELETIONS:	1
-SUBSTITUTIONS:	1
-NCHANGE:	2
+DELETIONS:	2
+SUBSTITUTIONS:	2
+NCHANGE:	4
 NTRUTH:	22
-NTEST:	21
-TRUE WORDS RECALL:	0.909
-TEST WORDS PRECISION:	0.952
+NTEST:	20
+TRUE WORDS RECALL:	0.818
+TEST WORDS PRECISION:	0.900
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/dict/msr_test_seg_result.utf8----1089
 我								我
 是								是
@@ -39693,8 +39691,8 @@ TEST WORDS PRECISION:	0.700
 王明								王明
 “								“
 左								左
-”								”
-倾								倾
+”							      |	”倾
+倾							      <
 错误								错误
 路线								路线
 ，								，
@@ -39747,13 +39745,13 @@ TEST WORDS PRECISION:	0.700
 							      >	九
 。								。
 INSERTIONS:	7
-DELETIONS:	0
-SUBSTITUTIONS:	6
-NCHANGE:	13
+DELETIONS:	1
+SUBSTITUTIONS:	7
+NCHANGE:	15
 NTRUTH:	62
-NTEST:	69
-TRUE WORDS RECALL:	0.903
-TEST WORDS PRECISION:	0.812
+NTEST:	68
+TRUE WORDS RECALL:	0.871
+TEST WORDS PRECISION:	0.794
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/dict/msr_test_seg_result.utf8----1094
 在								在
 １９３５年１月						      |	１９３５年
@@ -74494,8 +74492,8 @@ TEST WORDS PRECISION:	0.833
 长足进步							长足进步
 ，								，
 新								新
-修							      |	修水
-水渠							      |	渠
+修								修
+水渠								水渠
 ６７４公里						      |	６７
 							      >	４公里
 ，								，
@@ -74538,12 +74536,12 @@ TEST WORDS PRECISION:	0.833
 。								。
 INSERTIONS:	7
 DELETIONS:	0
-SUBSTITUTIONS:	7
-NCHANGE:	14
+SUBSTITUTIONS:	5
+NCHANGE:	12
 NTRUTH:	42
 NTEST:	49
-TRUE WORDS RECALL:	0.833
-TEST WORDS PRECISION:	0.714
+TRUE WORDS RECALL:	0.881
+TEST WORDS PRECISION:	0.755
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/dict/msr_test_seg_result.utf8----2014
 西藏								西藏
 的								的
@@ -108845,11 +108843,11 @@ TEST WORDS PRECISION:	0.933
 必须								必须
 具备								具备
 第九条								第九条
-第一								第一
-、								、
-二								二
-、								、
-三								三
+第一							      |	第一、二、三
+、							      <
+二							      <
+、							      <
+三							      <
 、								、
 五项								五项
 规定								规定
@@ -108863,13 +108861,13 @@ TEST WORDS PRECISION:	0.933
 负责人							负责人
 。								。
 INSERTIONS:	0
-DELETIONS:	0
-SUBSTITUTIONS:	0
-NCHANGE:	0
+DELETIONS:	4
+SUBSTITUTIONS:	1
+NCHANGE:	5
 NTRUTH:	34
-NTEST:	34
-TRUE WORDS RECALL:	1.000
-TEST WORDS PRECISION:	1.000
+NTEST:	30
+TRUE WORDS RECALL:	0.853
+TEST WORDS PRECISION:	0.967
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/dict/msr_test_seg_result.utf8----2962
 第十二条							第十二条
 交通								交通
@@ -133362,10 +133360,7 @@ TEST WORDS PRECISION:	0.942
 活动								活动
 ，								，
 每年								每年
-“五一”劳动节						      |	“
-							      >	五一
-							      >	”
-							      >	劳动节
+“五一”劳动节							“五一”劳动节
 和								和
 “十一”国庆节						      |	“
 							      >	十一
@@ -133389,14 +133384,14 @@ TEST WORDS PRECISION:	0.942
 活泼								活泼
 之中								之中
 。								。
-INSERTIONS:	6
+INSERTIONS:	3
 DELETIONS:	0
-SUBSTITUTIONS:	2
-NCHANGE:	8
+SUBSTITUTIONS:	1
+NCHANGE:	4
 NTRUTH:	56
-NTEST:	62
-TRUE WORDS RECALL:	0.964
-TEST WORDS PRECISION:	0.871
+NTEST:	59
+TRUE WORDS RECALL:	0.982
+TEST WORDS PRECISION:	0.932
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/dict/msr_test_seg_result.utf8----3620
 与此同时							与此同时
 ，								，
@@ -147832,16 +147827,16 @@ NTEST:	41
 TRUE WORDS RECALL:	0.822
 TEST WORDS PRECISION:	0.902
 === SUMMARY:
-=== TOTAL INSERTIONS:	5095
-=== TOTAL DELETIONS:	376
-=== TOTAL SUBSTITUTIONS:	4194
-=== TOTAL NCHANGE:	9665
+=== TOTAL INSERTIONS:	5090
+=== TOTAL DELETIONS:	385
+=== TOTAL SUBSTITUTIONS:	4196
+=== TOTAL NCHANGE:	9671
 === TOTAL TRUE WORD COUNT:	106873
-=== TOTAL TEST WORD COUNT:	111592
+=== TOTAL TEST WORD COUNT:	111578
 === TOTAL TRUE WORDS RECALL:	0.957
 === TOTAL TEST WORDS PRECISION:	0.917
 === F MEASURE:	0.937
 === OOV Rate:	0.026
 === OOV Recall Rate:	0.025
-=== IV Recall Rate:	0.983
-###	../result/dict/msr_test_seg_result.utf8	5095	376	4194	9665	106873	111592	0.957	0.917	0.937	0.026	0.025	0.983
+=== IV Recall Rate:	0.982
+###	../result/dict/msr_test_seg_result.utf8	5090	385	4196	9671	106873	111578	0.957	0.917	0.937	0.026	0.025	0.982

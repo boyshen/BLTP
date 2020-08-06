@@ -47,8 +47,8 @@ class NgramDictionary(Dictionary):
     def word_to_token(self, word):
         """
         根据单词获取token值。
-        :param word: <str> 单词
-        :return: <int> 成功则返回 token， 失败则返回 UNK = 0
+        :param word: (str, mandatory) 单词
+        :return: (int) 成功则返回 token， 失败则返回 UNK = 0
         """
         try:
             token = self.__word_token[word]
@@ -57,37 +57,37 @@ class NgramDictionary(Dictionary):
 
         return token
 
-    def __init_word_freq(self, texts, split_lab):
+    def __init_word_freq(self, texts):
         """
         初始化词频
-        :param texts: <list> 文本数量
-        :param split_lab: <str> 划分词频标签
-        :return: <list> 返回处理之后的分词文本
+        :param texts: (list, mandatory) 文本数量
+        :return: (list) 返回处理之后的分词文本
         """
-        # 遍历文本，统计词频。同时对每个句子添加 <START> 和 <END> 字符。
-        # 使用 new_text 保存已经分词和添加 <START> 和 <END> 字符的文本。
-        # new_text 是二维列表：[['<START>','文本','<END>'],['<START>'...'<END>']]
+        # 遍历文本，统计词频。同时对每个句子添加 (START) 和 (END) 字符。
+        # 使用 new_text 保存已经分词和添加 (START) 和 (END) 字符的文本。
+        # new_text 是二维列表：[['(START)','文本','(END)'],['(START)'...'(END)']]
         new_text = list()
         for text in tqdm(texts):
-            text = text.strip()
+            # text = text.strip()
+            #
+            # if text == '' or text == ' ' or len(text) == 0:
+            #     continue
 
-            if text == '' or text == ' ' or len(text) == 0:
-                continue
-
-            # 添加 <START> 和 <END>
-            text = self.START_TAG + split_lab + text + split_lab + self.END_TAG
+            # 添加 (START) 和 (END)
+            # text = self.START_TAG + split_lab + text + split_lab + self.END_TAG
+            text = [self.START_TAG] + text + [self.END_TAG]
 
             # 根据split_lab 进行分词。跳过空格字符
-            words = text.split(split_lab)
-            new_words = list()
-            for word in words:
-                if word == '' or word == ' ' or len(word) == 0:
-                    continue
-                new_words.append(word)
+            # words = text.split(split_lab)
+            # new_words = list()
+            # for word in words:
+            #     if word == '' or word == ' ' or len(word) == 0:
+            #         continue
+            #     new_words.append(word)
 
             # 统计词频
-            self.__word_freq.update(new_words)
-            new_text.append(new_words)
+            self.__word_freq.update(text)
+            new_text.append(text)
         return new_text
 
     def __init_words_token(self):
@@ -107,7 +107,7 @@ class NgramDictionary(Dictionary):
     def __init_n_word_freq(self, texts):
         """
         初始化n阶词频矩阵
-        :param texts:<list> 文本列表
+        :param texts:(list, mandatory) 文本列表
         :return:
         """
         # 初始化n阶词频矩阵，如果 n = 2 ，则表示二维矩阵，n = 3 则为三维矩阵。矩阵行和列代表单词的 token、初始化先将其设置为 0
@@ -121,7 +121,7 @@ class NgramDictionary(Dictionary):
 
         # 统计n阶词频
         for text in tqdm(texts):
-            if len(text) > self.__n:
+            if len(text) >= self.__n:
                 # 统计n阶词频。n 代表单词的个数。即 n = 2 时候。当前单词与前一个单词出现的次数。通过遍历统计前一个与当前词出现的次数
                 # 这里 n_gram = 1 时表示前一个词，n_gram = 2 时候表示前一个词的前一个词
                 n_gram = self.__n - 1
@@ -142,14 +142,13 @@ class NgramDictionary(Dictionary):
             elif len(text) < self.__n:
                 continue
 
-    def fit(self, texts, split_lab):
+    def fit(self, dataset):
         """
         拟合操作，初始化词频、n阶词频、词表、单词数量。
-        :param texts: <list> 文本
-        :param split_lab: <str> 分词标记
+        :param dataset: (list of list, mandatory) 数据
         :return:
         """
-        new_texts = self.__init_word_freq(texts, split_lab)
+        new_texts = self.__init_word_freq(dataset)
         self.__init_words_token()
         self.__init_n_word_freq(new_texts)
 
@@ -158,15 +157,15 @@ class NgramDictionary(Dictionary):
     def get_words(self):
         """
         获取词表
-        :return: <list> 单词统计表
+        :return: (list) 单词统计表
         """
         return self.__words
 
     def get_word_freq(self, word):
         """
         输入单词获取词频。如果查询到单词，则返回对应的词频，否则返回  0
-        :param word: <str> 单词
-        :return: <int> 词频
+        :param word: (str, mandatory) 单词
+        :return: (int) 词频
         """
         try:
             w_freq = self.__word_freq[word]
@@ -178,9 +177,9 @@ class NgramDictionary(Dictionary):
     def get_n_word_freq(self, words):
         """
         获取 n 阶词频
-        :param words: <list, tuple> 输入的类型必须是list或tuple，同时词数量必须等于 n(n元语法，n=2或n=3).
+        :param words: (list or tuple, mandatory) 输入的类型必须是list或tuple，同时词数量必须等于 n(n元语法，n=2或n=3).
         同时规定列表中第一个单词为当前词，第二个单词为当前词的前一个，依次类推。例如"A"、"B"、"C" 这三个词。当前词为 'B'，'B' 的上一个词为"A"
-        :return: <int> 词频
+        :return: (int) 词频
         """
         if not isinstance(words, (list, tuple)):
             raise ParameterError("input words type must be is [list, tuple], actually get {}".format(type(words)))
@@ -202,48 +201,53 @@ class NgramDictionary(Dictionary):
     def get_n(self):
         """
         获取 n 值。
-        :return: <int> self.__n
+        :return: (int) self.__n
         """
         return self.__n
 
     def get_word_num(self):
         """
         获取单词数量
-        :return: <int> self.__word_num
+        :return: (int) self.__word_num
         """
         return self.__word_num
 
     def get_total_words_num(self):
         """
         获取总词数
-        :return: <int> self.__total_words
+        :return: (int) self.__total_words
         """
         return self.__total_words
 
 
-def test():
-    texts = ["心  静  渐  知  春  似  海  ，  花  深  每  觉  影  生  香  。",
-             "心  静  渐  知  春  似  海  ，  花  深  每  觉  影  生  香  。"]
+def test_module_func():
+    dataset = [['这', '首先', '是', '个', '民族', '问题', '，', '民族', '的', '感情', '问题', '。']]
 
     # n = 2
     n = 3
     word_dict = NgramDictionary(n=n)
-    word_dict.fit(texts, split_lab="  ")
+    word_dict.fit(dataset)
 
-    # 单词 "静" 的词频
-    word = "静"
-    print("word: {}, freq: {}".format(word, word_dict.get_word_freq(word)))
+    # "民族" 的词频
+    word = "民族"
+    w_freq = word_dict.get_word_freq(word)
+    assert w_freq == 2, \
+        "{} Error: {} word freq expect get:{}, actually get:{}".format(word_dict.get_word_freq.__name__, word, 2,
+                                                                       w_freq)
+    print("word: {}, freq: {}".format(word, w_freq))
 
-    # n = 2 时，"静" 的前面是 "心" 的频次
-    # words = ["静", "心"]
+    # n = 3 时，"民族" 前面是 "个"， "个" 前面是"是" 的频次
+    words = ["民族", "个", "是"]
+    n_freq = word_dict.get_n_word_freq(words)
+    assert n_freq == 1, \
+        "{} Error: {} ngram word freq expect get:{}, actually get:{}".format(word_dict.get_n_word_freq.__name__, word,
+                                                                             1, n_freq)
 
-    # n = 3 时，"渐" 前面是 "静"， "静" 前面是"心" 的频次
-    words = ["渐", "静", "心"]
-    print("words: {}, n_gram: {}".format(words, word_dict.get_n_word_freq(words)))
+    print("words: {}, n_gram: {}".format(words, n_freq))
 
     words = word_dict.get_words()
     print("total words: {}, word number: {}".format(words, len(words)))
 
 
 if __name__ == "__main__":
-    test()
+    test_module_func()

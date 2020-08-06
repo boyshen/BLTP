@@ -3425,8 +3425,7 @@ TEST WORDS PRECISION:	1.000
 这							      <
 天							      <
 ，								，
-玲英							      |	玲
-							      >	英
+玲英								玲英
 便								便
 带								带
 上								上
@@ -3451,14 +3450,14 @@ TEST WORDS PRECISION:	1.000
 老人								老人
 祝寿								祝寿
 。								。
-INSERTIONS:	1
+INSERTIONS:	0
 DELETIONS:	2
-SUBSTITUTIONS:	4
-NCHANGE:	7
+SUBSTITUTIONS:	3
+NCHANGE:	5
 NTRUTH:	35
-NTEST:	34
-TRUE WORDS RECALL:	0.829
-TEST WORDS PRECISION:	0.853
+NTEST:	33
+TRUE WORDS RECALL:	0.857
+TEST WORDS PRECISION:	0.909
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----106
 她								她
 斟								斟
@@ -4088,10 +4087,10 @@ TRUE WORDS RECALL:	0.800
 TEST WORDS PRECISION:	0.769
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----125
 有人								有人
-说								说
-玲英							      |	玲
-是							      |	英是
-个							      |	个傻
+说							      |	说玲
+玲英							      |	英是
+是							      |	个傻
+个							      <
 傻							      <
 姑娘								姑娘
 ，								，
@@ -4133,13 +4132,13 @@ TEST WORDS PRECISION:	0.769
 。								。
 ”								”
 INSERTIONS:	0
-DELETIONS:	2
+DELETIONS:	3
 SUBSTITUTIONS:	9
-NCHANGE:	11
+NCHANGE:	12
 NTRUTH:	45
-NTEST:	43
-TRUE WORDS RECALL:	0.756
-TEST WORDS PRECISION:	0.791
+NTEST:	42
+TRUE WORDS RECALL:	0.733
+TEST WORDS PRECISION:	0.786
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----126
 前								前
 不久								不久
@@ -8694,17 +8693,17 @@ TEST WORDS PRECISION:	0.789
 的								的
 性质								性质
 也								也
-变								变
-了								了
+变							      |	变了
+了							      <
 。								。
 INSERTIONS:	0
-DELETIONS:	0
-SUBSTITUTIONS:	2
-NCHANGE:	2
+DELETIONS:	1
+SUBSTITUTIONS:	3
+NCHANGE:	4
 NTRUTH:	24
-NTEST:	24
-TRUE WORDS RECALL:	0.917
-TEST WORDS PRECISION:	0.917
+NTEST:	23
+TRUE WORDS RECALL:	0.833
+TEST WORDS PRECISION:	0.870
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----263
 依靠								依靠
 单位								单位
@@ -8740,7 +8739,8 @@ TEST WORDS PRECISION:	0.895
 ，								，
 信任								信任
 不仅仅是						      |	不仅
-							      >	仅是
+							      >	仅
+							      >	是
 一种								一种
 心态								心态
 的								的
@@ -8761,14 +8761,14 @@ TEST WORDS PRECISION:	0.895
 和								和
 强化								强化
 。								。
-INSERTIONS:	1
+INSERTIONS:	2
 DELETIONS:	1
 SUBSTITUTIONS:	3
-NCHANGE:	5
+NCHANGE:	6
 NTRUTH:	26
-NTEST:	26
+NTEST:	27
 TRUE WORDS RECALL:	0.846
-TEST WORDS PRECISION:	0.846
+TEST WORDS PRECISION:	0.815
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----265
 这种								这种
 机制								机制
@@ -9456,8 +9456,9 @@ TEST WORDS PRECISION:	0.882
 当								当
 三峡								三峡
 工程								工程
-还							      |	还处
-处在							      |	在
+还								还
+处在							      |	处
+							      >	在
 论证								论证
 阶段								阶段
 的								的
@@ -9477,14 +9478,14 @@ TEST WORDS PRECISION:	0.882
 的								的
 课题								课题
 。								。
-INSERTIONS:	0
+INSERTIONS:	1
 DELETIONS:	0
-SUBSTITUTIONS:	4
+SUBSTITUTIONS:	3
 NCHANGE:	4
 NTRUTH:	24
-NTEST:	24
-TRUE WORDS RECALL:	0.833
-TEST WORDS PRECISION:	0.833
+NTEST:	25
+TRUE WORDS RECALL:	0.875
+TEST WORDS PRECISION:	0.840
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----289
 国家								国家
 组织								组织
@@ -13286,8 +13287,8 @@ TEST WORDS PRECISION:	0.625
 一级								一级
 环保局								环保局
 ，								，
-沿								沿
-淮							      |	淮３４个县
+沿							      |	沿淮
+淮							      |	３４个县
 ３４个							      <
 县							      <
 已								已
@@ -13321,12 +13322,12 @@ TEST WORDS PRECISION:	0.625
 。								。
 INSERTIONS:	0
 DELETIONS:	7
-SUBSTITUTIONS:	8
-NCHANGE:	15
+SUBSTITUTIONS:	9
+NCHANGE:	16
 NTRUTH:	46
 NTEST:	39
-TRUE WORDS RECALL:	0.674
-TEST WORDS PRECISION:	0.795
+TRUE WORDS RECALL:	0.652
+TEST WORDS PRECISION:	0.769
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----383
 一年								一年
 多							      |	多来
@@ -14572,7 +14573,8 @@ TEST WORDS PRECISION:	0.750
 ，								，
 以及								以及
 来自								来自
-四川油建							四川油建
+四川油建						      |	四川
+							      >	油建
 、								、
 大庆油建							大庆油建
 、								、
@@ -14611,14 +14613,14 @@ TEST WORDS PRECISION:	0.750
 抢								抢
 进度								进度
 。								。
-INSERTIONS:	4
+INSERTIONS:	5
 DELETIONS:	2
-SUBSTITUTIONS:	10
-NCHANGE:	16
+SUBSTITUTIONS:	11
+NCHANGE:	18
 NTRUTH:	54
-NTEST:	56
-TRUE WORDS RECALL:	0.778
-TEST WORDS PRECISION:	0.750
+NTEST:	57
+TRUE WORDS RECALL:	0.759
+TEST WORDS PRECISION:	0.719
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----419
 他们								他们
 响亮								响亮
@@ -16074,9 +16076,9 @@ TEST WORDS PRECISION:	0.487
 国务委员								国务委员
 彭珮云								彭珮云
 在								在
-颁奖							      |	颁奖会
-会							      <
-上								上
+颁奖								颁奖
+会							      |	会上
+上							      <
 讲话								讲话
 ，								，
 赞扬								赞扬
@@ -16350,8 +16352,8 @@ TEST WORDS PRECISION:	1.000
 举行								举行
 的								的
 第三十六届							第三十六届
-南丁格尔							南丁格尔
-奖								奖
+南丁格尔						      |	南丁格尔奖
+奖							      <
 颁奖								颁奖
 大会								大会
 ，								，
@@ -16373,13 +16375,13 @@ TEST WORDS PRECISION:	1.000
 颁奖								颁奖
 。								。
 INSERTIONS:	2
-DELETIONS:	1
-SUBSTITUTIONS:	3
-NCHANGE:	6
+DELETIONS:	2
+SUBSTITUTIONS:	4
+NCHANGE:	8
 NTRUTH:	36
-NTEST:	37
-TRUE WORDS RECALL:	0.889
-TEST WORDS PRECISION:	0.865
+NTEST:	36
+TRUE WORDS RECALL:	0.833
+TEST WORDS PRECISION:	0.833
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----469
 这是								这是
 江泽民								江泽民
@@ -17041,9 +17043,9 @@ TEST WORDS PRECISION:	1.000
 为主								为主
 的								的
 大型								大型
-石油							      |	石油化工企业
-化工							      <
-企业							      <
+石油								石油
+化工								化工
+企业								企业
 ，								，
 原油							      |	原油年
 年							      <
@@ -17054,13 +17056,13 @@ TEST WORDS PRECISION:	1.000
 							      >	３亿吨
 。								。
 INSERTIONS:	1
-DELETIONS:	3
-SUBSTITUTIONS:	3
-NCHANGE:	7
+DELETIONS:	1
+SUBSTITUTIONS:	2
+NCHANGE:	4
 NTRUTH:	22
-NTEST:	20
-TRUE WORDS RECALL:	0.727
-TEST WORDS PRECISION:	0.800
+NTEST:	22
+TRUE WORDS RECALL:	0.864
+TEST WORDS PRECISION:	0.864
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----491
 油气								油气
 在								在
@@ -24123,21 +24125,20 @@ TEST WORDS PRECISION:	0.947
 ，								，
 同时								同时
 培养								培养
-造就							      |	造
-							      >	就
-出								出
-一大批								一大批
+造就								造就
+出							      |	出一大批
+一大批							      <
 优秀								优秀
 人才								人才
 。								。
-INSERTIONS:	3
-DELETIONS:	1
+INSERTIONS:	2
+DELETIONS:	2
 SUBSTITUTIONS:	4
 NCHANGE:	8
 NTRUTH:	49
-NTEST:	51
-TRUE WORDS RECALL:	0.898
-TEST WORDS PRECISION:	0.863
+NTEST:	49
+TRUE WORDS RECALL:	0.878
+TEST WORDS PRECISION:	0.878
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----698
 同志								同志
 们								们
@@ -24362,8 +24363,8 @@ TRUE WORDS RECALL:	1.000
 TEST WORDS PRECISION:	1.000
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----705
 本报								本报
-杭州							      |	杭州１１月１３日
-１１月１３日						      <
+杭州								杭州
+１１月１３日							１１月１３日
 电								电
 记者								记者
 赵相如								赵相如
@@ -24408,13 +24409,13 @@ TEST WORDS PRECISION:	1.000
 热潮								热潮
 。								。
 INSERTIONS:	0
-DELETIONS:	1
-SUBSTITUTIONS:	4
-NCHANGE:	5
+DELETIONS:	0
+SUBSTITUTIONS:	3
+NCHANGE:	3
 NTRUTH:	46
-NTEST:	45
-TRUE WORDS RECALL:	0.891
-TEST WORDS PRECISION:	0.911
+NTEST:	46
+TRUE WORDS RECALL:	0.935
+TEST WORDS PRECISION:	0.935
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----706
 进入								进入
 “								“
@@ -27698,20 +27699,21 @@ TEST WORDS PRECISION:	0.778
 头孢菌素						      |	化头孢菌素
 生产								生产
 基地								基地
-							      >	--
 -								-
--							      |	上海
--							      |	先锋
-上海先锋药业公司						      |	药业公司
+-								-
+-								-
+上海先锋药业公司						      |	上海
+							      >	先锋
+							      >	药业公司
 。								。
-INSERTIONS:	1
+INSERTIONS:	2
 DELETIONS:	1
-SUBSTITUTIONS:	6
-NCHANGE:	8
+SUBSTITUTIONS:	4
+NCHANGE:	7
 NTRUTH:	40
-NTEST:	40
-TRUE WORDS RECALL:	0.825
-TEST WORDS PRECISION:	0.825
+NTEST:	41
+TRUE WORDS RECALL:	0.875
+TEST WORDS PRECISION:	0.854
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----790
 新								新
 企业								企业
@@ -30242,9 +30244,9 @@ TEST WORDS PRECISION:	1.000
 上								上
 ，								，
 全国人大常委会						全国人大常委会
-副							      |	副委员长
-委员长							      <
-王丙乾								王丙乾
+副								副
+委员长							      |	委员
+王丙乾							      |	长王丙乾
 提出								提出
 ，								，
 全国								全国
@@ -30272,13 +30274,13 @@ TEST WORDS PRECISION:	1.000
 任务								任务
 。								。
 INSERTIONS:	2
-DELETIONS:	1
-SUBSTITUTIONS:	3
+DELETIONS:	0
+SUBSTITUTIONS:	4
 NCHANGE:	6
 NTRUTH:	55
-NTEST:	56
+NTEST:	57
 TRUE WORDS RECALL:	0.927
-TEST WORDS PRECISION:	0.911
+TEST WORDS PRECISION:	0.895
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----854
 我们								我们
 应该								应该
@@ -30998,8 +31000,8 @@ TEST WORDS PRECISION:	0.829
 抗旱								抗旱
 现场								现场
 和								和
-渭河								渭河
-防汛								防汛
+渭河							      |	渭河防汛
+防汛							      <
 ，								，
 走访								走访
 了								了
@@ -31015,13 +31017,13 @@ TEST WORDS PRECISION:	0.829
 汇报								汇报
 。								。
 INSERTIONS:	6
-DELETIONS:	3
-SUBSTITUTIONS:	6
-NCHANGE:	15
+DELETIONS:	4
+SUBSTITUTIONS:	7
+NCHANGE:	17
 NTRUTH:	52
-NTEST:	55
-TRUE WORDS RECALL:	0.827
-TEST WORDS PRECISION:	0.782
+NTEST:	54
+TRUE WORDS RECALL:	0.788
+TEST WORDS PRECISION:	0.759
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----870
 姜春云								姜春云
 对								对
@@ -33244,8 +33246,8 @@ TEST WORDS PRECISION:	0.868
 做								做
 节能								节能
 大户								大户
--							      |	--
--							      <
+-								-
+-								-
 访								访
 中国石油天然气总公司					      |	中国
 							      >	石油
@@ -33253,13 +33255,13 @@ TEST WORDS PRECISION:	0.868
 总经理								总经理
 周永康							周永康
 INSERTIONS:	2
-DELETIONS:	2
-SUBSTITUTIONS:	3
-NCHANGE:	7
+DELETIONS:	1
+SUBSTITUTIONS:	2
+NCHANGE:	5
 NTRUTH:	14
-NTEST:	14
-TRUE WORDS RECALL:	0.643
-TEST WORDS PRECISION:	0.643
+NTEST:	15
+TRUE WORDS RECALL:	0.786
+TEST WORDS PRECISION:	0.733
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----932
 本报								本报
 记者								记者
@@ -33458,17 +33460,17 @@ TEST WORDS PRECISION:	0.833
 １.４１亿吨							１.４１亿吨
 ，								，
 生产								生产
-天然气							      |	天然气１６４亿立方米
-１６４亿立方米					      <
+天然气								天然气
+１６４亿立方米						１６４亿立方米
 。								。
 INSERTIONS:	2
-DELETIONS:	1
-SUBSTITUTIONS:	2
-NCHANGE:	5
+DELETIONS:	0
+SUBSTITUTIONS:	1
+NCHANGE:	3
 NTRUTH:	31
-NTEST:	32
-TRUE WORDS RECALL:	0.903
-TEST WORDS PRECISION:	0.875
+NTEST:	33
+TRUE WORDS RECALL:	0.968
+TEST WORDS PRECISION:	0.909
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----939
 各								各
 油田								油田
@@ -36505,20 +36507,20 @@ TEST WORDS PRECISION:	1.000
 ”								”
 告别								告别
 ，								，
-飞								飞
-向								向
+飞							      |	飞向
+向							      <
 遥远								遥远
 的								的
 天际								天际
 。								。
 INSERTIONS:	1
-DELETIONS:	2
-SUBSTITUTIONS:	11
-NCHANGE:	14
+DELETIONS:	3
+SUBSTITUTIONS:	12
+NCHANGE:	16
 NTRUTH:	53
-NTEST:	52
-TRUE WORDS RECALL:	0.755
-TEST WORDS PRECISION:	0.769
+NTEST:	51
+TRUE WORDS RECALL:	0.717
+TEST WORDS PRECISION:	0.745
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----1012
 星星								星星
 的								的
@@ -37347,17 +37349,17 @@ TEST WORDS PRECISION:	0.600
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----1032
 本报								本报
 驻							      |	驻委
-委内瑞拉							      |	内瑞拉
-记者								记者
-管彦忠							管彦忠
+委内瑞拉							      |	内瑞拉记者管彦忠
+记者							      <
+管彦忠						      <
 INSERTIONS:	0
-DELETIONS:	0
+DELETIONS:	2
 SUBSTITUTIONS:	2
-NCHANGE:	2
+NCHANGE:	4
 NTRUTH:	5
-NTEST:	5
-TRUE WORDS RECALL:	0.600
-TEST WORDS PRECISION:	0.600
+NTEST:	3
+TRUE WORDS RECALL:	0.200
+TEST WORDS PRECISION:	0.333
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----1033
 乌拉维塔							乌拉维塔
 是								是
@@ -38314,8 +38316,8 @@ TEST WORDS PRECISION:	0.667
 纪念								纪念
 的								的
 人								人
--							      |	--
--							      <
+-								-
+-								-
 纪念								纪念
 秦邦宪							秦邦宪
 （								（
@@ -38324,13 +38326,13 @@ TEST WORDS PRECISION:	0.667
 诞辰								诞辰
 九十周年							九十周年
 INSERTIONS:	0
-DELETIONS:	1
-SUBSTITUTIONS:	1
-NCHANGE:	2
+DELETIONS:	0
+SUBSTITUTIONS:	0
+NCHANGE:	0
 NTRUTH:	15
-NTEST:	14
-TRUE WORDS RECALL:	0.867
-TEST WORDS PRECISION:	0.929
+NTEST:	15
+TRUE WORDS RECALL:	1.000
+TEST WORDS PRECISION:	1.000
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----1064
 温济泽							温济泽
 INSERTIONS:	0
@@ -41123,8 +41125,8 @@ TEST WORDS PRECISION:	0.925
 说								说
 ：								：
 “								“
-五								五
-岳								岳
+五							      |	五岳
+岳							      <
 凌霄								凌霄
 ，								，
 四海								四海
@@ -41142,13 +41144,13 @@ TEST WORDS PRECISION:	0.925
 。								。
 ”								”
 INSERTIONS:	1
-DELETIONS:	3
-SUBSTITUTIONS:	4
-NCHANGE:	8
+DELETIONS:	4
+SUBSTITUTIONS:	5
+NCHANGE:	10
 NTRUTH:	25
-NTEST:	23
-TRUE WORDS RECALL:	0.720
-TEST WORDS PRECISION:	0.783
+NTEST:	22
+TRUE WORDS RECALL:	0.640
+TEST WORDS PRECISION:	0.727
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----1139
 然而								然而
 在								在
@@ -44028,8 +44030,8 @@ TEST WORDS PRECISION:	1.000
 向							      <
 世界								世界
 ，								，
-在							      |	在平
-平等							      |	等
+在								在
+平等								平等
 相							      |	相待
 待							      <
 、								、
@@ -44057,12 +44059,12 @@ TEST WORDS PRECISION:	1.000
 。								。
 INSERTIONS:	1
 DELETIONS:	2
-SUBSTITUTIONS:	5
-NCHANGE:	8
+SUBSTITUTIONS:	3
+NCHANGE:	6
 NTRUTH:	40
 NTEST:	39
-TRUE WORDS RECALL:	0.825
-TEST WORDS PRECISION:	0.846
+TRUE WORDS RECALL:	0.875
+TEST WORDS PRECISION:	0.897
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----1221
 石油								石油
 天然气								天然气
@@ -45796,7 +45798,8 @@ TEST WORDS PRECISION:	1.000
 彭珮云								彭珮云
 对								对
 “八五							      |	“
-							      >	八五
+							      >	八
+							      >	五
 ”								”
 以来								以来
 湖南省								湖南省
@@ -45812,20 +45815,21 @@ TEST WORDS PRECISION:	1.000
 充分								充分
 肯定								肯定
 。								。
-INSERTIONS:	1
+INSERTIONS:	2
 DELETIONS:	0
 SUBSTITUTIONS:	1
-NCHANGE:	2
+NCHANGE:	3
 NTRUTH:	18
-NTEST:	19
+NTEST:	20
 TRUE WORDS RECALL:	0.944
-TEST WORDS PRECISION:	0.895
+TEST WORDS PRECISION:	0.850
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----1275
 她								她
 说								说
 ，								，
 “八五							      |	“
-							      >	八五
+							      >	八
+							      >	五
 ”								”
 期间								期间
 ，								，
@@ -45862,14 +45866,14 @@ TEST WORDS PRECISION:	0.895
 目标								目标
 努力								努力
 。								。
-INSERTIONS:	2
+INSERTIONS:	3
 DELETIONS:	0
 SUBSTITUTIONS:	2
-NCHANGE:	4
+NCHANGE:	5
 NTRUTH:	39
-NTEST:	41
+NTEST:	42
 TRUE WORDS RECALL:	0.949
-TEST WORDS PRECISION:	0.902
+TEST WORDS PRECISION:	0.881
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----1276
 浏阳市								浏阳市
 和								和
@@ -46665,7 +46669,8 @@ TEST WORDS PRECISION:	0.926
 持							      <
 一端								一端
 ，								，
-很难								很难
+很难							      |	很
+							      >	难
 取得								取得
 共识								共识
 ，								，
@@ -46677,14 +46682,14 @@ TEST WORDS PRECISION:	0.926
 分歧								分歧
 仍然								仍然
 。								。
-INSERTIONS:	3
+INSERTIONS:	4
 DELETIONS:	2
-SUBSTITUTIONS:	5
-NCHANGE:	10
+SUBSTITUTIONS:	6
+NCHANGE:	12
 NTRUTH:	34
-NTEST:	35
-TRUE WORDS RECALL:	0.794
-TEST WORDS PRECISION:	0.771
+NTEST:	36
+TRUE WORDS RECALL:	0.765
+TEST WORDS PRECISION:	0.722
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----1298
 清							      |	清入
 入关							      |	关前
@@ -47520,11 +47525,9 @@ TEST WORDS PRECISION:	0.600
 的								的
 评论								评论
 ，								，
-也是							      |	也
-褒贬							      |	是
-不一							      |	褒
-							      >	贬
-							      >	不
+也是								也是
+褒贬								褒贬
+不一							      |	不
 							      >	一
 ，								，
 尤其是								尤其是
@@ -47546,14 +47549,14 @@ TEST WORDS PRECISION:	0.600
 悬							      |	悬差
 差							      <
 。								。
-INSERTIONS:	3
+INSERTIONS:	1
 DELETIONS:	3
-SUBSTITUTIONS:	6
-NCHANGE:	12
+SUBSTITUTIONS:	4
+NCHANGE:	8
 NTRUTH:	32
-NTEST:	32
-TRUE WORDS RECALL:	0.719
-TEST WORDS PRECISION:	0.719
+NTEST:	30
+TRUE WORDS RECALL:	0.781
+TEST WORDS PRECISION:	0.833
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----1323
 这								这
 并不							      |	并
@@ -54366,10 +54369,10 @@ NTEST:	37
 TRUE WORDS RECALL:	0.750
 TEST WORDS PRECISION:	0.730
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----1509
-石							      |	石旮
-旮旯							      |	旯里
-里							      |	泥土金贵
-泥土							      <
+石								石
+旮旯								旮旯
+里								里
+泥土							      |	泥土金贵
 金贵							      <
 ，								，
 只能								只能
@@ -54396,13 +54399,13 @@ TEST WORDS PRECISION:	0.730
 深								深
 。								。
 INSERTIONS:	2
-DELETIONS:	3
-SUBSTITUTIONS:	8
-NCHANGE:	13
+DELETIONS:	2
+SUBSTITUTIONS:	6
+NCHANGE:	10
 NTRUTH:	27
-NTEST:	26
-TRUE WORDS RECALL:	0.593
-TEST WORDS PRECISION:	0.615
+NTEST:	27
+TRUE WORDS RECALL:	0.704
+TEST WORDS PRECISION:	0.704
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----1510
 山							      |	山里无水源
 里							      <
@@ -54946,8 +54949,9 @@ TEST WORDS PRECISION:	0.963
 充分								充分
 发挥								发挥
 国有								国有
-企业							      |	企业党组织
-党组织							      <
+企业								企业
+党组织							      |	党
+							      >	组织
 的								的
 政治								政治
 核心								核心
@@ -54988,14 +54992,14 @@ TEST WORDS PRECISION:	0.963
 的								的
 影响								影响
 。								。
-INSERTIONS:	0
-DELETIONS:	1
+INSERTIONS:	1
+DELETIONS:	0
 SUBSTITUTIONS:	3
 NCHANGE:	4
 NTRUTH:	53
-NTEST:	52
-TRUE WORDS RECALL:	0.925
-TEST WORDS PRECISION:	0.942
+NTEST:	54
+TRUE WORDS RECALL:	0.943
+TEST WORDS PRECISION:	0.926
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----1529
 各地区							      |	各
 							      >	地区
@@ -55005,8 +55009,9 @@ TEST WORDS PRECISION:	0.942
 部门								部门
 和								和
 国有								国有
-企业							      |	企业党组织
-党组织							      <
+企业								企业
+党组织							      |	党
+							      >	组织
 ，								，
 一定								一定
 要								要
@@ -55032,14 +55037,14 @@ TEST WORDS PRECISION:	0.942
 各项								各项
 要求								要求
 。								。
-INSERTIONS:	1
-DELETIONS:	1
+INSERTIONS:	2
+DELETIONS:	0
 SUBSTITUTIONS:	2
 NCHANGE:	4
 NTRUTH:	34
-NTEST:	34
-TRUE WORDS RECALL:	0.912
-TEST WORDS PRECISION:	0.912
+NTEST:	36
+TRUE WORDS RECALL:	0.941
+TEST WORDS PRECISION:	0.889
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----1530
 我国								我国
 社会主义							社会主义
@@ -55209,8 +55214,9 @@ TEST WORDS PRECISION:	1.000
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----1534
 许多								许多
 国有								国有
-企业							      |	企业党组织
-党组织							      <
+企业								企业
+党组织							      |	党
+							      >	组织
 在								在
 深化								深化
 企业								企业
@@ -55249,14 +55255,14 @@ TEST WORDS PRECISION:	1.000
 的								的
 经验								经验
 。								。
-INSERTIONS:	0
-DELETIONS:	1
+INSERTIONS:	1
+DELETIONS:	0
 SUBSTITUTIONS:	1
 NCHANGE:	2
 NTRUTH:	42
-NTEST:	41
-TRUE WORDS RECALL:	0.952
-TEST WORDS PRECISION:	0.976
+NTEST:	43
+TRUE WORDS RECALL:	0.976
+TEST WORDS PRECISION:	0.953
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----1535
 但是								但是
 ，								，
@@ -55412,8 +55418,9 @@ TEST WORDS PRECISION:	0.839
 ，								，
 充分								充分
 发挥								发挥
-企业							      |	企业党组织
-党组织							      <
+企业								企业
+党组织							      |	党
+							      >	组织
 的								的
 政治								政治
 核心								核心
@@ -55462,14 +55469,14 @@ TEST WORDS PRECISION:	0.839
 队伍								队伍
 建设								建设
 。								。
-INSERTIONS:	2
-DELETIONS:	1
+INSERTIONS:	3
+DELETIONS:	0
 SUBSTITUTIONS:	3
 NCHANGE:	6
 NTRUTH:	72
-NTEST:	73
-TRUE WORDS RECALL:	0.944
-TEST WORDS PRECISION:	0.932
+NTEST:	75
+TRUE WORDS RECALL:	0.958
+TEST WORDS PRECISION:	0.920
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----1540
 在								在
 加强								加强
@@ -55647,8 +55654,9 @@ TEST WORDS PRECISION:	0.889
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----1544
 充分								充分
 发挥								发挥
-企业							      |	企业党组织
-党组织							      <
+企业								企业
+党组织							      |	党
+							      >	组织
 的								的
 政治								政治
 核心								核心
@@ -55700,14 +55708,14 @@ TEST WORDS PRECISION:	0.889
 显著								显著
 特色								特色
 。								。
-INSERTIONS:	1
-DELETIONS:	3
+INSERTIONS:	2
+DELETIONS:	2
 SUBSTITUTIONS:	4
 NCHANGE:	8
 NTRUTH:	54
-NTEST:	52
-TRUE WORDS RECALL:	0.870
-TEST WORDS PRECISION:	0.904
+NTEST:	54
+TRUE WORDS RECALL:	0.889
+TEST WORDS PRECISION:	0.889
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----1545
 企业								企业
 党								党
@@ -55786,8 +55794,9 @@ NTEST:	68
 TRUE WORDS RECALL:	0.921
 TEST WORDS PRECISION:	0.853
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----1546
-企业							      |	企业党组织
-党组织							      <
+企业								企业
+党组织							      |	党
+							      >	组织
 要								要
 用								用
 更								更
@@ -55816,14 +55825,14 @@ TEST WORDS PRECISION:	0.853
 和								和
 创造性								创造性
 。								。
-INSERTIONS:	0
-DELETIONS:	1
+INSERTIONS:	1
+DELETIONS:	0
 SUBSTITUTIONS:	1
 NCHANGE:	2
 NTRUTH:	30
-NTEST:	29
-TRUE WORDS RECALL:	0.933
-TEST WORDS PRECISION:	0.966
+NTEST:	31
+TRUE WORDS RECALL:	0.967
+TEST WORDS PRECISION:	0.935
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----1547
 按照								按照
 《								《
@@ -56004,8 +56013,9 @@ TEST WORDS PRECISION:	0.929
 、								、
 各							      |	各国
 国有							      |	有
-企业							      |	企业党组织
-党组织							      <
+企业								企业
+党组织							      |	党
+							      >	组织
 的								的
 共同								共同
 努力								努力
@@ -56033,14 +56043,14 @@ TEST WORDS PRECISION:	0.929
 的								的
 作用								作用
 。								。
-INSERTIONS:	1
-DELETIONS:	2
+INSERTIONS:	2
+DELETIONS:	1
 SUBSTITUTIONS:	5
 NCHANGE:	8
 NTRUTH:	40
-NTEST:	39
-TRUE WORDS RECALL:	0.825
-TEST WORDS PRECISION:	0.846
+NTEST:	41
+TRUE WORDS RECALL:	0.850
+TEST WORDS PRECISION:	0.829
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----1553
 国家								国家
 最大								最大
@@ -60282,8 +60292,8 @@ TEST WORDS PRECISION:	0.833
 的								的
 真诚								真诚
 ，								，
-换取							      |	换
-您							      |	取您
+换取								换取
+您								您
 的								的
 满意								满意
 ”								”
@@ -60312,12 +60322,12 @@ TEST WORDS PRECISION:	0.833
 。								。
 INSERTIONS:	0
 DELETIONS:	6
-SUBSTITUTIONS:	9
-NCHANGE:	15
+SUBSTITUTIONS:	7
+NCHANGE:	13
 NTRUTH:	56
 NTEST:	50
-TRUE WORDS RECALL:	0.732
-TEST WORDS PRECISION:	0.820
+TRUE WORDS RECALL:	0.768
+TEST WORDS PRECISION:	0.860
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----1655
 记者								记者
 在								在
@@ -63001,18 +63011,18 @@ TEST WORDS PRECISION:	0.667
 料							      <
 ，								，
 就								就
-算							      |	算什么
+算							      |	算什么帐
 什么							      <
-帐								帐
+帐							      <
 。								。
 INSERTIONS:	0
-DELETIONS:	4
+DELETIONS:	5
 SUBSTITUTIONS:	3
-NCHANGE:	7
+NCHANGE:	8
 NTRUTH:	20
-NTEST:	16
-TRUE WORDS RECALL:	0.650
-TEST WORDS PRECISION:	0.812
+NTEST:	15
+TRUE WORDS RECALL:	0.600
+TEST WORDS PRECISION:	0.800
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----1739
 心中有数						      |	心中
 							      >	有数
@@ -64310,7 +64320,8 @@ TRUE WORDS RECALL:	1.000
 TEST WORDS PRECISION:	1.000
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----1775
 与								与
-信息化								信息化
+信息化							      |	信息
+							      >	化
 相关								相关
 的								的
 技术								技术
@@ -64345,14 +64356,14 @@ TEST WORDS PRECISION:	1.000
 生长点							      |	生长
 							      >	点
 。								。
-INSERTIONS:	2
+INSERTIONS:	3
 DELETIONS:	0
-SUBSTITUTIONS:	2
-NCHANGE:	4
+SUBSTITUTIONS:	3
+NCHANGE:	6
 NTRUTH:	34
-NTEST:	36
-TRUE WORDS RECALL:	0.941
-TEST WORDS PRECISION:	0.889
+NTEST:	37
+TRUE WORDS RECALL:	0.912
+TEST WORDS PRECISION:	0.838
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----1776
 加快								加快
 国家								国家
@@ -65366,7 +65377,8 @@ TEST WORDS PRECISION:	0.932
 比重								比重
 由								由
 “八五”初							      |	“
-							      >	八五
+							      >	八
+							      >	五
 							      >	”
 							      >	初
 的								的
@@ -65396,14 +65408,14 @@ TEST WORDS PRECISION:	0.932
 的								的
 ７１.１％							７１.１％
 。								。
-INSERTIONS:	5
+INSERTIONS:	6
 DELETIONS:	1
 SUBSTITUTIONS:	6
-NCHANGE:	12
+NCHANGE:	13
 NTRUTH:	53
-NTEST:	57
+NTEST:	58
 TRUE WORDS RECALL:	0.868
-TEST WORDS PRECISION:	0.807
+TEST WORDS PRECISION:	0.793
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----1802
 隆化								隆化
 是								是
@@ -71893,8 +71905,8 @@ TEST WORDS PRECISION:	0.800
 深							      <
 效益							      <
 节节								节节
-高							      |	高-
--							      <
+高								高
+-								-
 -								-
 秦机集团							秦机集团
 高效								高效
@@ -71903,13 +71915,13 @@ TEST WORDS PRECISION:	0.800
 路							      <
 探秘								探秘
 INSERTIONS:	0
-DELETIONS:	5
-SUBSTITUTIONS:	4
-NCHANGE:	9
+DELETIONS:	4
+SUBSTITUTIONS:	3
+NCHANGE:	7
 NTRUTH:	15
-NTEST:	10
-TRUE WORDS RECALL:	0.400
-TEST WORDS PRECISION:	0.600
+NTEST:	11
+TRUE WORDS RECALL:	0.533
+TEST WORDS PRECISION:	0.727
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----1958
 新华社								新华社
 记者								记者
@@ -71990,7 +72002,9 @@ TEST WORDS PRECISION:	0.571
 利润								利润
 年均								年均
 递增								递增
-２４.５％							２４.５％
+２４.５％						      |	２４
+							      >	.
+							      >	５％
 ，								，
 高于								高于
 利税								利税
@@ -72011,14 +72025,14 @@ TEST WORDS PRECISION:	0.571
 之							      |	行业
 首							      |	之首
 。								。
-INSERTIONS:	6
+INSERTIONS:	8
 DELETIONS:	2
-SUBSTITUTIONS:	14
-NCHANGE:	22
+SUBSTITUTIONS:	15
+NCHANGE:	25
 NTRUTH:	78
-NTEST:	82
-TRUE WORDS RECALL:	0.795
-TEST WORDS PRECISION:	0.756
+NTEST:	84
+TRUE WORDS RECALL:	0.782
+TEST WORDS PRECISION:	0.726
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----1960
 “								“
 金字塔								金字塔
@@ -74017,17 +74031,18 @@ TEST WORDS PRECISION:	0.875
 比								比
 上年								上年
 增长								增长
-７０.６６％						      |	７０.
+７０.６６％						      |	７０
+							      >	.
 							      >	６６％
 。								。
-INSERTIONS:	1
+INSERTIONS:	2
 DELETIONS:	1
 SUBSTITUTIONS:	2
-NCHANGE:	4
+NCHANGE:	5
 NTRUTH:	32
-NTEST:	32
+NTEST:	33
 TRUE WORDS RECALL:	0.906
-TEST WORDS PRECISION:	0.906
+TEST WORDS PRECISION:	0.879
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----2012
 全年								全年
 调运								调运
@@ -74094,9 +74109,9 @@ TEST WORDS PRECISION:	0.737
 改变								改变
 了								了
 “								“
-靠							      |	靠天
-天							      <
-养畜								养畜
+靠								靠
+天							      |	天养畜
+养畜							      <
 ”								”
 的								的
 被动								被动
@@ -76334,10 +76349,10 @@ TEST WORDS PRECISION:	0.808
 甚至								甚至
 表示								表示
 ，								，
-宁可							      |	宁可少
-少							      |	领两个月
+宁可								宁可
+少							      |	少领
 领							      <
-两个月							      <
+两个月								两个月
 的								的
 离退休							      |	离退
 金							      |	休金
@@ -76347,13 +76362,13 @@ TEST WORDS PRECISION:	0.808
 扭亏								扭亏
 。								。
 INSERTIONS:	4
-DELETIONS:	2
-SUBSTITUTIONS:	8
-NCHANGE:	14
+DELETIONS:	1
+SUBSTITUTIONS:	7
+NCHANGE:	12
 NTRUTH:	31
-NTEST:	33
-TRUE WORDS RECALL:	0.677
-TEST WORDS PRECISION:	0.636
+NTEST:	34
+TRUE WORDS RECALL:	0.742
+TEST WORDS PRECISION:	0.676
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----2069
 志气								志气
 大								大
@@ -79733,20 +79748,20 @@ TEST WORDS PRECISION:	0.905
 生命								生命
 渠								渠
 ”								”
--							      |	--河北太行山纪行
--							      <
-河北							      <
-太行山						      <
+-								-
+-								-
+河北							      |	河
+太行山						      |	北太行山纪行
 纪行							      <
 之								之
 二								二
 INSERTIONS:	2
-DELETIONS:	4
-SUBSTITUTIONS:	2
-NCHANGE:	8
+DELETIONS:	1
+SUBSTITUTIONS:	3
+NCHANGE:	6
 NTRUTH:	14
-NTEST:	12
-TRUE WORDS RECALL:	0.571
+NTEST:	15
+TRUE WORDS RECALL:	0.714
 TEST WORDS PRECISION:	0.667
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----2157
 本报								本报
@@ -79957,8 +79972,8 @@ TEST WORDS PRECISION:	0.682
 亡							      <
 …								…
 …								…
-最							      |	最让
-让							      <
+最								最
+让								让
 乡亲								乡亲
 们								们
 痛心								痛心
@@ -79987,13 +80002,13 @@ TEST WORDS PRECISION:	0.682
 七零八落							七零八落
 。								。
 INSERTIONS:	2
-DELETIONS:	9
-SUBSTITUTIONS:	13
-NCHANGE:	24
+DELETIONS:	8
+SUBSTITUTIONS:	12
+NCHANGE:	22
 NTRUTH:	59
-NTEST:	52
-TRUE WORDS RECALL:	0.627
-TEST WORDS PRECISION:	0.712
+NTEST:	53
+TRUE WORDS RECALL:	0.661
+TEST WORDS PRECISION:	0.736
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----2164
 “								“
 要								要
@@ -81734,8 +81749,8 @@ TEST WORDS PRECISION:	0.723
 鱼								鱼
 与								与
 熊掌								熊掌
-兼							      |	兼得
-得							      <
+兼								兼
+得								得
 ”								”
 的								的
 实践								实践
@@ -81747,13 +81762,13 @@ TEST WORDS PRECISION:	0.723
 重视								重视
 。								。
 INSERTIONS:	0
-DELETIONS:	2
-SUBSTITUTIONS:	2
-NCHANGE:	4
+DELETIONS:	1
+SUBSTITUTIONS:	1
+NCHANGE:	2
 NTRUTH:	21
-NTEST:	19
-TRUE WORDS RECALL:	0.810
-TEST WORDS PRECISION:	0.895
+NTEST:	20
+TRUE WORDS RECALL:	0.905
+TEST WORDS PRECISION:	0.950
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----2223
 本报								本报
 天津							      |	天津６月８日
@@ -82929,10 +82944,10 @@ TEST WORDS PRECISION:	1.000
 志气								志气
 路								路
 ”								”
--							      |	--河北太行山纪行
--							      <
-河北							      <
-太行山						      <
+-								-
+-								-
+河北							      |	河
+太行山						      |	北太行山纪行
 纪行							      <
 之								之
 三								三
@@ -82943,13 +82958,13 @@ TEST WORDS PRECISION:	1.000
 张								张
 ）								）
 INSERTIONS:	0
-DELETIONS:	4
-SUBSTITUTIONS:	1
-NCHANGE:	5
+DELETIONS:	1
+SUBSTITUTIONS:	2
+NCHANGE:	3
 NTRUTH:	21
-NTEST:	17
-TRUE WORDS RECALL:	0.762
-TEST WORDS PRECISION:	0.941
+NTEST:	20
+TRUE WORDS RECALL:	0.857
+TEST WORDS PRECISION:	0.900
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----2256
 本报								本报
 记者								记者
@@ -83111,8 +83126,9 @@ TEST WORDS PRECISION:	0.889
 那								那
 场								场
 山洪							      |	山
-如							      |	洪如猛虎
-猛虎下山							      |	下山
+如							      |	洪如
+猛虎下山							      |	猛虎
+							      >	下山
 ，								，
 赞皇								赞皇
 大量								大量
@@ -83146,14 +83162,14 @@ TEST WORDS PRECISION:	0.889
 通							      <
 村							      <
 。								。
-INSERTIONS:	2
+INSERTIONS:	3
 DELETIONS:	4
 SUBSTITUTIONS:	7
-NCHANGE:	13
+NCHANGE:	14
 NTRUTH:	38
-NTEST:	36
+NTEST:	37
 TRUE WORDS RECALL:	0.711
-TEST WORDS PRECISION:	0.750
+TEST WORDS PRECISION:	0.730
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----2263
 山势								山势
 险峻								险峻
@@ -85181,7 +85197,8 @@ TEST WORDS PRECISION:	0.966
 提出								提出
 从								从
 “八五”末						      |	“
-							      >	八五
+							      >	八
+							      >	五
 							      >	”
 							      >	末
 开始								开始
@@ -85242,14 +85259,14 @@ TEST WORDS PRECISION:	0.966
 ”								”
 产品								产品
 。								。
-INSERTIONS:	3
+INSERTIONS:	4
 DELETIONS:	1
 SUBSTITUTIONS:	2
-NCHANGE:	6
+NCHANGE:	7
 NTRUTH:	88
-NTEST:	90
+NTEST:	91
 TRUE WORDS RECALL:	0.966
-TEST WORDS PRECISION:	0.944
+TEST WORDS PRECISION:	0.934
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----2323
 并								并
 按								按
@@ -85552,7 +85569,8 @@ TEST WORDS PRECISION:	0.900
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----2332
 自								自
 “八五”末						      |	“
-							      >	八五
+							      >	八
+							      >	五
 							      >	”
 							      >	末
 ，								，
@@ -85603,14 +85621,14 @@ TEST WORDS PRECISION:	0.900
 							      >	企业
 集团								集团
 。								。
-INSERTIONS:	7
+INSERTIONS:	8
 DELETIONS:	0
 SUBSTITUTIONS:	6
-NCHANGE:	13
+NCHANGE:	14
 NTRUTH:	46
-NTEST:	53
+NTEST:	54
 TRUE WORDS RECALL:	0.870
-TEST WORDS PRECISION:	0.755
+TEST WORDS PRECISION:	0.741
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----2333
 如							      |	如海尔集团
 海尔集团						      <
@@ -87332,11 +87350,11 @@ TRUE WORDS RECALL:	0.875
 TEST WORDS PRECISION:	0.583
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----2384
 新华社								新华社
-北京							      |	北京七月五日
+北京							      |	北京七月五日电（中央人民广播电台
 七月五日							      <
-电								电
-（								（
-中央人民广播电台						中央人民广播电台
+电							      <
+（							      <
+中央人民广播电台					      <
 记者								记者
 李涛								李涛
 、								、
@@ -87357,13 +87375,13 @@ TEST WORDS PRECISION:	0.583
 举行								举行
 。								。
 INSERTIONS:	3
-DELETIONS:	1
+DELETIONS:	4
 SUBSTITUTIONS:	4
-NCHANGE:	8
+NCHANGE:	11
 NTRUTH:	22
-NTEST:	24
-TRUE WORDS RECALL:	0.773
-TEST WORDS PRECISION:	0.708
+NTEST:	21
+TRUE WORDS RECALL:	0.636
+TEST WORDS PRECISION:	0.667
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----2385
 中共中央政治局						中共中央政治局
 常委								常委
@@ -87763,8 +87781,9 @@ TEST WORDS PRECISION:	0.960
 特别								特别
 要								要
 在								在
-企业							      |	企业党组织
-党组织							      <
+企业								企业
+党组织							      |	党
+							      >	组织
 发挥								发挥
 政治								政治
 核心								核心
@@ -87795,14 +87814,14 @@ TEST WORDS PRECISION:	0.960
 形成								形成
 共识								共识
 。								。
-INSERTIONS:	5
-DELETIONS:	2
+INSERTIONS:	6
+DELETIONS:	1
 SUBSTITUTIONS:	5
 NCHANGE:	12
 NTRUTH:	58
-NTEST:	61
-TRUE WORDS RECALL:	0.879
-TEST WORDS PRECISION:	0.836
+NTEST:	63
+TRUE WORDS RECALL:	0.897
+TEST WORDS PRECISION:	0.825
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----2396
 党建								党建
 工作								工作
@@ -87970,8 +87989,9 @@ TEST WORDS PRECISION:	0.931
 ，								，
 同								同
 加强								加强
-企业							      |	企业党组织
-党组织							      <
+企业								企业
+党组织							      |	党
+							      >	组织
 的								的
 自身								自身
 建设								建设
@@ -87979,14 +87999,14 @@ TEST WORDS PRECISION:	0.931
 结合								结合
 起来								起来
 。								。
-INSERTIONS:	0
-DELETIONS:	1
+INSERTIONS:	1
+DELETIONS:	0
 SUBSTITUTIONS:	1
 NCHANGE:	2
 NTRUTH:	33
-NTEST:	32
-TRUE WORDS RECALL:	0.939
-TEST WORDS PRECISION:	0.969
+NTEST:	34
+TRUE WORDS RECALL:	0.970
+TEST WORDS PRECISION:	0.941
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----2400
 要								要
 采取								采取
@@ -90110,8 +90130,8 @@ TEST WORDS PRECISION:	1.000
 时候								时候
 ，								，
 他们								他们
-外							      |	外不慕
-不							      <
+外								外
+不							      |	不慕
 慕							      <
 纷华								纷华
 、								、
@@ -90142,13 +90162,13 @@ TEST WORDS PRECISION:	1.000
 效							      <
 。								。
 INSERTIONS:	4
-DELETIONS:	7
+DELETIONS:	6
 SUBSTITUTIONS:	10
-NCHANGE:	21
+NCHANGE:	20
 NTRUTH:	64
-NTEST:	61
-TRUE WORDS RECALL:	0.734
-TEST WORDS PRECISION:	0.770
+NTEST:	62
+TRUE WORDS RECALL:	0.750
+TEST WORDS PRECISION:	0.774
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----2462
 这								这
 很								很
@@ -91049,8 +91069,7 @@ TEST WORDS PRECISION:	0.773
 ”								”
 、								、
 “								“
-专业户							      |	专业
-							      >	户
+专业户								专业户
 带								带
 农户								农户
 ”								”
@@ -91095,14 +91114,14 @@ TEST WORDS PRECISION:	0.773
 的								的
 保证								保证
 。								。
-INSERTIONS:	1
+INSERTIONS:	0
 DELETIONS:	9
-SUBSTITUTIONS:	10
-NCHANGE:	20
+SUBSTITUTIONS:	9
+NCHANGE:	18
 NTRUTH:	98
-NTEST:	90
-TRUE WORDS RECALL:	0.806
-TEST WORDS PRECISION:	0.878
+NTEST:	89
+TRUE WORDS RECALL:	0.816
+TEST WORDS PRECISION:	0.899
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----2488
 江西								江西
 发展								发展
@@ -91745,8 +91764,7 @@ TEST WORDS PRECISION:	0.975
 ，								，
 不								不
 打白条							      |	打
-							      >	白
-							      >	条
+							      >	白条
 ；								；
 对								对
 某些								某些
@@ -91868,14 +91886,14 @@ TEST WORDS PRECISION:	0.975
 中								中
 支出								支出
 。								。
-INSERTIONS:	9
+INSERTIONS:	8
 DELETIONS:	5
 SUBSTITUTIONS:	17
-NCHANGE:	31
+NCHANGE:	30
 NTRUTH:	164
-NTEST:	168
+NTEST:	167
 TRUE WORDS RECALL:	0.866
-TEST WORDS PRECISION:	0.845
+TEST WORDS PRECISION:	0.850
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----2503
 大家								大家
 认为								认为
@@ -93813,9 +93831,9 @@ TEST WORDS PRECISION:	0.925
 办法								办法
 是								是
 与								与
-科研							      |	科研院所
+科研							      |	科研院
 院							      <
-所							      <
+所								所
 和								和
 大专院校							大专院校
 建立								建立
@@ -93858,13 +93876,13 @@ TEST WORDS PRECISION:	0.925
 长盛不衰							长盛不衰
 。								。
 INSERTIONS:	2
-DELETIONS:	2
+DELETIONS:	1
 SUBSTITUTIONS:	3
-NCHANGE:	7
+NCHANGE:	6
 NTRUTH:	45
-NTEST:	45
-TRUE WORDS RECALL:	0.889
-TEST WORDS PRECISION:	0.889
+NTEST:	46
+TRUE WORDS RECALL:	0.911
+TEST WORDS PRECISION:	0.891
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----2550
 今年２月						      |	今年
 							      >	２月
@@ -95022,8 +95040,9 @@ NTEST:	28
 TRUE WORDS RECALL:	0.719
 TEST WORDS PRECISION:	0.821
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----2580
-							      >	“
-八五								八五
+八五							      |	“
+							      >	八
+							      >	五
 ”								”
 以来								以来
 ，								，
@@ -95044,14 +95063,14 @@ TEST WORDS PRECISION:	0.821
 和								和
 １５.８％							１５.８％
 。								。
-INSERTIONS:	5
+INSERTIONS:	6
 DELETIONS:	0
-SUBSTITUTIONS:	2
-NCHANGE:	7
+SUBSTITUTIONS:	3
+NCHANGE:	9
 NTRUTH:	17
-NTEST:	22
-TRUE WORDS RECALL:	0.882
-TEST WORDS PRECISION:	0.682
+NTEST:	23
+TRUE WORDS RECALL:	0.824
+TEST WORDS PRECISION:	0.609
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----2581
 与此同时							与此同时
 ，								，
@@ -95646,8 +95665,7 @@ TEST WORDS PRECISION:	1.000
 收							      <
 、								、
 不								不
-打白条							      |	打
-							      >	白
+打白条							      |	打白
 							      >	条
 、								、
 不							      |	不代
@@ -95657,14 +95675,14 @@ TEST WORDS PRECISION:	1.000
 提留							      |	项提
 款							      |	留款
 。								。
-INSERTIONS:	2
+INSERTIONS:	1
 DELETIONS:	3
 SUBSTITUTIONS:	7
-NCHANGE:	12
+NCHANGE:	11
 NTRUTH:	41
-NTEST:	40
+NTEST:	39
 TRUE WORDS RECALL:	0.756
-TEST WORDS PRECISION:	0.775
+TEST WORDS PRECISION:	0.795
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----2595
 今年							      |	今年秋粮
 秋粮							      <
@@ -98155,7 +98173,8 @@ TEST WORDS PRECISION:	1.000
 说								说
 ，								，
 今年								今年
-夏粮								夏粮
+夏粮							      |	夏
+							      >	粮
 面积								面积
 增加								增加
 ，								，
@@ -98168,14 +98187,14 @@ TEST WORDS PRECISION:	1.000
 丰收								丰收
 在望								在望
 。								。
-INSERTIONS:	0
+INSERTIONS:	1
 DELETIONS:	0
-SUBSTITUTIONS:	0
-NCHANGE:	0
+SUBSTITUTIONS:	1
+NCHANGE:	2
 NTRUTH:	19
-NTEST:	19
-TRUE WORDS RECALL:	1.000
-TEST WORDS PRECISION:	1.000
+NTEST:	20
+TRUE WORDS RECALL:	0.947
+TEST WORDS PRECISION:	0.900
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----2673
 抓好								抓好
 夏季								夏季
@@ -99206,8 +99225,8 @@ TEST WORDS PRECISION:	0.967
 ，								，
 进行								进行
 分							      |	分拆
-拆							      <
-上市								上市
+拆							      |	上
+上市							      |	市
 、								、
 增							      |	增发
 发							      <
@@ -99253,13 +99272,13 @@ TEST WORDS PRECISION:	0.967
 管理								管理
 。								。
 INSERTIONS:	2
-DELETIONS:	11
-SUBSTITUTIONS:	15
-NCHANGE:	28
+DELETIONS:	10
+SUBSTITUTIONS:	17
+NCHANGE:	29
 NTRUTH:	80
-NTEST:	71
-TRUE WORDS RECALL:	0.675
-TEST WORDS PRECISION:	0.761
+NTEST:	72
+TRUE WORDS RECALL:	0.662
+TEST WORDS PRECISION:	0.736
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----2706
 二								二
 、								、
@@ -101833,10 +101852,10 @@ TEST WORDS PRECISION:	0.885
 小金库							      |	小
 							      >	金库
 ，								，
-搞							      |	搞帐
-帐							      |	外帐
+搞								搞
+帐							      |	帐外
 外							      <
-帐							      <
+帐								帐
 ，								，
 坐								坐
 支								支
@@ -101867,13 +101886,13 @@ TEST WORDS PRECISION:	0.885
 							      >	等
 。								。
 INSERTIONS:	7
-DELETIONS:	4
-SUBSTITUTIONS:	11
-NCHANGE:	22
+DELETIONS:	3
+SUBSTITUTIONS:	10
+NCHANGE:	20
 NTRUTH:	102
-NTEST:	105
-TRUE WORDS RECALL:	0.853
-TEST WORDS PRECISION:	0.829
+NTEST:	106
+TRUE WORDS RECALL:	0.873
+TEST WORDS PRECISION:	0.840
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----2770
 村							      |	村级
 级							      <
@@ -104431,21 +104450,20 @@ TEST WORDS PRECISION:	0.938
 食							      <
 ，								，
 对								对
-下一代							      |	下
-							      >	一代
-害虫								害虫
+下一代							      |	下一代害虫
+害虫							      <
 发挥								发挥
 控制								控制
 作用								作用
 。								。
-INSERTIONS:	2
-DELETIONS:	1
+INSERTIONS:	1
+DELETIONS:	2
 SUBSTITUTIONS:	3
 NCHANGE:	6
 NTRUTH:	18
-NTEST:	19
-TRUE WORDS RECALL:	0.778
-TEST WORDS PRECISION:	0.737
+NTEST:	17
+TRUE WORDS RECALL:	0.722
+TEST WORDS PRECISION:	0.765
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----2844
 在								在
 用药								用药
@@ -112684,24 +112702,19 @@ NTEST:	9
 TRUE WORDS RECALL:	0.667
 TEST WORDS PRECISION:	0.667
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----3075
-上海实业（集团）有限公司					      |	上海
-							      >	实业
-							      >	（
-							      >	集团
-							      >	）
-							      >	有限公司
+上海实业（集团）有限公司						上海实业（集团）有限公司
 董事长								董事长
 、								、
 总裁								总裁
 蔡来兴								蔡来兴
-INSERTIONS:	5
+INSERTIONS:	0
 DELETIONS:	0
-SUBSTITUTIONS:	1
-NCHANGE:	6
+SUBSTITUTIONS:	0
+NCHANGE:	0
 NTRUTH:	5
-NTEST:	10
-TRUE WORDS RECALL:	0.800
-TEST WORDS PRECISION:	0.400
+NTEST:	5
+TRUE WORDS RECALL:	1.000
+TEST WORDS PRECISION:	1.000
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----3076
 在								在
 实现								实现
@@ -117049,7 +117062,9 @@ TEST WORDS PRECISION:	0.918
 ，								，
 １９９２年１１月						１９９２年１１月
 ，								，
-国防科技大学							国防科技大学
+国防科技大学						      |	国防
+							      >	科技
+							      >	大学
 就								就
 向								向
 上级								上级
@@ -117065,14 +117080,14 @@ TEST WORDS PRECISION:	0.918
 的								的
 报告								报告
 。								。
-INSERTIONS:	0
+INSERTIONS:	2
 DELETIONS:	1
-SUBSTITUTIONS:	5
-NCHANGE:	6
+SUBSTITUTIONS:	6
+NCHANGE:	9
 NTRUTH:	25
-NTEST:	24
-TRUE WORDS RECALL:	0.760
-TEST WORDS PRECISION:	0.792
+NTEST:	26
+TRUE WORDS RECALL:	0.720
+TEST WORDS PRECISION:	0.692
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----3186
 国防科工委							国防科工委
 领导								领导
@@ -127223,16 +127238,15 @@ TEST WORDS PRECISION:	0.500
 杭州东宝电器集团公司					      |	杭州
 总经理							      |	东宝电器集团公司
 任尧森						      |	总经
-							      >	理任
-							      >	尧森
-INSERTIONS:	2
+							      >	理任尧森
+INSERTIONS:	1
 DELETIONS:	0
 SUBSTITUTIONS:	3
-NCHANGE:	5
+NCHANGE:	4
 NTRUTH:	10
-NTEST:	12
+NTEST:	11
 TRUE WORDS RECALL:	0.700
-TEST WORDS PRECISION:	0.583
+TEST WORDS PRECISION:	0.636
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----3457
 （								（
 附								附
@@ -127467,17 +127481,16 @@ TEST WORDS PRECISION:	0.625
 的								的
 东宝电器集团公司							东宝电器集团公司
 总经理							      |	总经
-任尧森						      |	理任
-							      >	尧森
+任尧森						      |	理任尧森
 。								。
-INSERTIONS:	1
+INSERTIONS:	0
 DELETIONS:	5
 SUBSTITUTIONS:	8
-NCHANGE:	14
+NCHANGE:	13
 NTRUTH:	24
-NTEST:	20
+NTEST:	19
 TRUE WORDS RECALL:	0.458
-TEST WORDS PRECISION:	0.550
+TEST WORDS PRECISION:	0.579
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----3467
 夏天								夏天
 用								用
@@ -127978,8 +127991,8 @@ TEST WORDS PRECISION:	0.714
 ”								”
 、								、
 “								“
-恒温							      |	恒
-宝							      |	温宝
+恒温								恒温
+宝								宝
 ”								”
 变频								变频
 空调								空调
@@ -128009,12 +128022,12 @@ TEST WORDS PRECISION:	0.714
 。								。
 INSERTIONS:	1
 DELETIONS:	0
-SUBSTITUTIONS:	5
-NCHANGE:	6
+SUBSTITUTIONS:	3
+NCHANGE:	4
 NTRUTH:	39
 NTEST:	40
-TRUE WORDS RECALL:	0.872
-TEST WORDS PRECISION:	0.850
+TRUE WORDS RECALL:	0.923
+TEST WORDS PRECISION:	0.900
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----3480
 １９９６年							１９９６年
 以来								以来
@@ -130756,21 +130769,22 @@ TEST WORDS PRECISION:	1.000
 批							      <
 振兴								振兴
 中华民族							      |	中
-							      >	华民族
+							      >	华
+							      >	民族
 软件								软件
 产业								产业
 的								的
 优秀								优秀
 人才								人才
 。								。
-INSERTIONS:	3
+INSERTIONS:	4
 DELETIONS:	1
 SUBSTITUTIONS:	4
-NCHANGE:	8
+NCHANGE:	9
 NTRUTH:	27
-NTEST:	29
+NTEST:	30
 TRUE WORDS RECALL:	0.815
-TEST WORDS PRECISION:	0.759
+TEST WORDS PRECISION:	0.733
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----3570
 在								在
 为								为
@@ -133076,7 +133090,8 @@ TEST WORDS PRECISION:	0.778
 人							      |	４５万人
 ，								，
 “八五							      |	“
-							      >	八五
+							      >	八
+							      >	五
 ”								”
 期间								期间
 ，								，
@@ -133105,14 +133120,14 @@ TEST WORDS PRECISION:	0.778
 的								的
 县级市								县级市
 。								。
-INSERTIONS:	2
+INSERTIONS:	3
 DELETIONS:	3
 SUBSTITUTIONS:	8
-NCHANGE:	13
+NCHANGE:	14
 NTRUTH:	42
-NTEST:	41
+NTEST:	42
 TRUE WORDS RECALL:	0.738
-TEST WORDS PRECISION:	0.756
+TEST WORDS PRECISION:	0.738
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----3628
 ３年								３年
 前								前
@@ -134133,8 +134148,9 @@ TEST WORDS PRECISION:	0.880
 里								里
 看								看
 ，								，
-不过								不过
-沧海一粟						      |	沧海
+不过							      |	不
+沧海一粟						      |	过
+							      >	沧海
 							      >	一粟
 ”								”
 ，								，
@@ -134191,14 +134207,14 @@ TEST WORDS PRECISION:	0.880
 发展								发展
 ”								”
 。								。
-INSERTIONS:	3
+INSERTIONS:	4
 DELETIONS:	3
-SUBSTITUTIONS:	6
-NCHANGE:	12
+SUBSTITUTIONS:	7
+NCHANGE:	14
 NTRUTH:	70
-NTEST:	70
-TRUE WORDS RECALL:	0.871
-TEST WORDS PRECISION:	0.871
+NTEST:	71
+TRUE WORDS RECALL:	0.857
+TEST WORDS PRECISION:	0.845
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----3654
 今天								今天
 ，								，
@@ -136156,7 +136172,8 @@ TEST WORDS PRECISION:	0.800
 方面								方面
 ，								，
 “八五							      |	“
-							      >	八五
+							      >	八
+							      >	五
 ”								”
 期间								期间
 已								已
@@ -136200,14 +136217,14 @@ TEST WORDS PRECISION:	0.800
 中							      <
 城市							      <
 。								。
-INSERTIONS:	3
+INSERTIONS:	4
 DELETIONS:	5
 SUBSTITUTIONS:	6
-NCHANGE:	14
+NCHANGE:	15
 NTRUTH:	51
-NTEST:	49
+NTEST:	50
 TRUE WORDS RECALL:	0.784
-TEST WORDS PRECISION:	0.816
+TEST WORDS PRECISION:	0.800
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----3698
 （								（
 ３								３
@@ -140788,9 +140805,9 @@ TEST WORDS PRECISION:	1.000
 与								与
 设计								设计
 的								的
-前							      |	前瞻性
-瞻							      <
-性							      <
+前								前
+瞻								瞻
+性								性
 ，								，
 理当								理当
 成为								成为
@@ -140808,13 +140825,13 @@ TEST WORDS PRECISION:	1.000
 问题								问题
 。								。
 INSERTIONS:	1
-DELETIONS:	2
-SUBSTITUTIONS:	2
-NCHANGE:	5
+DELETIONS:	0
+SUBSTITUTIONS:	1
+NCHANGE:	2
 NTRUTH:	23
-NTEST:	22
-TRUE WORDS RECALL:	0.826
-TEST WORDS PRECISION:	0.864
+NTEST:	24
+TRUE WORDS RECALL:	0.957
+TEST WORDS PRECISION:	0.917
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----3813
 人							      |	人机
 机							      <
@@ -145101,8 +145118,8 @@ TEST WORDS PRECISION:	1.000
 有							      |	有量
 量变							      |	变
 也								也
-有							      |	有质
-质变							      |	变
+有								有
+质变								质变
 ，								，
 每当								每当
 文化								文化
@@ -145125,12 +145142,12 @@ TEST WORDS PRECISION:	1.000
 。								。
 INSERTIONS:	0
 DELETIONS:	1
-SUBSTITUTIONS:	5
-NCHANGE:	6
+SUBSTITUTIONS:	3
+NCHANGE:	4
 NTRUTH:	28
 NTEST:	27
-TRUE WORDS RECALL:	0.786
-TEST WORDS PRECISION:	0.815
+TRUE WORDS RECALL:	0.857
+TEST WORDS PRECISION:	0.889
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/crf/msr_test_seg_result.utf8----3933
 由此								由此
 入手								入手
@@ -147243,16 +147260,16 @@ NTEST:	46
 TRUE WORDS RECALL:	0.800
 TEST WORDS PRECISION:	0.783
 === SUMMARY:
-=== TOTAL INSERTIONS:	4506
-=== TOTAL DELETIONS:	4801
-=== TOTAL SUBSTITUTIONS:	11275
-=== TOTAL NCHANGE:	20582
+=== TOTAL INSERTIONS:	4523
+=== TOTAL DELETIONS:	4782
+=== TOTAL SUBSTITUTIONS:	11265
+=== TOTAL NCHANGE:	20570
 === TOTAL TRUE WORD COUNT:	106873
-=== TOTAL TEST WORD COUNT:	106578
+=== TOTAL TEST WORD COUNT:	106614
 === TOTAL TRUE WORDS RECALL:	0.850
 === TOTAL TEST WORDS PRECISION:	0.852
 === F MEASURE:	0.851
 === OOV Rate:	0.026
-=== OOV Recall Rate:	0.587
+=== OOV Recall Rate:	0.586
 === IV Recall Rate:	0.857
-###	../result/crf/msr_test_seg_result.utf8	4506	4801	11275	20582	106873	106578	0.850	0.852	0.851	0.026	0.587	0.857
+###	../result/crf/msr_test_seg_result.utf8	4523	4782	11265	20570	106873	106614	0.850	0.852	0.851	0.026	0.586	0.857

@@ -28,10 +28,10 @@ class Writer(object):
     def writer_file(file, results, mode='a', encoding='utf-8'):
         """
         输入字符串、列表字符，写入文件
-        :param file: <str> 文件名 或 路径 + 文件名
-        :param results: <str, list, tuple> 需要写入文件的字符集或单个字符串。例如"hello word" 或['hello world']
-        :param mode: <str> 模式。默认为 'a' ，追加模式
-        :param encoding: <str> 编码。默认为 UTF-8 编码
+        :param file: (str, mandatory) 文件名 或 路径 + 文件名
+        :param results: (str or list or tuple, mandatory) 需要写入文件的字符集或单个字符串。例如"hello word" 或['hello world']
+        :param mode: (str, optional, default='a') 模式。默认为 'a' ，追加模式
+        :param encoding: (str, optional, default='utf-8') 编码。默认为 UTF-8 编码
         :return:
         """
         if not isinstance(results, (str, list, tuple)):
@@ -59,7 +59,7 @@ class Writer(object):
     def check_path(file):
         """
         检查文件目录是否存在，不存在则创建。
-        :param file: <str> 文件所在路径。绝对路径。例如："／home/test／test.file"
+        :param file: (str, mandatory) 文件所在路径。绝对路径。例如："／home/test／test.file"
         :return:
         """
         parameter_list = file.split(Writer.Dir_Separator)
@@ -67,6 +67,18 @@ class Writer(object):
             path = file[:len(file) - len(parameter_list[-1])]
             if not os.path.exists(path):
                 os.makedirs(path)
+
+    @staticmethod
+    def remove_file(file):
+        """
+        删除文件
+        :param file: (str, mandatory) 删除文件
+        :return: (bool)
+        """
+        if os.path.isfile(file):
+            os.remove(file)
+            return True
+        return False
 
 
 def test():

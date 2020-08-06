@@ -10294,62 +10294,59 @@ TEST WORDS PRECISION:	0.703
 和							      |	和比
 比较							      |	较
 现代化							      |	现
-的							      |	代
-气象							      |	化
-服务							      |	的气象
-体系							      |	服
-；							      |	务
-取得							      |	体
-							      >	系；
-							      >	取
-							      >	得
-了								了
-一批								一批
-重要							      |	重
-的							      |	要的
-气象							      |	气象科研成果；
-科研成果							      |	气
-；							      |	象教
-气象							      |	育迅速
-教育							      <
-迅速							      <
-发展								发展
-，								，
+的							      |	代化的
 气象							      |	气
-队伍							      |	象队
-素质							      |	伍素
-明显							      |	质明显
-提高								提高
-，								，
-并								并
-广泛							      |	广
-开展							      |	泛
-了							      |	开
-国际							      |	展
-气象							      |	了国
-合作							      |	际气
-与							      |	象
-交流							      |	合
-；							      |	作与
-气象							      |	交
-系统							      |	流；气
-精神文明							      |	象系统
-建设							      |	精神文
-							      >	明建设
-也								也
-取得							      |	取
-了							      |	得了重
-重要							      |	要成绩。
+							      >	象
+服务								服务
+体系								体系
+；								；
+取得								取得
+了								了
+一批							      |	一批重
+重要							      |	要的气象科研
+的							      |	成
+气象							      |	果；
+科研成果							      <
+；							      <
+气象								气象
+教育								教育
+迅速							      |	迅
+发展							      |	速发
+，							      |	展
+气象							      |	，气
+队伍							      |	象队伍素
+素质							      |	质明
+明显							      |	显
+提高							      |	提高，并广
+，							      |	泛开展了国
+并							      |	际气
+广泛							      |	象合
+开展							      |	作与交流；
+了							      <
+国际							      <
+气象							      <
+合作							      <
+与							      <
+交流							      <
+；							      <
+气象								气象
+系统								系统
+精神文明							      |	精神文明建设也取
+建设							      |	得了
+也							      |	重要成
+取得							      |	绩
+了							      <
+重要							      <
 成绩							      <
-。							      <
-INSERTIONS:	8
-DELETIONS:	5
-SUBSTITUTIONS:	41
-NCHANGE:	54
+。								。
+INSERTIONS:	5
+DELETIONS:	13
+SUBSTITUTIONS:	31
+NCHANGE:	49
 NTRUTH:	112
-NTEST:	115
-TRUE WORDS RECALL:	0.589
-TEST WORDS PRECISION:	0.574
+NTEST:	104
+TRUE WORDS RECALL:	0.607
+TEST WORDS PRECISION:	0.654
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----308
 根据								根据
 规划								规划
@@ -10817,41 +10814,40 @@ TEST WORDS PRECISION:	0.667
 新风								新风
 ，								，
 中华全国新闻工作者协会					      |	中华
-（							      |	全国新
-							      >	闻
-							      >	工
-							      >	作
-							      >	者
-							      >	协
-							      >	会（
-简称								简称
-『								『
-中国记协							中国记协
+							      >	全国
+							      >	新闻工
+							      >	作者协
+							      >	会
+（								（
+简称							      |	简
+『							      |	称『中国记
+中国记协						      |	协
 』								』
-）								）
-决定							      |	决
-建立							      |	定建
-新闻							      |	立新
-工作者							      |	闻
-接受							      |	工作者接受
+）							      |	）决定建立
+决定							      |	新
+建立							      |	闻
+新闻							      <
+工作者								工作者
+接受							      |	接
+							      >	受
 社会								社会
 监督							      |	监
-制度							      |	督制
-							      >	度
-，								，
-特							      |	特发表
-发表							      |	公
-公告							      |	告如
-如下							      |	下
-：								：
-INSERTIONS:	14
-DELETIONS:	3
-SUBSTITUTIONS:	25
-NCHANGE:	42
+制度							      |	督
+，							      |	制
+特							      |	度
+发表							      |	，特发
+公告							      |	表
+如下							      |	公
+：							      |	告如
+							      >	下：
+INSERTIONS:	13
+DELETIONS:	4
+SUBSTITUTIONS:	28
+NCHANGE:	45
 NTRUTH:	75
-NTEST:	86
-TRUE WORDS RECALL:	0.627
-TEST WORDS PRECISION:	0.547
+NTEST:	84
+TRUE WORDS RECALL:	0.573
+TEST WORDS PRECISION:	0.512
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----319
 一								一
 、								、
@@ -11152,47 +11148,48 @@ TEST WORDS PRECISION:	0.692
 建设								建设
 、								、
 禁止								禁止
-有偿								有偿
-新闻							      |	新
+有偿							      |	有
+新闻							      |	偿新闻的通
+的							      |	知
+通知							      <
+，								，
+坚决							      |	坚决执行
+执行							      |	中共
+中共中央宣传部					      |	中央
+、							      |	宣
+广播电影电视部					      |	传部
+、							      |	、广播
+新闻出版署						      |	电影电视部、
+、							      <
+中华全国新闻工作者协会					      <
+《							      <
+关于							      <
+禁止							      <
+有偿							      <
+新闻								新闻
+的							      |	出
+若干							      |	版
+规定							      |	署、中华全国新
 							      >	闻
-的								的
-通知								通知
-，							      |	，坚决执
-坚决							      |	行中共中
-执行							      |	央宣
-中共中央宣传部					      |	传
-、							      |	部
-广播电影电视部					      |	、广播
-、							      |	电
-新闻出版署						      |	影
-、							      |	电视
-中华全国新闻工作者协会					      |	部
-《							      |	、新
-关于							      |	闻
-禁止							      |	出版署
-有偿							      |	、中
-新闻							      |	华
-							      >	全
-							      >	国新
-							      >	闻工
-							      >	作者协会《
-							      >	关
+							      >	工
+							      >	作者协会
+							      >	《关
 							      >	于
-							      >	禁止有偿新
-							      >	闻
-的								的
-若干							      |	若
-规定							      |	干
-》							      |	规
-。							      |	定》。
-INSERTIONS:	21
-DELETIONS:	0
-SUBSTITUTIONS:	29
-NCHANGE:	50
+							      >	禁
+							      >	止有偿
+							      >	新闻的
+							      >	若干规
+							      >	定
+》								》
+。								。
+INSERTIONS:	22
+DELETIONS:	7
+SUBSTITUTIONS:	22
+NCHANGE:	51
 NTRUTH:	74
-NTEST:	95
+NTEST:	89
 TRUE WORDS RECALL:	0.608
-TEST WORDS PRECISION:	0.474
+TEST WORDS PRECISION:	0.506
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----325
 三								三
 、								、
@@ -12420,75 +12417,70 @@ TEST WORDS PRECISION:	0.750
 、								、
 山西								山西
 、								、
-甘肃								甘肃
+甘肃							      |	甘肃、
+、							      |	内
+内蒙古							      |	蒙古
+这							      |	这１
+１２个							      |	２个
+省								省
+							      >	、区中，
+							      >	湖
+							      >	南、河南
+							      >	、福建、安徽
 、								、
-内蒙古							      |	内
-这							      |	蒙
-１２个							      |	古这
-省							      |	１２个省
-、							      |	、区中
-区							      |	，湖
-中							      |	南
-，							      |	、
-湖南							      |	河
-、							      |	南
-河南							      |	、
-、							      |	福
-福建							      |	建、安
-、							      |	徽、
+区							      |	陕
+中							      |	西
+，							      <
+湖南							      <
+、							      <
+河南							      <
+、							      <
+福建							      <
+、							      <
 安徽							      <
 、							      <
-陕西								陕西
+陕西							      <
 ５								５
 省							      |	省人
-人口							      |	口出
-出生率							      |	生率
-下降							      |	下
-							      >	降
-了								了
-约								约
-１０个千分点						      |	１
-，							      |	０个千分
-甘肃							      |	点，甘肃
-、							      |	、内蒙
-内蒙古							      |	古
+人口							      |	口
+出生率							      |	出生
+下降							      |	率下
+了							      |	降了
+约							      |	约１
+１０个千分点						      |	０个千分
+							      >	点
+，								，
+甘肃							      |	甘肃、
 、							      <
-江西							      <
-３							      <
-省							      <
-、								、
-							      >	江西３省、
-区								区
-１９９６年						      |	１
-人口							      |	９
-出生率							      |	９６
-下降							      |	年人
-幅度							      |	口
-超过							      |	出生
-１.５个千分点						      |	率下
-，							      |	降幅
-广东省							      |	度超过
-多							      |	１
-							      >	.
-							      >	５
-							      >	个
-							      >	千分
-							      >	点，
-							      >	广
-							      >	东
-							      >	省多
+内蒙古								内蒙古
+、							      |	、江
+江西							      |	西
+３								３
+省							      |	省、
+、							      |	区１９９６年人口
+区							      |	出
+１９９６年						      |	生率下
+人口							      |	降幅度
+出生率							      <
+下降							      <
+幅度							      <
+超过								超过
+１.５个千分点						      |	１.５个
+，							      |	千分
+广东省							      |	点，广
+多							      |	东省多
 孩								孩
 率							      |	率较
-较高							      |	高。
-。							      <
-INSERTIONS:	12
-DELETIONS:	9
-SUBSTITUTIONS:	40
-NCHANGE:	61
+较高							      |	高
+。								。
+INSERTIONS:	7
+DELETIONS:	16
+SUBSTITUTIONS:	33
+NCHANGE:	56
 NTRUTH:	120
-NTEST:	123
+NTEST:	111
 TRUE WORDS RECALL:	0.592
-TEST WORDS PRECISION:	0.577
+TEST WORDS PRECISION:	0.640
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----360
 分析								分析
 认为								认为
@@ -13161,19 +13153,19 @@ TEST WORDS PRECISION:	0.793
 促进								促进
 领导								领导
 和								和
-企业							      |	企业加
-加快							      |	快行
-行动							      |	动
-步伐							      |	步
-。							      |	伐。
+企业								企业
+加快							      |	加快行动步伐。
+行动							      <
+步伐							      <
+。							      <
 INSERTIONS:	4
-DELETIONS:	7
-SUBSTITUTIONS:	20
-NCHANGE:	31
+DELETIONS:	10
+SUBSTITUTIONS:	16
+NCHANGE:	30
 NTRUTH:	68
-NTEST:	65
-TRUE WORDS RECALL:	0.603
-TEST WORDS PRECISION:	0.631
+NTEST:	62
+TRUE WORDS RECALL:	0.618
+TEST WORDS PRECISION:	0.677
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----374
 今年								今年
 实施								实施
@@ -14180,22 +14172,22 @@ TEST WORDS PRECISION:	0.816
 太阳能							      |	太阳
 							      >	能
 帆板								帆板
-及							      |	及通
-通信							      |	信天
-天线							      |	线展
-展开							      |	开等太空动作。
-等							      <
-太空							      <
-动作							      <
+及								及
+通信								通信
+天线								天线
+展开							      |	展开等
+等							      |	太
+太空							      |	空
+动作							      |	动作。
 。							      <
 INSERTIONS:	12
-DELETIONS:	5
+DELETIONS:	2
 SUBSTITUTIONS:	18
-NCHANGE:	35
+NCHANGE:	32
 NTRUTH:	52
-NTEST:	59
-TRUE WORDS RECALL:	0.558
-TEST WORDS PRECISION:	0.492
+NTEST:	62
+TRUE WORDS RECALL:	0.615
+TEST WORDS PRECISION:	0.516
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----400
 北京时间今天下午４时１１分				      |	北京
 							      >	时间
@@ -14999,41 +14991,36 @@ TEST WORDS PRECISION:	0.875
 太行山						      |	太行
 							      >	山
 ，								，
-过							      |	过遗
-遗钗岭							      |	钗
-							      >	岭
-、								、
-驿马岭							驿马岭
-、								、
-紫荆关							      |	紫荆
-，							      |	关
-经							      <
-河北							      <
-易县							      <
-进入							      <
-华北平原							      <
-，								，
-最后							      |	经河
-							      >	北易
-							      >	县进入
-							      >	华
-							      >	北平原，最
-							      >	后
-到								到
-了							      |	了北京石
-北京							      |	景
-石景山区						      |	山区的衙门
-的							      |	口
-衙门口							      <
+过								过
+遗钗岭							      |	遗钗岭、驿
+、							      |	马岭、紫
+驿马岭						      |	荆
+、							      |	关
+紫荆关							      |	，经河
+，							      |	北
+经							      |	易
+河北							      |	县进入华北
+易县							      |	平原
+进入							      |	，最后到
+华北平原							      |	了北京石景
+，							      |	山
+最后							      |	区
+到							      <
+了							      <
+北京							      <
+石景山区						      <
+的								的
+衙门口							      |	衙
+							      >	门口
 。								。
-INSERTIONS:	18
-DELETIONS:	9
-SUBSTITUTIONS:	23
-NCHANGE:	50
+INSERTIONS:	13
+DELETIONS:	7
+SUBSTITUTIONS:	28
+NCHANGE:	48
 NTRUTH:	75
-NTEST:	84
-TRUE WORDS RECALL:	0.573
-TEST WORDS PRECISION:	0.512
+NTEST:	81
+TRUE WORDS RECALL:	0.533
+TEST WORDS PRECISION:	0.494
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----422
 这							      |	这当
 当中							      |	中
@@ -15741,31 +15728,32 @@ TEST WORDS PRECISION:	0.440
 并								并
 建立								建立
 了								了
-预定							      |	预
-的							      |	定的
-漂移								漂移
+预定								预定
+的							      |	的漂
+漂移							      |	移
 速度								速度
-，							      |	，为按计
-为							      |	划
-按							      |	对其
-计划							      |	实
-对							      |	施
-其							      |	定
-实施							      |	点
-定点							      |	控
-控制							      |	制创
-创造							      |	造了
-了							      |	条件。
+，								，
+为							      |	为按计
+按							      |	划
+计划							      <
+对								对
+其								其
+实施							      |	实
+							      >	施
+定点								定点
+控制								控制
+创造							      |	创
+了							      |	造了条件
 条件							      <
-。							      <
-INSERTIONS:	3
+。								。
+INSERTIONS:	4
 DELETIONS:	6
-SUBSTITUTIONS:	26
-NCHANGE:	35
+SUBSTITUTIONS:	20
+NCHANGE:	30
 NTRUTH:	82
-NTEST:	79
-TRUE WORDS RECALL:	0.610
-TEST WORDS PRECISION:	0.633
+NTEST:	80
+TRUE WORDS RECALL:	0.683
+TEST WORDS PRECISION:	0.700
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----442
 在								在
 对								对
@@ -18384,71 +18372,75 @@ TEST WORDS PRECISION:	0.659
 重要								重要
 的								的
 是								是
-要								要
-迎战								迎战
-大江								大江
-截流							      |	截
-，							      |	流，特
-特别是							      |	别是
-备足							      |	备足备好龙口
-备							      |	合
-好							      |	龙关
-龙口							      |	键时
-合龙							      |	刻抛
-关键							      |	投的
-时刻							      |	大石
-抛							      <
-投							      <
-的							      <
-大							      <
-石							      <
-、								、
-特大							      |	特
-石							      |	大石
-；							      |	；同时，
+要							      |	要迎
+迎战							      |	战大
+大江							      |	江截
+截流							      |	流，
+，							      |	特别
+特别是							      |	是
+备足							      |	备足备
+备							      |	好龙
+好							      |	口合龙关键
+龙口							      <
+合龙							      <
+关键							      <
+时刻								时刻
+抛								抛
+投								投
+的							      |	的大
+大							      |	石、
+石							      |	特
+、							      |	大石；
+特大							      |	同时，对
+石							      |	技术
+；							      |	人员、操作手
 同时							      <
 ，							      <
-对								对
-技术人员								技术人员
-、								、
-操作							      |	操
-手							      |	作手还要进行
-还要							      |	强化训练，检
-进行							      |	修维
-强化							      |	护
-训练							      <
+对							      <
+技术人员							      <
+、							      <
+操作							      <
+手							      <
+还要								还要
+进行							      |	进
+							      >	行
+强化								强化
+训练							      |	训
+							      >	练
+，								，
+检修								检修
+维护							      |	维
+好							      |	护好工程设备，
+工程							      <
+设备							      <
 ，							      <
-检修							      <
-维护							      <
-好								好
-工程							      |	工
-							      >	程
-设备								设备
-，							      |	，对
-对							      |	可
-可能							      |	能
+对								对
+可能								可能
 遇到							      |	遇
 的							      |	到的新的
-新							      |	问题事
-的							      |	先研
-问题							      |	究
-事先							      |	对策，
-研究							      |	确保截流
-对策							      <
-，							      <
-确保							      <
-截流							      <
-顺利								顺利
-进行							      |	进
-。							      |	行。
-INSERTIONS:	5
+新							      <
+的							      <
+问题								问题
+事先							      |	事
+研究							      |	先研
+对策							      |	究
+							      >	对
+							      >	策
+，								，
+确保							      |	确
+截流							      |	保
+顺利							      |	截
+进行							      |	流
+							      >	顺利进行
+。								。
+INSERTIONS:	9
 DELETIONS:	19
-SUBSTITUTIONS:	38
-NCHANGE:	62
+SUBSTITUTIONS:	36
+NCHANGE:	64
 NTRUTH:	124
-NTEST:	110
-TRUE WORDS RECALL:	0.540
-TEST WORDS PRECISION:	0.609
+NTEST:	114
+TRUE WORDS RECALL:	0.556
+TEST WORDS PRECISION:	0.605
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----517
 图片								图片
 ：								：
@@ -18661,21 +18653,20 @@ TEST WORDS PRECISION:	0.893
 ，								，
 是								是
 我国								我国
-对外开放						      |	对
-事业							      |	外开
-							      >	放事业
-的								的
-重要							      |	重
-组成部分							      |	要
-。							      |	组成部分。
-INSERTIONS:	4
+对外开放						      |	对外
+事业							      |	开放事业的
+的							      |	重要组成
+重要							      |	部
+组成部分							      |	分
+。								。
+INSERTIONS:	3
 DELETIONS:	1
 SUBSTITUTIONS:	12
-NCHANGE:	17
+NCHANGE:	16
 NTRUTH:	66
-NTEST:	69
+NTEST:	68
 TRUE WORDS RECALL:	0.803
-TEST WORDS PRECISION:	0.768
+TEST WORDS PRECISION:	0.779
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----524
 江泽民								江泽民
 首先								首先
@@ -24432,18 +24423,18 @@ TEST WORDS PRECISION:	1.000
 时候								时候
 都								都
 不能								不能
-疏忽							      |	疏忽和懈
-和							      |	怠
-懈怠							      <
-。								。
+疏忽								疏忽
+和								和
+懈怠							      |	懈
+。							      |	怠。
 INSERTIONS:	7
-DELETIONS:	5
+DELETIONS:	4
 SUBSTITUTIONS:	15
-NCHANGE:	27
+NCHANGE:	26
 NTRUTH:	66
-NTEST:	68
-TRUE WORDS RECALL:	0.697
-TEST WORDS PRECISION:	0.676
+NTEST:	69
+TRUE WORDS RECALL:	0.712
+TEST WORDS PRECISION:	0.681
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----694
 总之								总之
 ，								，
@@ -25536,35 +25527,42 @@ TEST WORDS PRECISION:	0.900
 ，								，
 把								把
 环境								环境
-宣传							      |	宣
-							      >	传
-教育								教育
-工作							      |	工作的目
-的							      |	标和任务
+							      >	宣
+							      >	传教育工作
+							      >	的目
+							      >	标和任务
+							      >	落到实
+							      >	处，开
+							      >	创环
+							      >	境
+宣传								宣传
+教育							      |	教育工作
+工作							      |	的新局面
+的							      <
 目标							      <
 和							      <
 任务							      <
-落								落
-到							      |	到实处
+落							      <
+到							      <
 实处							      <
-，								，
-开创							      |	开创环
-环境							      |	境
-宣传							      |	宣
-教育							      |	传教育
-工作							      |	工
-的							      |	作的新
+，							      <
+开创							      <
+环境							      <
+宣传							      <
+教育							      <
+工作							      <
+的							      <
 新							      <
-局面								局面
+局面							      <
 。								。
-INSERTIONS:	6
-DELETIONS:	7
-SUBSTITUTIONS:	22
-NCHANGE:	35
+INSERTIONS:	13
+DELETIONS:	18
+SUBSTITUTIONS:	14
+NCHANGE:	45
 NTRUTH:	82
-NTEST:	81
-TRUE WORDS RECALL:	0.646
-TEST WORDS PRECISION:	0.654
+NTEST:	77
+TRUE WORDS RECALL:	0.610
+TEST WORDS PRECISION:	0.649
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----724
 “								“
 行动								行动
@@ -26284,30 +26282,29 @@ TEST WORDS PRECISION:	0.750
 世纪							      <
 行							      <
 ”								”
-活动								活动
-，								，
-做好							      |	做
-环保							      |	好环保
-执法								执法
-检查							      |	检
-活动							      |	查活
-的							      |	动的
-宣传							      |	宣
-报道							      |	传
-工作							      |	报
-等							      |	道
-							      >	工作等
+活动							      |	活
+，							      |	动
+做好							      |	，做
+环保							      |	好环保执法检查
+执法							      |	活动的
+检查							      |	宣
+活动							      |	传报道工作
+的							      <
+宣传							      <
+报道							      <
+工作							      <
+等								等
 具体								具体
 行动								行动
 。								。
-INSERTIONS:	2
-DELETIONS:	3
-SUBSTITUTIONS:	14
-NCHANGE:	19
+INSERTIONS:	1
+DELETIONS:	7
+SUBSTITUTIONS:	12
+NCHANGE:	20
 NTRUTH:	82
-NTEST:	81
-TRUE WORDS RECALL:	0.793
-TEST WORDS PRECISION:	0.802
+NTEST:	76
+TRUE WORDS RECALL:	0.768
+TEST WORDS PRECISION:	0.829
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----743
 姜春云								姜春云
 在								在
@@ -26671,30 +26668,30 @@ TEST WORDS PRECISION:	0.808
 到								到
 最低							      |	最
 限度							      |	低限
-，							      |	度
-为							      |	，为
-保护							      |	保
-森林资源						      |	护森林资
-和							      |	源和人
-人民							      |	民
-生命							      |	生
-财产							      |	命财产
-安全								安全
-做出							      |	做
+，							      |	度，为
+为							      |	保护森
+保护							      |	林资
+森林资源						      |	源和人
+和							      |	民生
+人民							      |	命
+生命							      |	财
+财产							      |	产
+安全							      |	安
+做出							      |	全做
 							      >	出
 新								新
 的								的
-贡献							      |	贡献”
-”							      <
-。								。
+贡献								贡献
+”							      |	”。
+。							      <
 INSERTIONS:	3
 DELETIONS:	2
-SUBSTITUTIONS:	16
-NCHANGE:	21
+SUBSTITUTIONS:	17
+NCHANGE:	22
 NTRUTH:	82
 NTEST:	83
-TRUE WORDS RECALL:	0.780
-TEST WORDS PRECISION:	0.771
+TRUE WORDS RECALL:	0.768
+TEST WORDS PRECISION:	0.759
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----751
 姜春云								姜春云
 和								和
@@ -27309,24 +27306,25 @@ TEST WORDS PRECISION:	0.776
 建设								建设
 有								有
 中国								中国
-特色							      |	特色社
-社会主义						      |	会
-理论							      |	主
-成为							      |	义
-我们							      |	理论成
-的							      |	为
-世界观							      |	我们的世
+特色							      |	特色社会主
+社会主义						      |	义理论
+理论							      |	成
+成为							      |	为
+我们								我们
+的								的
+世界观							      |	世
 和							      |	界观和
-方法论								方法论
+方法论							      |	方法
+							      >	论
 。								。
-INSERTIONS:	4
+INSERTIONS:	5
 DELETIONS:	0
-SUBSTITUTIONS:	12
+SUBSTITUTIONS:	11
 NCHANGE:	16
 NTRUTH:	74
-NTEST:	78
-TRUE WORDS RECALL:	0.838
-TEST WORDS PRECISION:	0.795
+NTEST:	79
+TRUE WORDS RECALL:	0.851
+TEST WORDS PRECISION:	0.797
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----764
 会议								会议
 提出								提出
@@ -28753,20 +28751,20 @@ TEST WORDS PRECISION:	0.900
 事业								事业
 要								要
 为								为
-经济								经济
-建设								建设
-作							      |	作出贡
-出							      |	献
-贡献							      <
+经济							      |	经济建
+建设							      |	设
+作							      |	作出
+出							      <
+贡献								贡献
 。								。
 INSERTIONS:	11
 DELETIONS:	5
-SUBSTITUTIONS:	12
-NCHANGE:	28
+SUBSTITUTIONS:	13
+NCHANGE:	29
 NTRUTH:	51
 NTEST:	57
-TRUE WORDS RECALL:	0.667
-TEST WORDS PRECISION:	0.596
+TRUE WORDS RECALL:	0.647
+TEST WORDS PRECISION:	0.579
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----804
 ５月１１日							５月１１日
 ，								，
@@ -28832,20 +28830,18 @@ TEST WORDS PRECISION:	0.596
 工作								工作
 的								的
 科技人员							      |	科技
-							      >	人员
-和								和
-解放军							      |	解放
-							      >	军
-官兵								官兵
-。								。
-INSERTIONS:	16
-DELETIONS:	0
-SUBSTITUTIONS:	11
-NCHANGE:	27
+和							      |	人员
+解放军							      |	和解放军
+官兵							      |	官兵。
+。							      <
+INSERTIONS:	14
+DELETIONS:	1
+SUBSTITUTIONS:	13
+NCHANGE:	28
 NTRUTH:	54
-NTEST:	70
-TRUE WORDS RECALL:	0.796
-TEST WORDS PRECISION:	0.614
+NTEST:	67
+TRUE WORDS RECALL:	0.741
+TEST WORDS PRECISION:	0.597
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----805
 １２日								１２日
 零时１７分						      |	零时
@@ -29022,21 +29018,21 @@ TEST WORDS PRECISION:	0.750
 工作								工作
 ，								，
 为								为
-成功								成功
-发射							      |	发射奠
-奠定							      |	定了
-了							      |	坚实基础。
-坚实							      <
-基础							      <
+成功							      |	成
+发射							      |	功
+奠定							      |	发
+了							      |	射奠
+坚实							      |	定了坚
+基础							      |	实基础。
 。							      <
 INSERTIONS:	12
-DELETIONS:	5
-SUBSTITUTIONS:	13
-NCHANGE:	30
+DELETIONS:	3
+SUBSTITUTIONS:	16
+NCHANGE:	31
 NTRUTH:	66
-NTEST:	73
-TRUE WORDS RECALL:	0.727
-TEST WORDS PRECISION:	0.658
+NTEST:	75
+TRUE WORDS RECALL:	0.712
+TEST WORDS PRECISION:	0.627
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----808
 实践								实践
 证明								证明
@@ -29208,58 +29204,57 @@ TEST WORDS PRECISION:	0.818
 天天								天天
 讲								讲
 ，								，
-一刻								一刻
-也							      |	也不
-不能							      |	能
-放松							      |	放松”
-”							      <
+一刻							      |	一
+也							      |	刻也不能放
+不能							      |	松
+放松							      <
+”								”
 的								的
-要求								要求
-，							      |	，视质
-视							      |	量
+要求							      |	要
+，							      |	求
+视							      |	，视质量
 质量							      |	为生
 为							      |	命，
 生命							      |	严
-，							      |	密组
-严密							      |	织、精心
-组织							      |	指
-、							      |	挥、
-精心							      <
-指挥							      <
-、							      <
-准确								准确
-操作								操作
-，							      |	，做
-做到							      |	到打一
-打							      <
-一							      <
+，							      |	密组织
+严密							      <
+组织							      <
+、								、
+精心								精心
+指挥							      |	指
+							      >	挥
+、								、
+准确							      |	准确操作，做到
+操作							      <
+，							      <
+做到							      <
+打								打
+一								一
 仗								仗
-进一步							      |	进一步，
-，							      |	力
-力争							      |	争每发
-每							      <
-发							      <
-必								必
-成								成
-，								，
-为								为
-国民经济						      |	国
-建设							      |	民
-作							      |	经
-出							      |	济建设
-							      >	作出
-新								新
-贡献							      |	贡
-							      >	献
+进一步							      |	进
+，							      |	一步，
+力争							      |	力
+每							      |	争每
+发								发
+必							      |	必成，为国
+成							      |	民
+，							      |	经济建设作
+为							      |	出新贡
+国民经济						      |	献
+建设							      <
+作							      <
+出							      <
+新							      <
+贡献							      <
 。								。
-INSERTIONS:	5
-DELETIONS:	11
-SUBSTITUTIONS:	28
-NCHANGE:	44
+INSERTIONS:	4
+DELETIONS:	14
+SUBSTITUTIONS:	27
+NCHANGE:	45
 NTRUTH:	113
-NTEST:	107
-TRUE WORDS RECALL:	0.655
-TEST WORDS PRECISION:	0.692
+NTEST:	103
+TRUE WORDS RECALL:	0.637
+TEST WORDS PRECISION:	0.699
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----811
 在								在
 西昌								西昌
@@ -30209,62 +30204,64 @@ TEST WORDS PRECISION:	0.667
 陈锡联							      <
 、							      <
 段君毅							      <
-、							      <
-廖汉生							      <
-、							      <
-方毅							      <
 、								、
-马文瑞							      |	张
+廖汉生							      |	张
 							      >	劲夫
 、								、
-杨成武							      |	张
-、							      |	爱萍、
-郑天翔							      |	陈锡
-							      >	联、段
-							      >	君
-							      >	毅
-							      >	、
-							      >	廖汉生、方毅、马
-							      >	文
-							      >	瑞、
-							      >	杨
-							      >	成
-							      >	武
-							      >	、郑
-							      >	天翔
+方毅							      |	张
+、							      |	爱萍
+马文瑞							      <
+、							      <
+杨成武							      <
+、							      <
+郑天翔							      <
 、								、
+							      >	陈锡
+							      >	联
+							      >	、
+							      >	段
+							      >	君
+							      >	毅、
+							      >	廖
+							      >	汉生
+							      >	、方毅、马
+							      >	文
+							      >	瑞、杨成武、郑
+							      >	天
+							      >	翔、
 刘复之								刘复之
-、							      |	、王鹤
-王鹤寿							      |	寿
-等							      |	等同志，
-同志							      <
-，							      <
-以								以
-不同							      |	不同方
-方式							      |	式
-对								对
-张钧							      |	张钧同
-同志							      |	志的逝世表
-的							      |	示
-逝世							      <
-表示							      <
-哀悼								哀悼
-，								，
-并								并
-向								向
-其							      |	其家
-家属							      |	属表示慰
-表示							      |	问
-慰问							      <
+、								、
+王鹤寿							      |	王
+等							      |	鹤寿等同志，以
+同志							      |	不
+，							      |	同
+以							      |	方
+不同							      |	式
+方式							      |	对张
+对							      |	钧
+张钧							      <
+同志								同志
+的							      |	的逝
+逝世							      |	世
+表示							      |	表
+哀悼							      |	示
+，							      |	哀
+并							      |	悼，并向其
+向							      <
+其							      <
+家属								家属
+表示							      |	表
+慰问							      |	示慰
+							      >	问
 。								。
-INSERTIONS:	18
-DELETIONS:	17
-SUBSTITUTIONS:	24
-NCHANGE:	59
+INSERTIONS:	20
+DELETIONS:	16
+SUBSTITUTIONS:	28
+NCHANGE:	64
 NTRUTH:	93
-NTEST:	94
-TRUE WORDS RECALL:	0.559
-TEST WORDS PRECISION:	0.553
+NTEST:	97
+TRUE WORDS RECALL:	0.527
+TEST WORDS PRECISION:	0.505
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----838
 张钧								张钧
 是								是
@@ -30314,66 +30311,58 @@ TEST WORDS PRECISION:	0.553
 、								、
 豫西南阳军分区政治部					      |	豫西南阳军
 主任							      |	分区
-、							      |	政治
-第二野战军四兵团师政治部					      |	部主
-主任							      |	任、
-、							      |	第
-十三军随营学校						      |	二
-副							      |	野战军四兵
-政委							      |	团师
-等							      |	政
-职							      |	治
-							      >	部主任
-							      >	、
-							      >	十三军随
-							      >	营学
-							      >	校副
-							      >	政
-							      >	委等职
-，								，
-参加							      |	参加了
-了							      |	著
-著名							      |	名
+、							      |	政治部
+第二野战军四兵团师政治部					      |	主任、
+主任							      |	第二野战军
+、							      |	四兵团
+十三军随营学校						      |	师政治部主任
+副							      |	、十三军随
+政委							      |	营学
+等							      |	校副政委
+职							      |	等职
+，							      |	，参加了著名
+参加							      <
+了							      <
+著名							      <
 的								的
-同								同
-蒲							      |	蒲、
+同							      |	同蒲、晋南、
+蒲							      <
 、							      <
-晋								晋
-南								南
-、								、
+晋							      <
+南							      <
+、							      <
 吕								吕
-梁								梁
+梁							      |	梁、
+、							      |	豫北、豫西
+豫							      <
+北							      <
+、							      <
+豫							      <
+西							      <
 、								、
-豫								豫
-北								北
+淮海								淮海
 、								、
-豫								豫
-西								西
-							      >	、淮
-							      >	海
-、								、
-淮海							      |	渡
-、							      |	江
-渡江							      |	、两广等战役
-、							      |	和解放
-两广							      <
-等							      <
-战役							      <
-和							      <
-解放							      <
+渡江							      |	渡
+、							      |	江、
+两广								两广
+等								等
+战役								战役
+和								和
+解放							      |	解
+							      >	放
 大								大
 西南								西南
-的								的
-作战							      |	作
-。							      |	战。
-INSERTIONS:	27
-DELETIONS:	8
-SUBSTITUTIONS:	31
-NCHANGE:	66
+的							      |	的作
+作战							      |	战。
+。							      <
+INSERTIONS:	19
+DELETIONS:	16
+SUBSTITUTIONS:	30
+NCHANGE:	65
 NTRUTH:	73
-NTEST:	92
-TRUE WORDS RECALL:	0.466
-TEST WORDS PRECISION:	0.370
+NTEST:	76
+TRUE WORDS RECALL:	0.370
+TEST WORDS PRECISION:	0.355
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----839
 １９５０年						      |	１９５０年后
 后							      <
@@ -31106,22 +31095,21 @@ TEST WORDS PRECISION:	0.840
 环境								环境
 与								与
 资源								资源
-法律							      |	法
-体系							      |	律
-框架							      |	体
-已							      |	系
-初步							      |	框
-形成							      |	架
-。							      |	已初
-							      >	步形成。
-INSERTIONS:	4
-DELETIONS:	1
-SUBSTITUTIONS:	11
-NCHANGE:	16
+法律							      |	法律体
+体系							      |	系框架
+框架							      |	已初
+已							      |	步
+初步							      |	形成。
+形成							      <
+。							      <
+INSERTIONS:	3
+DELETIONS:	3
+SUBSTITUTIONS:	9
+NCHANGE:	15
 NTRUTH:	68
-NTEST:	71
+NTEST:	68
 TRUE WORDS RECALL:	0.824
-TEST WORDS PRECISION:	0.789
+TEST WORDS PRECISION:	0.824
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----857
 王丙乾							      |	王丙
 说							      |	乾说
@@ -31631,32 +31619,28 @@ TEST WORDS PRECISION:	0.667
 课题								课题
 ，								，
 要							      |	要作
-作为							      <
-一							      <
-项							      <
+作为							      |	为
+一							      |	一项
+项							      |	战略任务
 战略							      <
 任务							      <
-来							      <
-抓							      <
-，							      <
-为								为
-实现							      |	一项
-可持续发展						      |	战略
-奠定							      |	任
-基础							      |	务
-。							      |	来抓
-							      >	，
-							      >	为实现
-							      >	可持续发展奠定基
-							      >	础。
-INSERTIONS:	8
-DELETIONS:	10
-SUBSTITUTIONS:	13
-NCHANGE:	31
+来								来
+抓								抓
+，							      |	，为
+为							      |	实现可
+实现							      |	持续发展奠
+可持续发展						      |	定基础
+奠定							      <
+基础							      <
+。								。
+INSERTIONS:	4
+DELETIONS:	6
+SUBSTITUTIONS:	15
+NCHANGE:	25
 NTRUTH:	65
 NTEST:	63
-TRUE WORDS RECALL:	0.646
-TEST WORDS PRECISION:	0.667
+TRUE WORDS RECALL:	0.677
+TEST WORDS PRECISION:	0.698
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----869
 六月十六日						      |	六月十六日至二十一日
 至							      <
@@ -32142,32 +32126,32 @@ TEST WORDS PRECISION:	0.520
 ；								；
 过去								过去
 是								是
-零打碎敲							      |	零打
-，							      |	碎敲
-单项							      |	，单项
-治理							      |	治
-，							      |	理
-现在							      |	，现
-是							      |	在是以小流域
-以							      |	为单元
-小							      |	，
-流域							      |	统一规划，
-为							      |	综
-单元							      |	合治
-，							      |	理
-统一							      <
-规划							      <
-，							      <
+零打碎敲							      |	零
+，							      |	打碎
+单项							      |	敲，单
+治理							      |	项治理
+，								，
+现在								现在
+是							      |	是以
+以							      <
+小								小
+流域							      |	流
+为							      |	域
+单元							      |	为单元，统
+，							      |	一
+统一							      |	规
+规划							      |	划
+，							      |	，综合治理。
 综合治理						      <
-。								。
+。							      <
 INSERTIONS:	4
-DELETIONS:	9
-SUBSTITUTIONS:	23
-NCHANGE:	36
+DELETIONS:	8
+SUBSTITUTIONS:	22
+NCHANGE:	34
 NTRUTH:	85
-NTEST:	80
-TRUE WORDS RECALL:	0.624
-TEST WORDS PRECISION:	0.662
+NTEST:	81
+TRUE WORDS RECALL:	0.647
+TEST WORDS PRECISION:	0.679
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----880
 开始								开始
 走上								走上
@@ -35365,26 +35349,26 @@ TEST WORDS PRECISION:	0.828
 １５年								１５年
 ”								”
 ，								，
-拉开							      |	拉开了
-了							      |	全
+拉开							      |	拉
+了							      |	开了全
 全县							      |	县
-小型								小型
-水利工程						      |	水
-产权							      |	利工
-							      >	程产权
-制度								制度
-改革							      |	改革的
-的							      |	帷
-帷幕							      |	幕
-。								。
+小型							      |	小型水
+水利工程						      |	利
+产权							      |	工程产
+制度							      |	权制
+改革							      |	度改
+							      >	革
+的								的
+帷幕							      |	帷幕。
+。							      <
 INSERTIONS:	7
-DELETIONS:	1
-SUBSTITUTIONS:	18
-NCHANGE:	26
+DELETIONS:	2
+SUBSTITUTIONS:	19
+NCHANGE:	28
 NTRUTH:	77
-NTEST:	83
-TRUE WORDS RECALL:	0.753
-TEST WORDS PRECISION:	0.699
+NTEST:	82
+TRUE WORDS RECALL:	0.727
+TEST WORDS PRECISION:	0.683
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----964
 目前								目前
 ，								，
@@ -36610,20 +36594,18 @@ TEST WORDS PRECISION:	0.721
 保护								保护
 和								和
 水污染							      |	水
-							      >	污
-							      >	染
-治理								治理
-严重							      |	严
-滞后							      |	重滞
-。							      |	后。
-INSERTIONS:	5
+治理							      |	污染治理
+严重								严重
+滞后								滞后
+。								。
+INSERTIONS:	3
 DELETIONS:	2
-SUBSTITUTIONS:	13
-NCHANGE:	20
+SUBSTITUTIONS:	11
+NCHANGE:	16
 NTRUTH:	76
-NTEST:	79
-TRUE WORDS RECALL:	0.803
-TEST WORDS PRECISION:	0.772
+NTEST:	77
+TRUE WORDS RECALL:	0.829
+TEST WORDS PRECISION:	0.818
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----998
 这些								这些
 问题								问题
@@ -36766,93 +36748,75 @@ TEST WORDS PRECISION:	0.750
 多渠道							      |	多
 							      >	渠道
 扩大								扩大
-资金来源							      |	资
-的							      |	金来
-措施							      |	源
-；							      |	的措施
-并							      |	；并从
-从							      |	水利的生
-水利							      |	态
-的							      |	、社会、
-生态							      |	经济、
-、							      |	环
-社会							      |	境
-、							      |	目标有机结
-经济							      |	合的
-、							      |	原
-环境							      |	则
-目标							      <
-有机							      <
-结合							      <
+资金来源							      |	资金来
+的							      |	源
+措施							      |	的措
+；							      |	施
+并							      |	；并
+从							      |	从水利的生态
+水利							      <
 的							      <
-原则							      <
-出发							      <
+生态							      <
+、								、
+社会								社会
+、								、
+经济							      |	经济、
+、							      <
+环境								环境
+目标								目标
+有机							      |	有
+结合							      |	机
+的							      |	结合的原则
+原则							      |	出
+出发							      |	发，
 ，							      <
-对							      <
-水							      <
-资源							      <
-保护							      <
-、							      <
-水土保持							      <
-、							      <
-水污染							      <
-防治							      <
-、							      <
+对								对
+水								水
+资源							      |	资源保护、水土
+保护							      |	保持、水污
+、							      |	染
+水土保持							      |	防
+、							      |	治
+水污染							      |	、节
+防治							      |	约
+、							      |	用水等方面
 节约							      <
 用							      <
 水							      <
 等							      <
 方面							      <
-作							      <
-出								出
-了							      |	发
-政策							      |	，对水
-规定							      |	资
-，							      |	源
-从而							      |	保
-							      >	护
-							      >	、水土保持、水
-							      >	污
-							      >	染
-							      >	防
-							      >	治
-							      >	、
-							      >	节
-							      >	约
-							      >	用水等
-							      >	方
-							      >	面
-							      >	作出
-							      >	了
-							      >	政
-							      >	策
-							      >	规
-							      >	定，从
-							      >	而
-为								为
-使							      |	使水利
-水利							      |	产业走上良
-产业							      |	性循
-走上							      |	环和
-良性							      |	可
-循环							      |	持
-和							      |	续
-可持续发展						      |	发
-提供							      |	展提供
-了								了
-有力							      |	有
-							      >	力
-的								的
-保障								保障
+作								作
+出							      |	出了政策规
+了							      |	定
+政策							      |	，从
+规定							      |	而为
+，							      |	使水利产业走上良
+从而							      |	性循
+为							      |	环
+使							      <
+水利							      <
+产业							      <
+走上							      <
+良性							      <
+循环							      <
+和								和
+可持续发展						      |	可持
+提供							      |	续发展提
+了							      |	供
+有力							      |	了
+的							      |	有
+保障							      |	力
+							      >	的保
+							      >	障
 。								。
-INSERTIONS:	23
-DELETIONS:	24
-SUBSTITUTIONS:	34
-NCHANGE:	81
+INSERTIONS:	5
+DELETIONS:	17
+SUBSTITUTIONS:	37
+NCHANGE:	59
 NTRUTH:	130
-NTEST:	129
-TRUE WORDS RECALL:	0.554
-TEST WORDS PRECISION:	0.558
+NTEST:	118
+TRUE WORDS RECALL:	0.585
+TEST WORDS PRECISION:	0.644
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----1001
 水利								水利
 产业								产业
@@ -37843,21 +37807,20 @@ TEST WORDS PRECISION:	0.600
 雄伟								雄伟
 壮观								壮观
 ，								，
-令							      |	令观
+令							      |	令观者激动不已。
 观							      <
-者								者
-激动							      |	激
-不已							      |	动
-。							      |	不
-							      >	已。
-INSERTIONS:	1
-DELETIONS:	6
-SUBSTITUTIONS:	16
+者							      <
+激动							      <
+不已							      <
+。							      <
+INSERTIONS:	0
+DELETIONS:	10
+SUBSTITUTIONS:	13
 NCHANGE:	23
 NTRUTH:	62
-NTEST:	57
-TRUE WORDS RECALL:	0.645
-TEST WORDS PRECISION:	0.702
+NTEST:	52
+TRUE WORDS RECALL:	0.629
+TEST WORDS PRECISION:	0.750
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----1024
 据								据
 科学家							科学家
@@ -38043,25 +38006,25 @@ TEST WORDS PRECISION:	0.825
 天文							      |	天文景象
 景象							      <
 ，								，
-给								给
-他们							      |	他
-单调							      |	们单
-的							      |	调的
-生活							      |	生
-增加							      |	活增加了
-了							      |	新的
-新							      <
-的							      <
-乐趣								乐趣
+给							      |	给他
+他们							      |	们单
+单调							      |	调的
+的							      |	生
+生活							      |	活
+增加							      |	增
+了							      |	加
+新							      |	了新
+的							      |	的乐趣
+乐趣							      <
 。								。
 INSERTIONS:	6
-DELETIONS:	6
-SUBSTITUTIONS:	24
-NCHANGE:	36
+DELETIONS:	5
+SUBSTITUTIONS:	27
+NCHANGE:	38
 NTRUTH:	67
-NTEST:	67
-TRUE WORDS RECALL:	0.552
-TEST WORDS PRECISION:	0.552
+NTEST:	68
+TRUE WORDS RECALL:	0.522
+TEST WORDS PRECISION:	0.515
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----1028
 第一届								第一届
 海尔-波普彗星						      |	海尔
@@ -39717,72 +39680,78 @@ TEST WORDS PRECISION:	0.667
 而								而
 把								把
 不是								不是
-中央委员						      |	中央
-							      >	委
-							      >	员
-、								、
-缺少								缺少
-实际							      |	实际斗争经
-斗争							      |	验
+中央委员						      |	中
+、							      |	央
+缺少							      <
+实际							      <
+斗争							      <
 经验							      <
-、								、
-２６岁								２６岁
-的							      |	的王明补选
+、							      <
+２６岁							      <
+的							      <
 王明							      <
 补选							      <
-为								为
-中央委员						      |	中
-并							      |	央
-成为							      |	委员并成
-中央政治局						      |	为中
-委员							      |	央政治
-							      >	局委员
-，								，
-让								让
-他								他
-实际上							      |	实
-操纵							      |	际上操纵
-了							      |	了党中
-党中央							      |	央的领
-的							      |	导
-领导							      <
-权								权
-，							      |	，使
-使							      <
+为							      <
+中央委员						      <
+并							      <
+成为							      <
+中央政治局						      <
+委员								委员
+，							      |	、
+让							      |	缺
+他							      |	少实际斗争经验、
+实际上							      |	２６岁的
+操纵							      |	王明补选为
+了							      |	中
+党中央							      |	央
+的							      |	委
+领导							      |	员并成
+权							      |	为中央
+，							      |	政
+使							      |	治
+							      >	局
+							      >	委
+							      >	员
+							      >	，让他实
+							      >	际上操
+							      >	纵了
+							      >	党中央的
+							      >	领导权
+							      >	，使
 以								以
-王明							      |	王
-为首							      |	明
-的							      |	为
-“							      |	首
-左							      |	的“左”倾教条宗派
-”							      |	主义错
-倾							      |	误路
-教条							      |	线，在
-宗派主义						      |	党中
-错误							      |	央领
-路线							      |	导
-，							      |	机构占统
-在							      |	治地位
-党中央							      <
-领导							      <
-机构							      <
-占							      <
-统治							      <
-地位							      <
-长								长
-达							      |	达４
-４年							      |	年
+王明								王明
+为首							      |	为
+的							      |	首的
+“								“
+左							      |	左”
+”							      |	倾教
+倾							      |	条宗
+教条							      |	派主
+宗派主义						      |	义错
+错误							      |	误
+路线							      |	路
+，							      |	线，
+在								在
+党中央								党中央
+领导							      |	领导机
+机构							      |	构
+占								占
+统治							      |	统
+地位							      |	治
+长							      |	地
+达							      |	位长达
+４年								４年
 之								之
 久								久
 。								。
-INSERTIONS:	5
-DELETIONS:	17
+INSERTIONS:	11
+DELETIONS:	20
 SUBSTITUTIONS:	42
-NCHANGE:	64
+NCHANGE:	73
 NTRUTH:	111
-NTEST:	99
-TRUE WORDS RECALL:	0.468
-TEST WORDS PRECISION:	0.525
+NTEST:	102
+TRUE WORDS RECALL:	0.441
+TEST WORDS PRECISION:	0.480
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----1082
 ９月								９月
 ，								，
@@ -39983,108 +39952,124 @@ TEST WORDS PRECISION:	0.706
 ；								；
 由于							      |	由
 顾顺章						      |	于顾
-							      >	顺章
-告密								告密
-，								，
-化名							      |	化
-王作林							      |	名
-							      >	王作
-							      >	林
-被								被
-判								判
-徒刑								徒刑
-关								关
-在								在
-国民党中央军人监狱					      |	国民
-的							      |	党中
-恽代英							      |	央
-身份							      |	军
-暴露							      |	人监狱的恽代
-，							      |	英身
+告密							      |	顺章
+，							      |	告密，化
+化名							      |	名王
+王作林							      |	作林
+被							      |	被判徒刑关在国民
+判							      |	党中
+徒刑							      |	央军
+关							      |	人
+在							      |	监
+国民党中央军人监狱					      |	狱
+的								的
+恽代英							      |	恽
+身份							      |	代
+暴露							      |	英
+，							      |	身
 英勇							      |	份
-牺牲							      |	暴露，英
-							      >	勇
-							      >	牺
+牺牲							      |	暴
+							      >	露，英
+							      >	勇牺
 							      >	牲
 ；								；
-中央							      |	中央总书记
-总书记						      |	向忠
-向忠发							      |	发被
-被捕							      |	捕
-自首							      |	自
-后							      |	首后枪
-枪毙							      |	毙；
-；							      |	党
-党中央							      |	中
+中央							      |	中
+总书记						      |	央总
+向忠发							      |	书记
+被捕							      |	向忠
+自首							      |	发
+后							      |	被
+枪毙							      |	捕自
+							      >	首后
+							      >	枪
+							      >	毙
+；								；
+党中央							      |	党
+							      >	中
 							      >	央
 保存								保存
-文件							      |	文
-							      >	件
+文件							      |	文件的
+							      >	秘密机关和
+							      >	中央秘
+							      >	密印刷
+							      >	机关先后
+							      >	被破
+							      >	坏，又
+							      >	有几十个同
+							      >	志被
+							      >	捕；
+							      >	国
+							      >	民党以重
+							      >	金悬
+							      >	赏通
+							      >	缉
+							      >	瞿
+							      >	秋白等
+							      >	中共要
+							      >	人
+							      >	……就是在这
+							      >	样严
+							      >	峻白
+							      >	色
+							      >	恐怖
 的								的
-秘密								秘密
-机关							      |	机关和
-和							      |	中央秘
-中央							      |	密印刷机关先后
-秘密							      |	被破
-印刷							      |	坏
-机关							      |	，又
+秘密							      |	氛围中，博古受
+机关							      |	共产国
+							      >	际
+和								和
+中央							      <
+秘密							      <
+印刷							      <
+机关							      <
 先后							      <
 被							      <
 破坏							      <
 ，							      <
 又							      <
-有								有
-几十个							      |	几
-同志							      |	十
-被捕							      |	个
-							      >	同
-							      >	志
-							      >	被
-							      >	捕
-；								；
-国民党							      |	国
-以							      |	民党以
-重金							      |	重金悬赏
-悬赏							      |	通
-通缉							      |	缉
-瞿秋白								瞿秋白
-等								等
-中共							      |	中共要人…
+有							      <
+几十个							      <
+同志							      <
+被捕							      <
+；							      <
+国民党							      <
+以							      <
+重金							      <
+悬赏							      <
+通缉							      <
+瞿秋白							      <
+等							      <
+中共							      <
 要人							      <
 …							      <
-…								…
-就是							      |	就
-在							      |	是
-这样							      |	在这
-严峻							      |	样严
-白色恐怖							      |	峻
-							      >	白
-							      >	色
-							      >	恐怖
-的								的
-氛围							      |	氛围中，
-中							      |	博古受
-，							      |	共
-博古							      |	产
-受							      |	国际和
-共产国际						      |	中共
-和							      <
+…							      <
+就是							      <
+在							      <
+这样							      <
+严峻							      <
+白色恐怖							      <
+的							      <
+氛围							      <
+中								中
+，							      |	共中
+博古							      |	央指定走上中央
+受							      |	领
+共产国际						      |	导
+和							      |	岗位。
 中共中央						      <
 指定							      <
 走上							      <
-中央								中央
-领导							      |	指定走上
-岗位							      |	中
-							      >	央领导岗位
-。								。
-INSERTIONS:	21
-DELETIONS:	16
-SUBSTITUTIONS:	63
-NCHANGE:	100
+中央							      <
+领导							      <
+岗位							      <
+。							      <
+INSERTIONS:	37
+DELETIONS:	44
+SUBSTITUTIONS:	47
+NCHANGE:	128
 NTRUTH:	134
-NTEST:	139
-TRUE WORDS RECALL:	0.410
-TEST WORDS PRECISION:	0.396
+NTEST:	127
+TRUE WORDS RECALL:	0.321
+TEST WORDS PRECISION:	0.339
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----1087
 我								我
 认为								认为
@@ -41857,48 +41842,48 @@ TEST WORDS PRECISION:	0.750
 奠基								奠基
 和								和
 开拓							      |	开拓方
-方面							      |	面有过
-有							      |	不
-过							      |	朽功劳的
-不朽							      |	人，
-功劳							      |	“是为
-的							      |	修
-人							      |	改?宪
-，							      <
-“							      <
-是							      <
-为							      <
-修改							      <
-?宪							      <
-草								草
-而							      |	而粉身碎骨”、“为
-粉身碎骨						      |	建立民主中国而奋
-”							      |	斗到
-、							      |	底”
-“							      |	（周
-为							      |	恩
-建立							      |	来语
-民主							      |	）的人
+方面							      |	面
+有								有
+过							      |	过不朽
+不朽							      |	功
+功劳							      |	劳的人，
+的							      |	“是
+人							      |	为修改
+，							      |	?
+“							      |	宪
+是							      |	草而粉
+为							      |	身
+修改							      |	碎骨”
+?宪							      |	、“为
+草							      |	建
+而							      |	立
+粉身碎骨						      |	民
+”							      |	主
+、							      |	中
+“							      |	国而奋斗
+为							      |	到
+建立							      |	底
+民主							      <
 中国							      <
 而							      <
 奋斗							      <
 到底							      <
-”							      <
-（							      <
-周恩来							      <
-语							      <
-）							      <
-的							      <
-人							      <
-。								。
+”								”
+（								（
+周恩来							      |	周
+语							      |	恩
+）							      |	来
+的							      |	语）
+人							      |	的人。
+。							      <
 INSERTIONS:	7
-DELETIONS:	22
-SUBSTITUTIONS:	27
-NCHANGE:	56
+DELETIONS:	11
+SUBSTITUTIONS:	37
+NCHANGE:	55
 NTRUTH:	107
-NTEST:	92
-TRUE WORDS RECALL:	0.542
-TEST WORDS PRECISION:	0.630
+NTEST:	103
+TRUE WORDS RECALL:	0.551
+TEST WORDS PRECISION:	0.573
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----1133
 我们								我们
 应当								应当
@@ -44197,18 +44182,18 @@ TEST WORDS PRECISION:	0.865
 实用性							      |	实用
 							      >	性
 和								和
-可								可
-操作							      |	操作性。
-性							      <
-。							      <
+可							      |	可操
+操作							      |	作
+性								性
+。								。
 INSERTIONS:	10
-DELETIONS:	2
-SUBSTITUTIONS:	11
-NCHANGE:	23
+DELETIONS:	0
+SUBSTITUTIONS:	12
+NCHANGE:	22
 NTRUTH:	61
-NTEST:	69
-TRUE WORDS RECALL:	0.787
-TEST WORDS PRECISION:	0.696
+NTEST:	71
+TRUE WORDS RECALL:	0.803
+TEST WORDS PRECISION:	0.690
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----1197
 中国农业大学						      |	中国
 							      >	农业
@@ -44278,23 +44263,23 @@ TEST WORDS PRECISION:	0.696
 方面								方面
 倾斜								倾斜
 ，								，
-还要							      |	还
-加大							      |	要加
-立法							      |	大立
-和							      |	法和执法
-执法							      |	工
-工作							      |	作的
-的							      |	力
-力度							      |	度
-。								。
+还要								还要
+加大								加大
+立法								立法
+和							      |	和执法工
+执法							      |	作
+工作							      <
+的								的
+力度							      |	力
+。							      |	度。
 INSERTIONS:	8
-DELETIONS:	2
-SUBSTITUTIONS:	16
-NCHANGE:	26
+DELETIONS:	3
+SUBSTITUTIONS:	12
+NCHANGE:	23
 NTRUTH:	69
-NTEST:	75
-TRUE WORDS RECALL:	0.739
-TEST WORDS PRECISION:	0.680
+NTEST:	74
+TRUE WORDS RECALL:	0.783
+TEST WORDS PRECISION:	0.730
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----1198
 他们								他们
 倡议								倡议
@@ -46738,29 +46723,32 @@ TEST WORDS PRECISION:	0.667
 人口							      |	人
 素质							      |	口素
 的							      |	质
-好							      |	的好路子
-路子							      |	；职工
-；							      |	医
-职工							      |	疗保障制
-医疗							      |	度
-保障							      <
-制度							      <
-改革								改革
-要								要
-积极							      |	积
+好							      |	的好路
+路子							      |	子
+；								；
+职工							      |	职
+医疗							      |	工
+保障							      |	医
+制度							      |	疗
+改革							      |	保
+要							      |	障制
+积极							      |	度改
+							      >	革要
+							      >	积
 							      >	极
 稳妥								稳妥
 地								地
-推进								推进
+推进							      |	推
+							      >	进
 。								。
-INSERTIONS:	7
-DELETIONS:	4
-SUBSTITUTIONS:	20
-NCHANGE:	31
+INSERTIONS:	10
+DELETIONS:	2
+SUBSTITUTIONS:	24
+NCHANGE:	36
 NTRUTH:	78
-NTEST:	81
-TRUE WORDS RECALL:	0.692
-TEST WORDS PRECISION:	0.667
+NTEST:	86
+TRUE WORDS RECALL:	0.667
+TEST WORDS PRECISION:	0.605
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----1273
 １月２５日						      |	１月２５日至２月１日
 至							      <
@@ -50041,23 +50029,23 @@ TEST WORDS PRECISION:	0.737
 ，								，
 对								对
 中华民族								中华民族
-传统								传统
-文化								文化
-全面							      |	全面总结，远
-总结							      |	迈历代。
-，							      <
-远							      <
+传统							      |	传统文化全
+文化							      |	面
+全面							      |	总结，
+总结							      |	远迈
+，							      |	历
+远							      |	代。
 迈							      <
 历代							      <
 。							      <
 INSERTIONS:	2
-DELETIONS:	9
-SUBSTITUTIONS:	10
-NCHANGE:	21
+DELETIONS:	7
+SUBSTITUTIONS:	14
+NCHANGE:	23
 NTRUTH:	83
-NTEST:	76
-TRUE WORDS RECALL:	0.771
-TEST WORDS PRECISION:	0.842
+NTEST:	78
+TRUE WORDS RECALL:	0.747
+TEST WORDS PRECISION:	0.795
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----1367
 当然								当然
 ，								，
@@ -53389,24 +53377,25 @@ TEST WORDS PRECISION:	0.643
 和								和
 带动								带动
 作用								作用
-，								，
-为							      |	为国
-国家							      |	家
+，							      |	，为
+为							      <
+国家								国家
 的								的
-现代化							      |	现代化做出更
-做出							      |	大贡
-更							      |	献。
-大							      <
-贡献							      <
-。							      <
-INSERTIONS:	1
-DELETIONS:	4
-SUBSTITUTIONS:	12
-NCHANGE:	17
+现代化								现代化
+做出							      |	做
+							      >	出
+更								更
+大								大
+贡献							      |	贡
+。							      |	献。
+INSERTIONS:	2
+DELETIONS:	2
+SUBSTITUTIONS:	11
+NCHANGE:	15
 NTRUTH:	68
-NTEST:	65
-TRUE WORDS RECALL:	0.765
-TEST WORDS PRECISION:	0.800
+NTEST:	68
+TRUE WORDS RECALL:	0.809
+TEST WORDS PRECISION:	0.809
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----1454
 １月１１日						      |	１月１１日至１７日
 至							      <
@@ -53508,26 +53497,24 @@ TEST WORDS PRECISION:	0.800
 听取								听取
 了								了
 关于								关于
-社区							      |	社
-建设							      |	区建
-情况							      |	设情况
-的							      |	的介绍
-介绍							      <
-，								，
-参观								参观
-了							      |	了青少年
-青少年活动中心					      |	活
-							      >	动
-							      >	中心
-。								。
-INSERTIONS:	15
+社区							      |	社区建设情
+建设							      |	况
+情况							      <
+的								的
+介绍							      |	介
+，							      |	绍，参观
+参观							      |	了青少年
+了							      |	活动
+青少年活动中心					      |	中
+。							      |	心。
+INSERTIONS:	13
 DELETIONS:	2
-SUBSTITUTIONS:	15
+SUBSTITUTIONS:	17
 NCHANGE:	32
 NTRUTH:	65
-NTEST:	78
-TRUE WORDS RECALL:	0.738
-TEST WORDS PRECISION:	0.615
+NTEST:	76
+TRUE WORDS RECALL:	0.708
+TEST WORDS PRECISION:	0.605
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----1456
 去年								去年
 ，								，
@@ -54107,35 +54094,36 @@ TEST WORDS PRECISION:	0.843
 综合								综合
 配套								配套
 比较							      |	比
-好							      |	较好，工作比较扎实，年年
-，							      <
-工作							      <
-比较							      <
-扎实							      <
-，							      <
-年年							      <
-有								有
-重点							      |	重
-，							      |	点
-年年							      |	，年
+好							      |	较好
+，								，
+工作							      |	工作比
+比较							      |	较
+扎实								扎实
+，								，
+年年								年年
+							      >	有重点
+							      >	，年
 							      >	年
 有								有
-进步							      |	进
-							      >	步
-，								，
-这是								这是
-值得							      |	值得发扬
+重点							      |	进步，这
+，							      |	是值
+年年							      |	得
+有							      |	发扬的
+进步							      <
+，							      <
+这是							      <
+值得							      <
 发扬							      <
-的								的
+的							      <
 。								。
-INSERTIONS:	6
-DELETIONS:	7
-SUBSTITUTIONS:	15
-NCHANGE:	28
+INSERTIONS:	7
+DELETIONS:	6
+SUBSTITUTIONS:	16
+NCHANGE:	29
 NTRUTH:	89
-NTEST:	88
+NTEST:	90
 TRUE WORDS RECALL:	0.753
-TEST WORDS PRECISION:	0.761
+TEST WORDS PRECISION:	0.744
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----1468
 （							      |	（ａ、ｂ
 ａ							      <
@@ -55163,26 +55151,26 @@ TEST WORDS PRECISION:	0.739
 到								到
 ４１０公斤							４１０公斤
 ，								，
-在							      |	在贵
-贵州							      |	州极
-极							      |	贫的“
-贫							      <
-的							      <
+在							      |	在贵州极
+贵州							      <
+极							      <
+贫								贫
+的							      |	的“两
 “							      <
-两								两
-山							      |	山”
-”							      |	地
-地区							      |	区（麻山、
-（							      <
-麻山							      <
+两							      <
+山								山
+”							      |	”地区（
+地区							      |	麻
+（							      |	山、瑶
+麻山							      |	山）
 、							      <
-瑶山								瑶山
-）							      |	）中
-中							      <
-率先								率先
-摆脱							      |	摆脱了
-了							      |	贫
-贫困							      |	困。
+瑶山							      <
+）							      <
+中								中
+率先							      |	率
+摆脱							      |	先摆
+了							      |	脱了
+贫困							      |	贫困。
 。							      <
 INSERTIONS:	2
 DELETIONS:	18
@@ -56673,19 +56661,19 @@ TEST WORDS PRECISION:	0.844
 领导班子							领导班子
 和								和
 经营								经营
-管理								管理
-者								者
-队伍							      |	队
-建设							      |	伍建设
+管理							      |	管
+者							      |	理者队伍
+队伍							      <
+建设								建设
 。								。
 INSERTIONS:	3
-DELETIONS:	0
+DELETIONS:	1
 SUBSTITUTIONS:	5
-NCHANGE:	8
+NCHANGE:	9
 NTRUTH:	72
-NTEST:	75
-TRUE WORDS RECALL:	0.931
-TEST WORDS PRECISION:	0.893
+NTEST:	74
+TRUE WORDS RECALL:	0.917
+TEST WORDS PRECISION:	0.892
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----1540
 在								在
 加强								加强
@@ -57604,39 +57592,37 @@ TEST WORDS PRECISION:	0.925
 ，								，
 为								为
 国家								国家
-一级							      |	一
-干线							      |	级
-（							      |	干
-单线							      |	线（单
-）							      |	线），
-，							      |	一
-一次							      |	次建
-建成							      |	成电
-电气化							      |	气
-，							      |	化，年输
-年							      |	送能力
-输送							      <
-能力							      <
-近期								近期
-１０００万吨						      |	１
-，							      |	０
-远期							      |	００
-２０００-３０００万吨					      |	万吨，远
-							      >	期
-							      >	２０００
-							      >	-
-							      >	３
-							      >	００
-							      >	０万吨
+一级								一级
+干线							      |	干
+							      >	线
+（								（
+单线								单线
+）								）
+，							      |	，一次建成电
+一次							      |	气
+建成							      |	化
+电气化							      <
+，								，
+年								年
+输送								输送
+能力							      |	能力近期１０００
+近期							      |	万吨，
+１０００万吨						      <
+，							      <
+远期								远期
+２０００-３０００万吨					      |	２０００
+							      >	-３
+							      >	０
+							      >	００万吨
 。								。
-INSERTIONS:	7
-DELETIONS:	9
-SUBSTITUTIONS:	25
-NCHANGE:	41
+INSERTIONS:	5
+DELETIONS:	10
+SUBSTITUTIONS:	17
+NCHANGE:	32
 NTRUTH:	89
-NTEST:	87
-TRUE WORDS RECALL:	0.618
-TEST WORDS PRECISION:	0.632
+NTEST:	84
+TRUE WORDS RECALL:	0.697
+TEST WORDS PRECISION:	0.738
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----1561
 南昆铁路							      |	南昆
 所							      |	铁路
@@ -58096,52 +58082,52 @@ TEST WORDS PRECISION:	0.800
 海岸								海岸
 、								、
 交通								交通
-发达							      |	发达的华南
-的							      |	地
-华南							      |	区连
-地区							      |	接
-连接							      |	起来，
-起来							      |	形
-，							      |	成“背靠
+发达								发达
+的								的
+华南							      |	华南地
+地区							      |	区连
+连接							      |	接
+起来								起来
+，							      |	，形成
 形成							      <
-“							      <
-背靠							      <
+“								“
+背靠							      |	背
+							      >	靠
 大								大
 西南								西南
 ，								，
-面向							      |	面
-东南亚							      |	向东
-							      >	南亚
-”								”
-的								的
-格局							      |	格
-，							      |	局，为
-为							      |	大西南的资源
-大							      |	开
-西南							      |	发
-的							      |	和从根本上改
-资源							      |	变贫困
-开发							      |	落后面貌
-和							      |	起到
+面向								面向
+东南亚							      |	东南
+”							      |	亚
+的							      |	”的格
+格局							      |	局
+，								，
+为								为
+大								大
+西南							      |	西
+的							      |	南的资源开
+资源							      |	发
+开发							      |	和从根本
+和							      |	上
 从							      <
 根本上							      <
-改变							      <
-贫困							      <
-落后							      <
-面貌							      <
+改变								改变
+贫困							      |	贫困落
+落后							      |	后面貌起到
+面貌							      |	促进作用
 起							      <
 到							      <
-促进								促进
-作用								作用
+促进							      <
+作用							      <
 。								。
 INSERTIONS:	3
-DELETIONS:	13
-SUBSTITUTIONS:	25
-NCHANGE:	41
+DELETIONS:	9
+SUBSTITUTIONS:	24
+NCHANGE:	36
 NTRUTH:	104
-NTEST:	94
-TRUE WORDS RECALL:	0.635
-TEST WORDS PRECISION:	0.702
+NTEST:	98
+TRUE WORDS RECALL:	0.683
+TEST WORDS PRECISION:	0.724
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----1571
 南昆铁路							      |	南昆
 							      >	铁路
@@ -58228,29 +58214,27 @@ TEST WORDS PRECISION:	0.778
 邹家华							      |	邹家
 副总理							      |	华
 多次							      |	副
-参加							      |	总理
-铁路							      |	多
-							      >	次
-							      >	参加铁路
-建设								建设
-领导							      |	领
-							      >	导
-小组								小组
-会议							      |	会
-，							      |	议
-协调							      |	，协调解
-解决							      |	决重
-重大							      |	大
-问题								问题
-。								。
-INSERTIONS:	5
-DELETIONS:	2
-SUBSTITUTIONS:	23
+参加							      |	总理多次参
+							      >	加
+铁路								铁路
+建设							      |	建
+领导							      |	设领
+小组							      |	导小组会
+会议							      |	议
+，								，
+协调							      |	协
+解决							      |	调
+重大							      |	解决重
+问题							      |	大问题。
+。							      <
+INSERTIONS:	3
+DELETIONS:	3
+SUBSTITUTIONS:	24
 NCHANGE:	30
 NTRUTH:	68
-NTEST:	71
-TRUE WORDS RECALL:	0.632
-TEST WORDS PRECISION:	0.606
+NTEST:	68
+TRUE WORDS RECALL:	0.603
+TEST WORDS PRECISION:	0.603
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----1573
 南昆铁路							      |	南昆
 东							      |	铁路
@@ -58446,21 +58430,21 @@ TEST WORDS PRECISION:	0.605
 了								了
 异地								异地
 安置								安置
-扶贫							      |	扶
-点							      |	贫点的
-的							      |	壮
-壮族							      |	族村民
+扶贫								扶贫
+点							      |	点的壮族村民家
+的							      |	庭
+壮族							      <
 村民							      <
-家庭								家庭
+家庭							      <
 。								。
 INSERTIONS:	10
-DELETIONS:	2
-SUBSTITUTIONS:	12
+DELETIONS:	4
+SUBSTITUTIONS:	10
 NCHANGE:	24
 NTRUTH:	57
-NTEST:	65
+NTEST:	63
 TRUE WORDS RECALL:	0.754
-TEST WORDS PRECISION:	0.662
+TEST WORDS PRECISION:	0.683
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----1577
 图片								图片
 ：								：
@@ -58800,24 +58784,24 @@ TEST WORDS PRECISION:	0.333
 							      >	性
 、								、
 操作								操作
-性							      |	性，
-，							      <
-是								是
-一个								一个
-重要							      |	重
-的							      |	要的
-指导							      |	指导性文
-性							      |	件
+性							      |	性，是
+，							      |	一
+是							      |	个重要
+一个							      <
+重要							      <
+的								的
+指导							      |	指
+性							      |	导性文件
 文件							      <
 。								。
 INSERTIONS:	7
-DELETIONS:	6
+DELETIONS:	7
 SUBSTITUTIONS:	16
-NCHANGE:	29
+NCHANGE:	30
 NTRUTH:	86
-NTEST:	87
-TRUE WORDS RECALL:	0.744
-TEST WORDS PRECISION:	0.736
+NTEST:	86
+TRUE WORDS RECALL:	0.733
+TEST WORDS PRECISION:	0.733
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----1588
 中组部							      |	中
 							      >	组部
@@ -59156,23 +59140,24 @@ TEST WORDS PRECISION:	0.778
 大							      |	较大
 、								、
 内部矛盾							      |	内
-和							      |	部矛盾
-问题							      |	和问
+和							      |	部
+问题							      |	矛
+比较							      |	盾
+多							      |	和问
 							      >	题
-比较								比较
-多								多
+							      >	比较多
 的								的
 企业								企业
-领导班子						      |	领导班子。
-。							      <
-INSERTIONS:	4
-DELETIONS:	3
-SUBSTITUTIONS:	11
-NCHANGE:	18
+领导班子						      |	领导班
+。							      |	子。
+INSERTIONS:	5
+DELETIONS:	2
+SUBSTITUTIONS:	14
+NCHANGE:	21
 NTRUTH:	78
-NTEST:	79
-TRUE WORDS RECALL:	0.821
-TEST WORDS PRECISION:	0.810
+NTEST:	81
+TRUE WORDS RECALL:	0.795
+TEST WORDS PRECISION:	0.765
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----1596
 要								要
 在								在
@@ -59313,17 +59298,17 @@ TEST WORDS PRECISION:	1.000
 坚决								坚决
 查处								查处
 ，								，
-决不							      |	决不姑
-姑息							      |	息
+决不							      |	决不姑息
+姑息							      <
 。								。
 INSERTIONS:	4
-DELETIONS:	2
-SUBSTITUTIONS:	9
+DELETIONS:	3
+SUBSTITUTIONS:	8
 NCHANGE:	15
 NTRUTH:	71
-NTEST:	73
+NTEST:	72
 TRUE WORDS RECALL:	0.845
-TEST WORDS PRECISION:	0.822
+TEST WORDS PRECISION:	0.833
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----1599
 张全景							      |	张
 							      >	全景
@@ -60330,77 +60315,60 @@ TEST WORDS PRECISION:	0.923
 量								量
 分别								分别
 达到								达到
-１５００万羽						      |	１５００万羽和
-							      >	１万
-							      >	羽
-							      >	，
-							      >	甲
-							      >	鱼
-							      >	特
-							      >	种
-							      >	水产养
-							      >	殖
-							      >	面
-							      >	积达到３０
-							      >	０
-							      >	０亩
-							      >	，
-							      >	以商
-							      >	品肉牛、山羊为
-							      >	主的
-							      >	草
-							      >	食畜牧
-							      >	分
-							      >	别
-							      >	为２.
-							      >	３
-							      >	３万头
-和								和
-１万羽							      |	１
-，							      |	万头，
-甲鱼							      <
-特种							      <
-水产							      <
-养殖							      <
-面积							      <
+１５００万羽						      |	１５００万
+和							      |	羽
+１万羽							      |	和１
+，							      |	万羽
+甲鱼							      |	，甲鱼特种水产养
+特种							      |	殖面
+水产							      |	积
+养殖							      |	达
+面积							      |	到３０００亩，
 达到							      <
 ３０００亩						      <
 ，							      <
 以								以
-商品							      |	毛
-肉牛							      |	竹
+商品							      |	商
+肉牛							      |	品肉
+、							      |	牛、
+山羊								山羊
+为主								为主
+的							      |	的草
+草食							      |	食
+畜牧							      |	畜
+分别							      |	牧
+为							      |	分
+２.３３万头						      |	别
+							      >	为２.
+							      >	３
+							      >	３万头
+和								和
+１万头							      |	１
+，							      |	万
+以							      |	头，以
+毛竹								毛竹
 、								、
-山羊							      |	白
-为主							      |	杨
-的							      <
-草食							      <
-畜牧							      <
-分别							      <
-为								为
-２.３３万头						      |	主的
-和							      |	特
-１万头							      |	色林
-，							      <
-以							      <
-毛竹							      <
-、							      <
-白杨							      <
-为主							      <
-的							      <
-特色							      <
+白杨								白杨
+为主							      |	为
+							      >	主
+的								的
+特色							      |	特色林竹
 林							      <
-竹								竹
-达							      |	达１５０万
-１５０万亩						      |	亩。
-。							      <
-INSERTIONS:	27
-DELETIONS:	28
-SUBSTITUTIONS:	25
-NCHANGE:	80
+竹							      <
+达								达
+１５０万亩						      |	１
+							      >	５
+							      >	０
+							      >	万亩
+。								。
+INSERTIONS:	10
+DELETIONS:	11
+SUBSTITUTIONS:	37
+NCHANGE:	58
 NTRUTH:	88
 NTEST:	87
-TRUE WORDS RECALL:	0.398
-TEST WORDS PRECISION:	0.402
+TRUE WORDS RECALL:	0.455
+TEST WORDS PRECISION:	0.460
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----1620
 抚州								抚州
 地区								地区
@@ -60457,59 +60425,51 @@ TEST WORDS PRECISION:	0.402
 优质								优质
 瘦肉							      |	瘦
 型							      |	肉型
-猪							      |	猪，崇仁
-，							      |	县河堤乡
-崇仁县							      |	的５００
-河堤乡						      |	万
-的							      <
-５００万						      <
-麻								麻
-鸡								鸡
-饲养							      |	饲养，黎川县
-，							      <
-黎川县							      <
-的							      <
-鳗鱼							      <
-养殖							      <
-，							      <
-宜黄县							      <
-二都乡							      <
-的								的
-３万亩							      |	鳗鱼养
-丰产							      |	殖，
-毛竹							      |	宜黄
-							      >	县二
-							      >	都乡的
-							      >	３
-							      >	万亩
-							      >	丰产毛竹
+猪								猪
 ，								，
-资溪高阜镇						      |	资
-							      >	溪高阜
-							      >	镇
+崇仁县							      |	崇仁
+河堤乡						      |	县河堤乡
 的								的
-万亩							      |	万
-							      >	亩
-毛竹								毛竹
+５００万						      |	５００
+麻							      |	万麻
+鸡							      |	鸡饲
+饲养							      |	养
+，							      |	，黎川县的鳗鱼养
+黎川县							      |	殖，
+的							      |	宜
+鳗鱼							      |	黄
+养殖							      |	县
+，							      |	二
+宜黄县							      |	都乡
+二都乡							      |	的３万
+的							      |	亩丰产
+３万亩							      |	毛
+丰产							      |	竹
+毛竹							      |	，资溪高阜镇
+，							      |	的万
+资溪高阜镇						      |	亩毛竹
+的							      <
+万亩							      <
+毛竹							      <
 低								低
 改							      |	改，崇
-，							      |	仁县的
-崇仁县							      |	８
-的							      |	００
-８０００亩						      |	０亩
-白杨							      |	白杨等
-等							      |	十大样板
-十大							      |	工
-样板							      |	程
-工程							      <
+，							      |	仁
+崇仁县							      |	县
+的								的
+８０００亩						      |	８０００亩白杨等
+白杨							      <
+等							      <
+十大								十大
+样板							      |	样
+工程							      |	板工程
 。								。
-INSERTIONS:	12
-DELETIONS:	12
-SUBSTITUTIONS:	31
-NCHANGE:	55
+INSERTIONS:	4
+DELETIONS:	6
+SUBSTITUTIONS:	38
+NCHANGE:	48
 NTRUTH:	89
-NTEST:	89
-TRUE WORDS RECALL:	0.517
+NTEST:	87
+TRUE WORDS RECALL:	0.506
 TEST WORDS PRECISION:	0.517
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----1621
 在								在
@@ -60688,54 +60648,60 @@ TEST WORDS PRECISION:	0.882
 鲜果								鲜果
 ５００万公斤							５００万公斤
 ；								；
-以							      |	以茶鲜
-茶							      |	菇为
-鲜							      |	主
-菇							      <
-为主							      <
-的								的
-食用菌							      |	食
-加工							      |	用菌加工企业
-企业							      |	广昌县食
+以							      |	以茶鲜菇
+茶							      |	为主的食用菌
+鲜							      |	加
+菇							      |	工
+为主							      |	企
+的							      |	业
+食用菌							      |	广
+加工							      |	昌县
+企业							      |	食
 广昌县食用菌开发集团					      |	用
-，							      |	菌开发
-联系							      |	集团，联系农户
-农户							      |	３
-３０００多户						      |	００
-，							      |	０
-年产							      |	多
-茶							      |	户
-鲜							      |	，年
-菇							      |	产茶鲜菇７００
-７００万袋						      |	万袋，实
-，							      |	现产
-实现							      |	值
-产值							      |	３０
-３０００多万元						      |	０
-，							      |	０
-创							      |	多万元，创利
-利税							      |	税
-１３００多万元						      |	１３００
-							      >	多
+，							      |	菌
+							      >	开发集团，
+联系								联系
+农户							      |	农
+３０００多户						      |	户
+，							      |	３００
+年产							      |	０多户，
+茶							      |	年
+鲜							      |	产
+菇							      |	茶鲜
+７００万袋						      |	菇７
+							      >	０
+							      >	０
 							      >	万
-							      >	元
+							      >	袋
 ，								，
+实现								实现
+产值							      |	产值３００
+３０００多万元						      |	０多
+，							      |	万
+创							      |	元，创
+利税							      |	利
+１３００多万元						      |	税
+，							      |	１３０
+							      >	０
+							      >	多万元，
 平均								平均
-每							      |	每户
-户							      |	农民纯
-农民							      |	收入增
-纯收入							      |	加４１
-增加							      |	４
-４１４０元						      |	０元
+每								每
+户								户
+农民							      |	农
+纯收入							      |	民纯收
+增加							      |	入
+４１４０元						      |	增加４
+							      >	１
+							      >	４０元
 。								。
-INSERTIONS:	7
-DELETIONS:	7
-SUBSTITUTIONS:	43
-NCHANGE:	57
+INSERTIONS:	13
+DELETIONS:	5
+SUBSTITUTIONS:	42
+NCHANGE:	60
 NTRUTH:	91
-NTEST:	91
-TRUE WORDS RECALL:	0.451
-TEST WORDS PRECISION:	0.451
+NTEST:	99
+TRUE WORDS RECALL:	0.484
+TEST WORDS PRECISION:	0.444
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----1624
 用							      |	用真
 真诚							      |	诚换
@@ -60782,17 +60748,17 @@ TEST WORDS PRECISION:	0.600
 							      >	石家庄分行
 							      >	第二营业部
 的								的
-复核							      |	复核员
-员							      <
+复核							      |	复
+员							      |	核员
 。								。
 INSERTIONS:	4
-DELETIONS:	1
-SUBSTITUTIONS:	4
+DELETIONS:	0
+SUBSTITUTIONS:	5
 NCHANGE:	9
 NTRUTH:	9
-NTEST:	12
+NTEST:	13
 TRUE WORDS RECALL:	0.444
-TEST WORDS PRECISION:	0.333
+TEST WORDS PRECISION:	0.308
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----1627
 每天								每天
 她								她
@@ -65346,89 +65312,97 @@ TEST WORDS PRECISION:	0.889
 建设								建设
 带来								带来
 了								了
-新							      |	新的活
-的							      |	力；
-活力							      |	电
-；							      |	子信
-电子							      |	息技术
+新								新
+的								的
+活力								活力
+；							      |	；电
+电子							      |	子信息技术
+信息							      |	与产品
+技术							      |	的自主开发
+与							      |	、推
+产品							      |	广应用
+的							      |	和信
+自主							      |	息
+开发							      |	应
+、							      |	用
+推广应用						      <
+和							      <
 信息							      <
-技术							      <
-与								与
-产品							      |	产
-的							      |	品
-自主							      |	的自主开
-开发							      |	发、
-、							      |	推广
-推广应用						      |	应
-和							      |	用和
-信息							      |	信
-应用							      |	息
-系统							      |	应
-建设							      |	用系
-，							      |	统建设，取得了显著成
-取得							      |	绩；
+应用							      <
+系统								系统
+建设							      |	建
+，							      |	设
+取得							      <
 了							      <
 显著							      <
 成绩							      <
 ；							      <
-一								一
-支							      |	支具
-具有							      |	有相
-相当							      |	当规
-规模							      |	模，
-，							      |	从
-从事							      |	事
-专业								专业
-科研							      |	科研开
-开发							      |	发
-、							      |	、生
-生产							      |	产
-制造							      |	制
-和							      |	造
-应用							      |	和应
-服务							      |	用
-							      >	服
-							      >	务
+一							      <
+支							      <
+具有							      <
+相当							      <
+规模							      <
+，								，
+							      >	取得了
+							      >	显
+							      >	著成
+							      >	绩
+							      >	；一
+							      >	支具有
+							      >	相
+							      >	当
+							      >	规
+							      >	模，
+从事								从事
+专业							      |	专
+							      >	业
+科研								科研
+开发							      |	开发、生产制造
+、							      <
+生产							      <
+制造							      <
+和								和
+应用							      |	应
+服务							      |	用服务
 的								的
-信息化							      |	信
-							      >	息化
-人才								人才
-队伍							      |	队
-，							      |	伍
-初步							      |	，初步
-形成							      |	形
-；							      |	成；
-各级							      |	各
-领导							      |	级领
-							      >	导
-机构								机构
-逐步								逐步
-健全							      |	健
-，							      |	全
-信息化							      |	，信息化工作开
-工作							      |	始
-开始							      |	走
-走上							      |	上
-了								了
-有							      |	有领
-领导							      |	导
-、							      |	、有组
-有							      |	织、有
-组织							      |	计划的
+信息化							      |	信息化人才
+人才							      |	队伍，
+队伍							      |	初
+，							      |	步
+初步							      <
+形成								形成
+；							      |	；各级领导
+各级							      |	机构逐步
+领导							      <
+机构							      <
+逐步							      <
+健全								健全
+，							      |	，信
+信息化							      |	息化
+工作								工作
+开始								开始
+走上							      |	走上了有领导
+了							      |	、有
+有							      |	组
+领导							      |	织
+、							      |	、有计划
+有							      <
+组织							      <
 、							      <
 有							      <
 计划							      <
-的							      <
-轨道								轨道
+的								的
+轨道							      |	轨
+							      >	道
 。								。
-INSERTIONS:	10
-DELETIONS:	13
-SUBSTITUTIONS:	61
-NCHANGE:	84
+INSERTIONS:	18
+DELETIONS:	29
+SUBSTITUTIONS:	40
+NCHANGE:	87
 NTRUTH:	145
-NTEST:	142
-TRUE WORDS RECALL:	0.490
-TEST WORDS PRECISION:	0.500
+NTEST:	134
+TRUE WORDS RECALL:	0.524
+TEST WORDS PRECISION:	0.567
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----1769
 从								从
 总体								总体
@@ -65560,44 +65534,38 @@ TEST WORDS PRECISION:	0.800
 的								的
 能力								能力
 ，								，
-有待								有待
-进一步							      |	进
-							      >	一
-							      >	步
-提高								提高
-；							      |	；有关信
-有关							      |	息化的政策
-信息化							      <
-的							      <
-政策							      <
-、								、
-法规							      |	法规，
-，							      <
-还								还
-不尽							      |	不
-							      >	尽
-完善								完善
+有待							      |	有待进一步
+进一步							      |	提
+提高							      |	高
 ；								；
-投入							      |	投
-信息化							      |	入
-建设							      |	信
-的							      |	息
-资金							      |	化
-							      >	建
-							      >	设的资
-							      >	金
-有限								有限
-，							      |	，等
-等等							      |	等。
-。							      <
-INSERTIONS:	10
-DELETIONS:	6
-SUBSTITUTIONS:	20
-NCHANGE:	36
+有关							      |	有关信息
+信息化							      |	化
+的								的
+政策							      |	政
+、							      |	策、法
+法规							      |	规
+，							      |	，
+还							      |	还不尽完善
+不尽							      |	；投入信息化
+完善							      |	建设的
+；							      |	资
+投入							      |	金有限
+信息化							      |	，等等
+建设							      <
+的							      <
+资金							      <
+有限							      <
+，							      <
+等等							      <
+。								。
+INSERTIONS:	4
+DELETIONS:	7
+SUBSTITUTIONS:	23
+NCHANGE:	34
 NTRUTH:	93
-NTEST:	97
-TRUE WORDS RECALL:	0.720
-TEST WORDS PRECISION:	0.691
+NTEST:	90
+TRUE WORDS RECALL:	0.677
+TEST WORDS PRECISION:	0.700
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----1772
 这些								这些
 问题								问题
@@ -66496,22 +66464,25 @@ TEST WORDS PRECISION:	0.733
 							      >	４％
 ；								；
 农民								农民
-人均								人均
-纯收入								纯收入
-达到							      |	达到１
-１７６０元						      |	７６０
-，							      |	元，增长
-增长							      |	２７.
-２７.４％						      |	４％
-。								。
-INSERTIONS:	5
+人均							      |	人
+纯收入							      |	均
+达到							      |	纯
+１７６０元						      |	收入达到
+，							      |	１
+							      >	７
+							      >	６
+							      >	０元，
+增长								增长
+２７.４％						      |	２７.４
+。							      |	％。
+INSERTIONS:	8
 DELETIONS:	1
-SUBSTITUTIONS:	15
-NCHANGE:	21
+SUBSTITUTIONS:	17
+NCHANGE:	26
 NTRUTH:	62
-NTEST:	66
-TRUE WORDS RECALL:	0.742
-TEST WORDS PRECISION:	0.697
+NTEST:	69
+TRUE WORDS RECALL:	0.710
+TEST WORDS PRECISION:	0.638
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----1795
 全市								全市
 涌现								涌现
@@ -67521,68 +67492,68 @@ TEST WORDS PRECISION:	0.611
 国力								国力
 、								、
 巩固								巩固
-工农联盟							      |	工农联盟和
-和							      <
-保障								保障
-社会							      |	社
+工农联盟							      |	工农
+							      >	联盟
+和								和
+保障							      |	保
+社会							      |	障社
 稳定							      |	会
 等							      |	稳
-方面							      |	定
-发挥							      |	等方
-了							      |	面
-							      >	发
-							      >	挥了
-重要								重要
-作用								作用
-；							      |	；为
+方面							      |	定等方面发挥了
+发挥							      |	重
+了							      |	要
+重要							      |	作用；为
+作用							      |	在我
+；							      |	们
 为							      <
-在								在
-我们								我们
+在							      <
+我们							      <
 这样								这样
 一个							      |	一个农
 农民							      |	民
-占								占
-绝大多数						      |	绝大
-							      >	多
+占							      |	占绝
+绝大多数						      |	大多
 							      >	数
 的								的
-农业							      |	农
-大国							      |	业大
+农业								农业
+大国							      |	大
 解决							      |	国解
-好							      |	决
-农业							      |	好农业、农村、
-、							      |	农民问题
-农村							      <
-、							      <
-农民							      <
-问题							      <
-，								，
-促进							      |	促进经
-经济体制						      |	济体制改革
-改革							      <
+							      >	决
+好								好
+农业							      |	农
+							      >	业、农村
 、								、
-国民经济						      |	国
-和							      |	民
-社会							      |	经济
-发展							      |	和社会发展，探
-，							      |	索出了一条成
-探索							      |	功
-出							      |	之路
-了							      <
-一							      <
+农村							      |	农
+、							      |	民
+农民							      |	问
+问题							      |	题，
+，							      <
+促进								促进
+经济体制						      |	经济体
+改革							      |	制
+、							      |	改革、国
+国民经济						      |	民经济
+和							      |	和社会
+社会							      <
+发展								发展
+，								，
+探索							      |	探索出
+出							      |	了一
+了							      |	条成功之
+一							      |	路。
 条							      <
 成功							      <
 之							      <
 路							      <
-。								。
+。							      <
 INSERTIONS:	9
-DELETIONS:	15
-SUBSTITUTIONS:	34
-NCHANGE:	58
+DELETIONS:	12
+SUBSTITUTIONS:	39
+NCHANGE:	60
 NTRUTH:	114
-NTEST:	108
-TRUE WORDS RECALL:	0.570
-TEST WORDS PRECISION:	0.602
+NTEST:	111
+TRUE WORDS RECALL:	0.553
+TEST WORDS PRECISION:	0.568
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----1823
 发展								发展
 乡镇企业						      |	乡镇
@@ -67710,25 +67681,26 @@ TEST WORDS PRECISION:	0.727
 方式								方式
 的								的
 转变								转变
-，							      |	，努力
-努力							      <
-提高								提高
-经济							      |	经济运行
-运行							      |	的质
-的							      |	量
-质量							      <
-和								和
-效益							      |	效
-							      >	益
-。								。
-INSERTIONS:	7
+，								，
+努力							      |	努
+提高							      |	力
+							      >	提
+							      >	高
+经济								经济
+运行							      |	运
+的							      |	行的质量和
+质量							      |	效
+和							      |	益。
+效益							      <
+。							      <
+INSERTIONS:	8
 DELETIONS:	4
-SUBSTITUTIONS:	14
-NCHANGE:	25
+SUBSTITUTIONS:	15
+NCHANGE:	27
 NTRUTH:	69
-NTEST:	72
-TRUE WORDS RECALL:	0.739
-TEST WORDS PRECISION:	0.708
+NTEST:	73
+TRUE WORDS RECALL:	0.725
+TEST WORDS PRECISION:	0.685
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----1826
 要								要
 适应								适应
@@ -67802,42 +67774,43 @@ TEST WORDS PRECISION:	0.708
 机制								机制
 ，								，
 调动							      |	调
-所有者							      |	动所
-、							      |	有
-经营者							      |	者、
-、							      |	经营者、
-生产者							      |	生
-的							      |	产
-积极性							      |	者的
-							      >	积
-							      >	极性
-和								和
-创造性							      |	创造
-，							      |	性
-增强							      |	，增
-企业							      |	强
-的							      |	企业的生
-生机							      |	机
-和							      |	和活力，
-活力							      |	提高企
-，							      |	业
-提高							      <
-企业							      <
-的								的
-经济效益							      |	经济效
-和							      |	益
-竞争							      |	和竞争
-能力							      |	能
-							      >	力
-。								。
-INSERTIONS:	10
-DELETIONS:	2
-SUBSTITUTIONS:	30
-NCHANGE:	42
+所有者							      |	动
+、							      |	所
+经营者							      |	有
+							      >	者
+、								、
+生产者							      |	经
+的							      |	营者
+积极性							      |	、生产者的积极性
+和							      |	和创造性
+创造性							      <
+，								，
+增强								增强
+企业							      |	企业的
+的							      |	生
+生机							      |	机和
+和							      |	活
+活力							      |	力
+，							      |	，
+提高							      |	提
+企业							      |	高
+的							      |	企
+经济效益							      |	业的
+和							      |	经
+竞争							      |	济
+能力							      |	效
+。							      |	益
+							      >	和竞争
+							      >	能
+							      >	力。
+INSERTIONS:	11
+DELETIONS:	1
+SUBSTITUTIONS:	31
+NCHANGE:	43
 NTRUTH:	90
-NTEST:	98
+NTEST:	100
 TRUE WORDS RECALL:	0.644
-TEST WORDS PRECISION:	0.592
+TEST WORDS PRECISION:	0.580
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----1827
 要								要
 正确								正确
@@ -69454,39 +69427,36 @@ TEST WORDS PRECISION:	0.773
 其中							      |	其
 预算内							      |	中
 国有							      |	预算
-							      >	内国
-							      >	有
-企业								企业
-实现							      |	实现利
-利润							      |	润
-							      >	列全国
-							      >	第九
+企业							      |	内国
+实现							      |	有
+利润							      |	企业实
+							      >	现
+							      >	利
+							      >	润
+列								列
+全国								全国
+第九位							      |	第
+							      >	九
 							      >	位
-							      >	，
-							      >	效
-							      >	益盈
-							      >	亏
-							      >	相
-							      >	抵
+，								，
+效益							      |	效益盈亏相
+盈亏							      |	抵
+相抵							      <
 列								列
 全国							      |	全
-第九位							      |	国
-，							      |	第十
-效益							      |	一
-盈亏							      |	位
-相抵							      <
-列							      <
-全国							      <
-第十一位						      <
+第十一位						      |	国第
+							      >	十
+							      >	一
+							      >	位
 。								。
-INSERTIONS:	14
-DELETIONS:	12
-SUBSTITUTIONS:	23
-NCHANGE:	49
+INSERTIONS:	11
+DELETIONS:	9
+SUBSTITUTIONS:	24
+NCHANGE:	44
 NTRUTH:	74
 NTEST:	76
-TRUE WORDS RECALL:	0.527
-TEST WORDS PRECISION:	0.513
+TRUE WORDS RECALL:	0.554
+TEST WORDS PRECISION:	0.539
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----1865
 把								把
 乡镇企业						      |	乡镇
@@ -69619,16 +69589,16 @@ TEST WORDS PRECISION:	0.800
 ，								，
 总产值								总产值
 达到								达到
-８８５亿元						      |	８８５亿
-。							      |	元。
+８８５亿元							８８５亿元
+。								。
 INSERTIONS:	2
 DELETIONS:	3
-SUBSTITUTIONS:	18
-NCHANGE:	23
+SUBSTITUTIONS:	16
+NCHANGE:	21
 NTRUTH:	55
 NTEST:	54
-TRUE WORDS RECALL:	0.618
-TEST WORDS PRECISION:	0.630
+TRUE WORDS RECALL:	0.655
+TEST WORDS PRECISION:	0.667
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----1869
 国务院办公厅						      |	国务
 							      >	院办
@@ -70576,48 +70546,47 @@ TEST WORDS PRECISION:	0.900
 、							      |	贸、供
 供销							      |	销
 等								等
-部门							      |	部
-							      >	门
-，								，
-要								要
-积极							      |	积
-组织							      |	极组
-货源							      |	织货
-，							      |	源，
-做好							      |	做
-有关							      |	好有关设
-设备							      |	备
-、								、
-物资							      |	物资、
-、							      |	电力及
+部门								部门
+，							      |	，要
+要							      |	积
+积极							      |	极组织
+组织							      |	货源，
+货源							      <
+，							      <
+做好								做好
+有关								有关
+设备							      |	设
+、							      |	备、物资、电
+物资							      |	力及
+、							      <
 电力							      <
 及							      <
 农业								农业
-生产资料							      |	生产资料的供应工作；新
-的							      |	闻
-供应							      |	单位要进一步做
-工作							      |	好抗旱双保工作的
-；							      |	宣
-新闻							      |	传
-单位							      |	报
-要							      |	道
-进一步							      <
-做好							      <
-抗旱							      <
-双保							      <
-工作							      <
-的							      <
-宣传							      <
-报道							      <
+生产资料							      |	生产
+的							      |	资
+供应							      |	料
+工作							      |	的供应
+；							      |	工
+新闻							      |	作；新闻单
+单位							      |	位
+要							      |	要进一步做好抗
+进一步							      |	旱
+做好							      |	双
+抗旱							      |	保工
+双保							      |	作的
+工作							      |	宣
+的							      |	传
+宣传							      |	报
+报道							      |	道
 。								。
-INSERTIONS:	1
-DELETIONS:	10
-SUBSTITUTIONS:	21
-NCHANGE:	32
+INSERTIONS:	0
+DELETIONS:	5
+SUBSTITUTIONS:	26
+NCHANGE:	31
 NTRUTH:	107
-NTEST:	98
+NTEST:	102
 TRUE WORDS RECALL:	0.710
-TEST WORDS PRECISION:	0.776
+TEST WORDS PRECISION:	0.745
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----1896
 五								五
 、								、
@@ -71186,22 +71155,20 @@ TEST WORDS PRECISION:	0.830
 食品								食品
 类								类
 商品								商品
-零售额							      |	零售额的比
-的							      |	重占百
-比重							      |	分
-占							      |	之五十
-百分之五十七点三						      |	七
-							      >	点
-							      >	三
-。								。
-INSERTIONS:	7
-DELETIONS:	1
-SUBSTITUTIONS:	9
-NCHANGE:	17
+零售额							      |	零售
+的							      |	额的比重
+比重							      <
+占								占
+百分之五十七点三						      |	百分之五十七
+。							      |	点三。
+INSERTIONS:	5
+DELETIONS:	2
+SUBSTITUTIONS:	8
+NCHANGE:	15
 NTRUTH:	63
-NTEST:	69
+NTEST:	66
 TRUE WORDS RECALL:	0.841
-TEST WORDS PRECISION:	0.768
+TEST WORDS PRECISION:	0.803
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----1910
 这								这
 就								就
@@ -71440,24 +71407,22 @@ TEST WORDS PRECISION:	1.000
 为								为
 百分之六点一						      |	百分
 ，							      |	之六
-比							      |	点一，
-上年							      |	比上
-回落							      |	年
-八点七个百分点						      |	回
-							      >	落八点
-							      >	七
-							      >	个百
-							      >	分
+比							      |	点
+上年							      |	一，
+回落							      |	比上年回
+八点七个百分点						      |	落八点
+							      >	七个
+							      >	百分
 							      >	点
 。								。
-INSERTIONS:	14
+INSERTIONS:	12
 DELETIONS:	0
 SUBSTITUTIONS:	17
-NCHANGE:	31
+NCHANGE:	29
 NTRUTH:	45
-NTEST:	59
+NTEST:	57
 TRUE WORDS RECALL:	0.622
-TEST WORDS PRECISION:	0.475
+TEST WORDS PRECISION:	0.491
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----1916
 虽								虽
 不能								不能
@@ -71578,62 +71543,61 @@ TEST WORDS PRECISION:	0.839
 的								的
 经济								经济
 发展								发展
-水平							      |	水平还不
-还							      |	高，因此
-不							      |	社会商
-高							      |	品
-，							      |	零
-因此							      |	售
-社会							      |	总
-商品							      |	额
-零售							      |	和城乡居民
-总额							      |	生活消费
-和							      <
-城乡							      <
-居民							      <
-生活							      <
-消费							      <
-中								中
-食品							      |	食品所
-所							      |	占的比重
-占							      <
-的							      <
-比重							      <
-就							      <
-较高							      <
+水平								水平
+还								还
+不							      |	不高，
+高							      <
 ，							      <
-这							      <
-就								就
-							      >	较
-							      >	高
-							      >	，这就
-使								使
-粮价							      |	粮价、食
-、							      |	品类商品
-食品							      |	的价格
-类							      |	波
-商品							      |	动
-的							      <
-价格							      <
-波动							      <
-必然								必然
-对								对
-整个							      |	整个物价
-物价							      |	水
-水平							      |	平发
-发生							      |	生重
-重大							      |	大
+因此								因此
+社会								社会
+商品							      |	商
+零售							      |	品
+总额							      |	零
+和							      |	售
+							      >	总额和
+城乡								城乡
+居民								居民
+生活							      |	生
+消费							      |	活消
+							      >	费
+中								中
+食品								食品
+所								所
+占								占
+的								的
+比重								比重
+就							      |	就较高
+较高							      <
+，								，
+这							      |	这就使粮
+就							      |	价
+使							      |	、食
+粮价							      |	品类商
+、							      |	品
+食品							      |	的
+类							      |	价
+商品							      |	格
+的							      |	波
+价格							      |	动
+波动							      |	必然对
+必然							      |	整个物
+对							      |	价
+整个							      |	水
+物价							      |	平
+水平							      |	发
+发生							      |	生重大
+重大							      <
 的								的
 影响							      |	影响。
 。							      <
-INSERTIONS:	3
-DELETIONS:	21
-SUBSTITUTIONS:	30
-NCHANGE:	54
+INSERTIONS:	2
+DELETIONS:	10
+SUBSTITUTIONS:	33
+NCHANGE:	45
 NTRUTH:	123
-NTEST:	105
-TRUE WORDS RECALL:	0.585
-TEST WORDS PRECISION:	0.686
+NTEST:	115
+TRUE WORDS RECALL:	0.650
+TEST WORDS PRECISION:	0.696
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----1918
 应该								应该
 看到								看到
@@ -72350,25 +72314,25 @@ TEST WORDS PRECISION:	0.652
 变								变
 ，								，
 但								但
-大庆								大庆
-人								人
-“								“
-三老四严							      |	三老四严”
-”							      |	的作
-的							      |	风
-作风							      <
-却								却
-一直							      |	一直代代
-代代相传						      |	相传。
+大庆							      |	大
+人							      |	庆人“
+“							      |	三老
+三老四严							      |	四严
+”							      |	”的作风
+的							      |	却一
+作风							      |	直代
+却							      |	代相
+一直							      |	传。
+代代相传						      <
 。							      <
 INSERTIONS:	3
 DELETIONS:	8
-SUBSTITUTIONS:	21
-NCHANGE:	32
+SUBSTITUTIONS:	25
+NCHANGE:	36
 NTRUTH:	78
 NTEST:	73
-TRUE WORDS RECALL:	0.628
-TEST WORDS PRECISION:	0.671
+TRUE WORDS RECALL:	0.577
+TEST WORDS PRECISION:	0.616
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----1935
 在								在
 建立								建立
@@ -72721,19 +72685,20 @@ TEST WORDS PRECISION:	0.875
 ，								，
 充分								充分
 发扬								发扬
-民主							      |	民
-，							      |	主，共同总
-共同							      |	结
-总结经验						      |	经验。
-。							      <
-INSERTIONS:	5
-DELETIONS:	5
-SUBSTITUTIONS:	15
-NCHANGE:	25
+民主								民主
+，								，
+共同								共同
+总结经验						      |	总结
+。							      |	经
+							      >	验。
+INSERTIONS:	6
+DELETIONS:	4
+SUBSTITUTIONS:	13
+NCHANGE:	23
 NTRUTH:	71
-NTEST:	71
-TRUE WORDS RECALL:	0.718
-TEST WORDS PRECISION:	0.718
+NTEST:	73
+TRUE WORDS RECALL:	0.761
+TEST WORDS PRECISION:	0.740
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----1942
 多年来							      |	多年
 							      >	来
@@ -73477,40 +73442,45 @@ TEST WORDS PRECISION:	0.444
 ，								，
 高于								高于
 销售								销售
-增速								增速
+增速							      |	增
+							      >	速
 ；								；
-利润							      |	利
-							      >	润
-年均								年均
-递增							      |	递
-２４.５％						      |	增
-，							      |	２
-高于							      |	４.
-利税							      |	５％
-增速							      |	，高
-；							      |	于
-去年							      |	利税增
-实现							      |	速；去
-利润							      |	年实现利润
-创							      |	创历
-历史							      |	史
-最高							      |	最
-纪录							      |	高纪
-，							      |	录，
-居							      |	居全国同行
-全国							      |	业之
-同行业							      |	首。
+利润							      |	利润年
+年均							      |	均
+递增							      |	递增２４
+２４.５％						      |	.５％，高于
+							      >	利税增速；去年实
+							      >	现利
+							      >	润创历史
+							      >	最
+							      >	高纪录
+，								，
+高于							      |	居全国同
+利税							      |	行业之
+增速							      <
+；							      <
+去年							      <
+实现							      <
+利润							      <
+创							      <
+历史							      <
+最高							      <
+纪录							      <
+，							      <
+居							      <
+全国							      <
+同行业							      <
 之							      <
-首							      <
-。							      <
-INSERTIONS:	8
-DELETIONS:	5
-SUBSTITUTIONS:	38
-NCHANGE:	51
+首								首
+。								。
+INSERTIONS:	13
+DELETIONS:	16
+SUBSTITUTIONS:	26
+NCHANGE:	55
 NTRUTH:	78
-NTEST:	81
-TRUE WORDS RECALL:	0.449
-TEST WORDS PRECISION:	0.432
+NTEST:	75
+TRUE WORDS RECALL:	0.462
+TEST WORDS PRECISION:	0.480
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----1960
 “								“
 金字塔							      |	金字
@@ -73532,9 +73502,10 @@ TRUE WORDS RECALL:	0.889
 TEST WORDS PRECISION:	0.800
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----1961
 公司								公司
-董事长								董事长
-赵贤哲						      |	赵贤
-认为							      |	哲认
+董事长							      |	董事
+赵贤哲						      |	长
+认为							      |	赵贤
+							      >	哲认
 							      >	为
 ，								，
 “								“
@@ -73552,14 +73523,14 @@ TEST WORDS PRECISION:	0.800
 深								深
 。								。
 ”								”
-INSERTIONS:	1
+INSERTIONS:	2
 DELETIONS:	1
-SUBSTITUTIONS:	3
-NCHANGE:	5
+SUBSTITUTIONS:	4
+NCHANGE:	7
 NTRUTH:	20
-NTEST:	20
-TRUE WORDS RECALL:	0.800
-TEST WORDS PRECISION:	0.800
+NTEST:	21
+TRUE WORDS RECALL:	0.750
+TEST WORDS PRECISION:	0.714
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----1962
 确实								确实
 ，								，
@@ -75433,24 +75404,24 @@ TEST WORDS PRECISION:	0.889
 旅游业								旅游业
 作为								作为
 新								新
-的							      |	的经济增长
-经济							      <
-增长							      <
-点								点
-进行							      |	进行大
-大力							      |	力培
-培育							      |	育
-和							      |	和扶
-扶持							      |	持。
-。							      <
+的								的
+经济								经济
+增长							      |	增
+点							      |	长点
+进行							      |	进
+大力							      |	行大力培
+培育							      |	育和扶
+和							      |	持
+扶持							      <
+。								。
 INSERTIONS:	2
-DELETIONS:	5
+DELETIONS:	3
 SUBSTITUTIONS:	14
-NCHANGE:	21
+NCHANGE:	19
 NTRUTH:	77
-NTEST:	74
-TRUE WORDS RECALL:	0.753
-TEST WORDS PRECISION:	0.784
+NTEST:	76
+TRUE WORDS RECALL:	0.779
+TEST WORDS PRECISION:	0.789
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----2009
 １９９６年							１９９６年
 ，								，
@@ -76115,23 +76086,22 @@ TEST WORDS PRECISION:	0.787
 ２１２５元							２１２５元
 ，								，
 扣除							      |	扣
-物价							      |	除物价
-因素							      |	因
-							      >	素
-，								，
-增长								增长
-１２％							      |	１
-							      >	２
-							      >	％
-。								。
-INSERTIONS:	10
-DELETIONS:	0
+物价							      |	除
+							      >	物
+							      >	价
+因素								因素
+，							      |	，增长１２
+增长							      |	％。
+１２％							      <
+。							      <
+INSERTIONS:	9
+DELETIONS:	2
 SUBSTITUTIONS:	12
-NCHANGE:	22
+NCHANGE:	23
 NTRUTH:	51
-NTEST:	61
-TRUE WORDS RECALL:	0.765
-TEST WORDS PRECISION:	0.639
+NTEST:	58
+TRUE WORDS RECALL:	0.725
+TEST WORDS PRECISION:	0.638
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----2026
 一大批							      |	一大
 乡							      |	批乡
@@ -76342,42 +76312,39 @@ TEST WORDS PRECISION:	0.688
 财政收入						      |	财政
 							      >	收入
 的								的
-一							      |	一大
-大							      <
-支柱								支柱
-，							      |	，真正成为粮食
-真正							      <
-成为							      <
-粮食							      <
+一								一
+大							      |	大支
+支柱							      |	柱，
+，							      |	真
+真正							      |	正成
+成为							      |	为
+粮食								粮食
 大								大
-省							      |	省、畜
-、							      |	牧业大省
-畜牧业							      <
-大							      <
+省							      |	省、
+、							      |	畜
+畜牧业							      |	牧业
+大							      |	大省、农
+省							      |	产品
+、							      |	加
+农产品							      |	工
+加工业							      |	业
+大								大
+省							      |	省，
+，							      |	实
+实现							      |	现农
+农业							      |	业经
+经济							      |	济强
+强							      |	省。
 省							      <
-、								、
-农产品							      |	农
-加工业							      |	产
-							      >	品
-							      >	加
-							      >	工业
-大								大
-省								省
-，							      |	，实
-实现							      |	现
-农业							      |	农业经济
-经济							      <
-强								强
-省								省
-。								。
-INSERTIONS:	7
-DELETIONS:	11
-SUBSTITUTIONS:	18
-NCHANGE:	36
+。							      <
+INSERTIONS:	4
+DELETIONS:	5
+SUBSTITUTIONS:	28
+NCHANGE:	37
 NTRUTH:	93
-NTEST:	89
-TRUE WORDS RECALL:	0.688
-TEST WORDS PRECISION:	0.719
+NTEST:	92
+TRUE WORDS RECALL:	0.645
+TEST WORDS PRECISION:	0.652
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----2031
 吉林省								吉林省
 在								在
@@ -78929,33 +78896,32 @@ TEST WORDS PRECISION:	0.882
 采取								采取
 的								的
 措施							      |	措
-，							      |	施，
-制订								制订
-了							      |	了在政
-在							      |	策、资金
-政策							      |	、技
-、							      |	术、
-资金							      |	物
-、							      |	资
-技术							      <
-、							      <
+，							      |	施，制订
+制订							      <
+了								了
+在							      |	在政策
+政策							      |	、资
+、							      |	金、
+资金							      |	技
+、							      |	术、物
+技术							      |	资等方
+、							      |	面
 物资							      <
-等								等
-方面							      |	方
-							      >	面
+等							      <
+方面							      <
 的								的
-扶持							      |	扶
-							      >	持
-措施								措施
+扶持								扶持
+措施							      |	措
+							      >	施
 。								。
-INSERTIONS:	7
-DELETIONS:	5
+INSERTIONS:	6
+DELETIONS:	6
 SUBSTITUTIONS:	19
 NCHANGE:	31
 NTRUTH:	91
-NTEST:	93
-TRUE WORDS RECALL:	0.736
-TEST WORDS PRECISION:	0.720
+NTEST:	91
+TRUE WORDS RECALL:	0.725
+TEST WORDS PRECISION:	0.725
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----2097
 规定								规定
 ：								：
@@ -80772,29 +80738,29 @@ TEST WORDS PRECISION:	0.913
 证券								证券
 经营								经营
 机构								机构
-客户							      |	客户资金管理情
-资金							      |	况
-管理							      <
+客户								客户
+资金							      |	资金管理情况
+管理							      |	，发现
 情况							      <
-，								，
-发现							      |	发现有挪用
-有							      |	行为的
-挪用							      <
-行为							      <
+，							      <
+发现							      <
+有								有
+挪用							      |	挪
+行为							      |	用行为的，要严肃
 的							      <
-，								，
-要								要
-严肃							      |	严
-查处							      |	肃查处。
-。							      <
+，							      <
+要							      <
+严肃							      <
+查处								查处
+。								。
 INSERTIONS:	3
-DELETIONS:	9
-SUBSTITUTIONS:	11
-NCHANGE:	23
+DELETIONS:	10
+SUBSTITUTIONS:	9
+NCHANGE:	22
 NTRUTH:	74
-NTEST:	68
-TRUE WORDS RECALL:	0.730
-TEST WORDS PRECISION:	0.794
+NTEST:	67
+TRUE WORDS RECALL:	0.743
+TEST WORDS PRECISION:	0.821
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----2143
 （							      |	（ａ、ｂ
 ａ							      <
@@ -81173,28 +81139,27 @@ TEST WORDS PRECISION:	0.806
 							      >	银行
 要								要
 停止							      |	停
-							      >	止
-该								该
-证券							      |	证券登记、结
-登记							      |	算机构的证
-、							      |	券
-结算							      |	交
-机构							      |	易资
-的							      |	金清
-证券							      |	算业
-交易							      |	务
-资金							      <
-清算							      <
-业务							      <
-。								。
-INSERTIONS:	6
-DELETIONS:	5
-SUBSTITUTIONS:	20
-NCHANGE:	31
+该							      |	止
+证券							      |	该证券登记
+登记							      |	、
+、							      |	结
+结算							      |	算
+机构							      |	机
+的							      |	构的
+证券							      |	证
+交易							      |	券
+资金							      |	交易资金清
+清算							      |	算业
+业务							      |	务。
+。							      <
+INSERTIONS:	5
+DELETIONS:	3
+SUBSTITUTIONS:	24
+NCHANGE:	32
 NTRUTH:	78
-NTEST:	79
-TRUE WORDS RECALL:	0.679
-TEST WORDS PRECISION:	0.671
+NTEST:	80
+TRUE WORDS RECALL:	0.654
+TEST WORDS PRECISION:	0.637
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----2152
 证券								证券
 经营								经营
@@ -84377,40 +84342,38 @@ TEST WORDS PRECISION:	0.455
 ２.５万头						      |	２.
 							      >	５万头
 、								、
-年产							      |	年产鲜奶９
-鲜							      |	.５
-奶							      |	万
-９.５万吨						      |	吨的
-的							      |	奶牛基
-奶牛							      |	地，年出栏
-基地							      <
-，							      <
+年产							      |	年产鲜奶９.５万
+鲜							      |	吨
+奶							      |	的奶
+９.５万吨						      |	牛基地
+的							      |	，年出栏
+奶牛							      |	能力２３
+基地							      |	００
+，							      |	万只
 年							      <
 出栏							      <
-能力								能力
-２３００万只						      |	２
-的							      |	３０
-肉鸡							      |	０
-基地							      |	万只的
-和							      |	肉
-年产							      |	鸡
-１０万吨						      |	基地和
-的							      |	年
-水产品							      |	产
-基地							      |	１０
-。							      |	万
-							      >	吨的
-							      >	水
-							      >	产品
-							      >	基地。
-INSERTIONS:	7
+能力							      <
+２３００万只						      <
+的								的
+肉鸡								肉鸡
+基地							      |	基地和
+和							      |	年
+年产							      |	产
+１０万吨						      |	１
+的							      |	０
+水产品							      |	万
+基地							      |	吨的
+							      >	水产
+							      >	品基地
+。								。
+INSERTIONS:	5
 DELETIONS:	5
-SUBSTITUTIONS:	30
-NCHANGE:	42
+SUBSTITUTIONS:	28
+NCHANGE:	38
 NTRUTH:	73
-NTEST:	75
-TRUE WORDS RECALL:	0.521
-TEST WORDS PRECISION:	0.507
+NTEST:	73
+TRUE WORDS RECALL:	0.548
+TEST WORDS PRECISION:	0.548
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----2249
 １９９６年							１９９６年
 ，								，
@@ -86684,23 +86647,21 @@ TEST WORDS PRECISION:	1.000
 的								的
 发展								发展
 ，								，
-一批							      |	一批新
-新							      <
+一批							      |	一
+新							      |	批新
 的								的
 名牌							      |	名
-							      >	牌
-产品								产品
-脱颖而出							      |	脱颖而
-							      >	出
+产品							      |	牌产
+脱颖而出							      |	品脱颖而出
 。								。
-INSERTIONS:	3
-DELETIONS:	4
-SUBSTITUTIONS:	7
-NCHANGE:	14
+INSERTIONS:	1
+DELETIONS:	3
+SUBSTITUTIONS:	9
+NCHANGE:	13
 NTRUTH:	75
-NTEST:	74
-TRUE WORDS RECALL:	0.853
-TEST WORDS PRECISION:	0.865
+NTEST:	73
+TRUE WORDS RECALL:	0.840
+TEST WORDS PRECISION:	0.863
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----2319
 其中								其中
 青岛								青岛
@@ -86901,37 +86862,36 @@ TEST WORDS PRECISION:	0.765
 的								的
 产品								产品
 ，								，
-２０个								２０个
-至								至
-３０个							      |	３
-全国							      |	０个全国名
-名牌							      |	牌
-产品							      |	产
-，							      |	品
-４０个							      |	，４
-至							      |	０
-５０个							      |	个至
-山东							      |	５０个山东名
-名牌							      |	牌产品
-产品							      <
-及								及
-１００个						      |	１
-							      >	００
-							      >	个
-行业								行业
-“							      |	“排头兵”产品。
-排头兵							      <
-”							      <
-产品							      <
-。							      <
-INSERTIONS:	4
-DELETIONS:	11
-SUBSTITUTIONS:	20
-NCHANGE:	35
+２０个							      |	２０个至３０
+至							      |	个
+３０个							      |	全
+全国							      |	国名牌
+名牌							      <
+产品								产品
+，							      |	，４
+４０个							      |	０
+至							      |	个至
+５０个								５０个
+山东							      |	山
+名牌							      |	东
+产品							      |	名
+及							      |	牌产
+１００个						      |	品
+行业							      |	及１
+“							      |	０
+排头兵							      |	０
+”							      |	个
+产品							      |	行
+。							      |	业“排头兵”
+							      >	产品。
+INSERTIONS:	3
+DELETIONS:	7
+SUBSTITUTIONS:	26
+NCHANGE:	36
 NTRUTH:	88
-NTEST:	81
-TRUE WORDS RECALL:	0.648
-TEST WORDS PRECISION:	0.704
+NTEST:	84
+TRUE WORDS RECALL:	0.625
+TEST WORDS PRECISION:	0.655
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----2323
 并								并
 按							      |	按责
@@ -90498,51 +90458,60 @@ TEST WORDS PRECISION:	0.636
 行动								行动
 ，								，
 有关							      |	有
-部门							      |	关部
-通力合作							      |	门通力合
-，							      |	作，
-尽快							      |	尽
-把							      |	快把
-按							      |	按保护
-保护价							      |	价敞
-敞开							      |	开收购议
-收购							      |	购粮
+部门							      |	关部门
+通力合作							      |	通
+，							      |	力
+尽快							      |	合作，尽
+把							      |	快
+按							      |	把按
+保护价							      <
+敞开							      <
+收购							      <
 议购							      <
 粮							      <
-的								的
-政策								政策
-落								落
-到							      |	到实处，
-实处							      |	切
-，							      |	实保
-切实							      |	护
-保护							      <
+的							      <
+政策							      <
+落							      <
+到							      <
+实处							      <
+，							      <
+切实							      <
+保护								保护
+							      >	价敞
+							      >	开收
+							      >	购议
+							      >	购粮
+							      >	的
+							      >	政
+							      >	策落
+							      >	到实处，切
+							      >	实
+							      >	保
+							      >	护
 农民								农民
 的								的
 生产								生产
-积极性							      |	积极
-，							      |	性，
-保持							      |	保持农
-农业							      |	业
-和								和
-整个								整个
-国民经济						      |	国
-的							      |	民
-大好							      |	经
-形势							      |	济的
-							      >	大好形
-							      >	势
-持续								持续
+积极性							      |	积
+，							      |	极
+保持							      |	性，
+农业							      |	保
+和							      |	持农
+整个							      |	业和整个
+国民经济						      |	国民
+的							      |	经
+大好							      |	济的
+形势							      |	大
+持续							      |	好形势持续
 发展								发展
 。								。
-INSERTIONS:	7
-DELETIONS:	5
-SUBSTITUTIONS:	28
-NCHANGE:	40
+INSERTIONS:	16
+DELETIONS:	14
+SUBSTITUTIONS:	24
+NCHANGE:	54
 NTRUTH:	89
 NTEST:	91
-TRUE WORDS RECALL:	0.629
-TEST WORDS PRECISION:	0.615
+TRUE WORDS RECALL:	0.573
+TEST WORDS PRECISION:	0.560
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----2426
 我国								我国
 农业								农业
@@ -91202,34 +91171,34 @@ TEST WORDS PRECISION:	1.000
 的								的
 粮食								粮食
 还								还
-可以								可以
-顺							      |	顺价出售，
-价							      |	销量也会增加
-出售							      <
-，							      <
-销量							      <
+可以							      |	可
+顺							      |	以顺
+价								价
+出售							      |	出售，销
+，							      |	量也会增
+销量							      |	加
 也							      <
 会							      <
 增加							      <
 ，								，
+对							      |	对农民
+农民							      <
+、								、
 对								对
-农民							      |	农
-、							      |	民
-对							      |	、对
 粮食							      |	粮
-企业							      |	食企
-都是							      |	业
-有利							      |	都是有
-的							      |	利的
+企业							      |	食企业都
+都是							      |	是有
+有利							      |	利
+的								的
 。								。
 INSERTIONS:	7
-DELETIONS:	7
+DELETIONS:	5
 SUBSTITUTIONS:	19
-NCHANGE:	33
+NCHANGE:	31
 NTRUTH:	76
-NTEST:	76
-TRUE WORDS RECALL:	0.658
-TEST WORDS PRECISION:	0.658
+NTEST:	78
+TRUE WORDS RECALL:	0.684
+TEST WORDS PRECISION:	0.667
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----2443
 朱镕基								朱镕基
 强调								强调
@@ -92845,34 +92814,33 @@ TEST WORDS PRECISION:	0.682
 增产								增产
 、								、
 农民								农民
-增收								增收
-、							      |	、工
-工业							      |	业增
-增							      <
-效								效
-、								、
-财政							      |	财
-增长							      |	政
-、							      |	增
-经济							      |	长、
-增速							      |	经济增速提
-提供							      |	供
-了								了
-充分								充分
-而								而
-可靠							      |	可
-							      >	靠
-的								的
-保证							      |	保证。
-。							      <
-INSERTIONS:	2
-DELETIONS:	9
-SUBSTITUTIONS:	17
-NCHANGE:	28
+增收							      |	增
+、							      |	收、
+工业								工业
+增								增
+效							      |	效、财政
+、							      <
+财政							      <
+增长								增长
+、							      |	、经济增
+经济							      |	速提
+增速							      |	供了充
+提供							      |	分
+了							      |	而可靠的
+充分							      <
+而							      <
+可靠							      <
+的							      <
+保证								保证
+。								。
+INSERTIONS:	1
+DELETIONS:	13
+SUBSTITUTIONS:	15
+NCHANGE:	29
 NTRUTH:	98
-NTEST:	91
-TRUE WORDS RECALL:	0.735
-TEST WORDS PRECISION:	0.791
+NTEST:	86
+TRUE WORDS RECALL:	0.714
+TEST WORDS PRECISION:	0.814
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----2488
 江西								江西
 发展								发展
@@ -93174,19 +93142,19 @@ TEST WORDS PRECISION:	0.667
 的								的
 发展								发展
 ，								，
-打下								打下
-稳固							      |	稳
-的							      |	固的基础。
+打下							      |	打
+稳固							      |	下稳
+的							      |	固的基础
 基础							      <
-。							      <
+。								。
 INSERTIONS:	6
-DELETIONS:	3
-SUBSTITUTIONS:	13
+DELETIONS:	2
+SUBSTITUTIONS:	14
 NCHANGE:	22
 NTRUTH:	67
-NTEST:	70
+NTEST:	71
 TRUE WORDS RECALL:	0.761
-TEST WORDS PRECISION:	0.729
+TEST WORDS PRECISION:	0.718
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----2495
 这次								这次
 会议								会议
@@ -93552,112 +93520,112 @@ TEST WORDS PRECISION:	0.949
 基础								基础
 上								上
 适当								适当
-下浮							      |	下浮，要给农
-，							      |	民
-要							      |	一
-给							      |	个明白的信号
+下浮								下浮
+，							      |	，要
+要							      <
+给								给
+农民							      |	农
+一个							      |	民
+明白							      |	一
+的							      |	个
+信号							      |	明
+，							      |	白
+促使							      |	的信号
 农民							      |	，
-一个							      |	促
-明白							      |	使农
-的							      |	民改
-信号							      |	良
-，							      |	品种、调整
-促使							      |	粮食
-农民							      |	种
-改良							      |	植结
-品种							      |	构，但
-、							      <
-调整							      <
+改良							      |	促
+品种							      |	使农民改
+、							      |	良品
+调整							      |	种、
+粮食							      |	调
+种植							      |	整粮食种
+结构							      |	植结构
+，								，
+但								但
+也							      |	也不能下
+不能							      |	浮
+下浮							      |	过
+过多							      |	多
+，							      |	，影响
+影响							      |	农民收入
+农民							      |	；对
+收入							      |	粮食收购
+；							      |	资金保
+对							      |	证
 粮食							      <
-种植							      <
-结构							      <
-，							      <
-但							      <
-也								也
-不能								不能
-下浮							      |	下
-过多							      |	浮过多
-，							      |	，影
-影响							      |	响农民收入；
-农民							      <
-收入							      <
-；							      <
-对								对
-粮食							      |	粮
-收购							      |	食
-资金							      |	收
-保证							      |	购资金保证供应
-供应							      |	，但绝不
-，							      |	允
-但							      |	许
-绝不							      <
-允许							      <
-挪用								挪用
-、							      |	、扣留，
-扣留							      <
-，							      <
-要								要
-积极							      |	积极回笼粮食调销
-回笼							      |	资金；
-粮食							      <
-调							      <
-销							      <
+收购							      <
 资金							      <
+保证							      <
+供应								供应
+，							      |	，但绝
+但							      |	不
+绝不							      <
+允许								允许
+挪用							      |	挪用、
+、							      |	扣
+扣留							      |	留，要
+，							      <
+要							      <
+积极								积极
+回笼								回笼
+粮食							      |	粮
+调							      |	食
+销							      |	调销资
+资金							      |	金；
 ；							      <
 对								对
-按							      |	按定购价
-定购							      <
+按								按
+定购							      |	定购价和保护价收购
 价							      <
+和							      <
+保护价							      <
+收购							      <
+的								的
+粮食							      |	粮食，其
+，							      |	超
+其							      |	过正
+超过							      |	常周
+正常							      |	转
+周转							      |	库
+库存							      |	存
+部分							      |	部
+，							      |	分
+财政							      |	，财
+对							      |	政对
+按								按
+原粮								原粮
+计算							      |	计
+的							      |	算的
+利息							      |	利
+							      >	息
 和								和
-保护价							      |	保
-收购							      |	护价收
-的							      |	购的粮食，其
-粮食							      <
-，							      <
-其							      <
-超过								超过
-正常								正常
-周转								周转
-库存							      |	库
-部分							      |	存
-，							      |	部
-财政							      |	分
-对							      |	，
-按							      |	财政对
-原粮							      |	按原粮
-计算							      |	计算的利息
-的							      |	和保管
-利息							      |	费用进
-和							      |	行
-保管							      <
-费用							      <
-进行							      <
+保管							      |	保
+费用							      |	管
+进行							      |	费
+补贴							      |	用进行补贴；补
+；							      |	贴
 补贴							      <
-；							      <
-补贴								补贴
-从							      |	；补
-中央							      |	贴
-和							      |	从中
-地方							      |	央
-财政							      |	和地方
-共同							      |	财政共同
-建立							      |	建
-的							      |	立
-粮食							      |	的粮
-							      >	食
-风险								风险
-基金								基金
-中							      |	中支
-支出							      |	出
-。								。
+从								从
+中央							      |	中央和
+和							      |	地
+地方							      |	方
+财政							      |	财政共同
+共同							      |	建立的粮食
+建立							      |	风
+的							      |	险
+粮食							      |	基
+风险							      |	金中
+基金							      |	支出。
+中							      <
+支出							      <
+。							      <
 INSERTIONS:	7
-DELETIONS:	33
-SUBSTITUTIONS:	65
-NCHANGE:	105
+DELETIONS:	21
+SUBSTITUTIONS:	76
+NCHANGE:	104
 NTRUTH:	164
-NTEST:	138
-TRUE WORDS RECALL:	0.402
-TEST WORDS PRECISION:	0.478
+NTEST:	150
+TRUE WORDS RECALL:	0.409
+TEST WORDS PRECISION:	0.447
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----2503
 大家								大家
 认为								认为
@@ -95080,25 +95048,25 @@ TEST WORDS PRECISION:	0.882
 ，								，
 小							      |	小山
 山村							      |	村的小
-的							      <
-小							      <
-舞台								舞台
-，							      |	，已难以容
-已							      |	纳和
-难以							      |	进
-容纳							      |	一步
-和							      |	发
-进一步							      |	展。
+的							      |	舞台，已难以
+小							      |	容
+舞台							      |	纳和进一步
+，							      |	发
+已							      |	展
+难以							      <
+容纳							      <
+和							      <
+进一步							      <
 发展							      <
-。							      <
+。								。
 INSERTIONS:	3
-DELETIONS:	6
-SUBSTITUTIONS:	15
+DELETIONS:	7
+SUBSTITUTIONS:	14
 NCHANGE:	24
 NTRUTH:	79
-NTEST:	76
+NTEST:	75
 TRUE WORDS RECALL:	0.734
-TEST WORDS PRECISION:	0.763
+TEST WORDS PRECISION:	0.773
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----2537
 如何								如何
 解开								解开
@@ -95597,22 +95565,22 @@ TEST WORDS PRECISION:	0.812
 							      >	加值
 产品								产品
 ，								，
-使							      |	使其
-其							      <
-成为								成为
-经济								经济
-腾飞							      |	腾
-的							      |	飞的
-优势							      |	优
-。							      |	势。
+使								使
+其							      |	其成为
+成为							      |	经济腾飞的优势
+经济							      <
+腾飞							      <
+的							      <
+优势							      <
+。								。
 INSERTIONS:	3
-DELETIONS:	5
-SUBSTITUTIONS:	13
+DELETIONS:	8
+SUBSTITUTIONS:	10
 NCHANGE:	21
 NTRUTH:	82
-NTEST:	80
+NTEST:	77
 TRUE WORDS RECALL:	0.780
-TEST WORDS PRECISION:	0.800
+TEST WORDS PRECISION:	0.831
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----2549
 办法								办法
 是								是
@@ -96781,57 +96749,53 @@ TEST WORDS PRECISION:	0.967
 ”								”
 ；								；
 借助								借助
-快速							      |	快
-							      >	速
+快速							      |	快速的
+的							      |	规模扩
+规模							      |	张，
+扩张							      |	湖北
+，							      |	双
+湖北双环							      |	环和
+和							      |	沙
+沙隆达							      |	隆达
+已								已
+成为							      |	成
+国内							      |	为国内乃至
+乃至							      |	亚
+亚洲							      |	洲
+最大							      |	最
+							      >	大
 的								的
-规模								规模
-扩张								扩张
-，							      |	，湖北双环
-湖北双环							      <
-和								和
-沙隆达							      |	沙
-已							      |	隆
-成为							      |	达
-国内							      |	已成
-乃至							      |	为国内
-							      >	乃
-							      >	至
-亚洲								亚洲
-最大								最大
-的								的
-联								联
-碱							      |	碱和
-和							      <
-农药								农药
-生产							      |	生产企
-企业							      |	业，
-，							      |	荆
-荆襄磷化集团						      |	襄
-、							      |	磷化集团、
-葛化集团							      |	葛
-、							      |	化集
-东风轮胎						      |	团
-将							      |	、东风
-成为							      |	轮胎将成
-华中							      |	为
-乃至							      |	华中乃
-							      >	至
-国内								国内
-同行							      |	同
-最大							      |	行最
-的							      |	大的
-生产							      |	生
-企业							      |	产
-。							      |	企
-							      >	业。
-INSERTIONS:	11
+联							      |	联碱
+碱							      |	和农
+和							      |	药
+农药							      |	生产企
+生产							      |	业，
+企业							      |	荆襄磷化集
+，							      |	团、
+荆襄磷化集团						      |	葛
+、							      |	化
+葛化集团							      |	集团
+、								、
+东风轮胎						      |	东风轮
+将							      |	胎将成
+成为							      |	为华中乃
+华中							      |	至国
+乃至							      |	内同
+国内							      |	行
+同行							      |	最
+最大							      |	大的生
+的							      |	产
+生产							      |	企业。
+企业							      <
+。							      <
+INSERTIONS:	7
 DELETIONS:	5
-SUBSTITUTIONS:	36
-NCHANGE:	52
+SUBSTITUTIONS:	43
+NCHANGE:	55
 NTRUTH:	105
-NTEST:	111
-TRUE WORDS RECALL:	0.610
-TEST WORDS PRECISION:	0.577
+NTEST:	107
+TRUE WORDS RECALL:	0.543
+TEST WORDS PRECISION:	0.533
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----2579
 与								与
 此								此
@@ -96972,26 +96936,26 @@ TEST WORDS PRECISION:	0.700
 发展								发展
 ，								，
 使								使
-汉								汉
-派								派
-服装								服装
-异军突起						      |	异军
-，							      |	突起
-去年１２月						      |	，去年１
-起							      |	２月
-全							      |	起全
-行业							      |	行
-扭亏为盈						      |	业扭亏为
-							      >	盈
-。								。
+汉							      |	汉派服
+派							      |	装
+服装							      |	异军
+异军突起						      |	突
+，							      |	起，去年
+去年１２月						      |	１２月
+起							      |	起全
+全							      |	行
+行业							      |	业
+扭亏为盈						      |	扭
+。							      |	亏为
+							      >	盈。
 INSERTIONS:	6
 DELETIONS:	5
-SUBSTITUTIONS:	19
-NCHANGE:	30
+SUBSTITUTIONS:	23
+NCHANGE:	34
 NTRUTH:	75
 NTEST:	76
-TRUE WORDS RECALL:	0.680
-TEST WORDS PRECISION:	0.671
+TRUE WORDS RECALL:	0.627
+TEST WORDS PRECISION:	0.618
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----2582
 鄂							      |	鄂东
 东							      <
@@ -98594,52 +98558,52 @@ TEST WORDS PRECISION:	0.696
 付							      <
 ：								：
 １９９２年４月１日					      |	１９９２年４月１日至１９９３年６月３０日
-至							      |	，
-１９９３年６月３０日					      |	年利率
-，							      |	百分
-年							      |	之
-利率							      |	十点
-百分之十点五						      |	五
+至							      <
+１９９３年６月３０日					      <
+，								，
+年							      |	年利率
+利率							      |	百分
+百分之十点五						      |	之
+							      >	十点
+							      >	五
 ，								，
 不								不
 实行								实行
 保值								保值
 贴补								贴补
 ；								；
-１９９３年７月１日					      |	１９９３年７月１日至１９９７年３月３
-至							      |	１
-１９９７年３月３１日					      |	日，
-，							      |	在年
-在							      |	利
-年							      |	率百
-利率							      |	分
-百分之十三点八六						      |	之十
-							      >	三
-							      >	点
-							      >	八
-							      >	六
-的								的
+１９９３年７月１日					      |	１９９３年７月１日至１９９７年３月３１日，在
+至							      |	年利
+１９９７年３月３１日					      |	率
+，							      |	百
+在							      |	分
+年							      |	之十
+利率							      |	三点
+百分之十三点八六						      |	八
+的							      |	六的
 基础							      |	基础上
-上							      |	，加
-，							      |	人
-加							      |	民银行
-人民银行						      |	公
-公布							      |	布
+上							      <
+，								，
+加								加
+人民银行						      |	人民银
+公布							      |	行公布
 的								的
 今年４月份						      |	今
-保值							      |	年４月份保值
-贴补率							      |	贴补
-计算							      |	率计算利息
-利息							      <
+保值							      |	年
+贴补率							      |	４
+计算							      |	月份保值
+利息							      |	贴补
+							      >	率计
+							      >	算利息
 。								。
 INSERTIONS:	5
-DELETIONS:	7
-SUBSTITUTIONS:	35
-NCHANGE:	47
+DELETIONS:	9
+SUBSTITUTIONS:	31
+NCHANGE:	45
 NTRUTH:	72
-NTEST:	70
-TRUE WORDS RECALL:	0.417
-TEST WORDS PRECISION:	0.429
+NTEST:	68
+TRUE WORDS RECALL:	0.444
+TEST WORDS PRECISION:	0.471
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----2627
 ４							      |	４.
 .							      <
@@ -98739,53 +98703,50 @@ TEST WORDS PRECISION:	0.864
 ：								：
 不满								不满
 半年								半年
-不							      |	不付
-付							      |	利息；
-利息							      |	满半年不
-；							      <
-满								满
-半年							      |	一
-不满							      |	年，年
-一年							      |	利率百分之九
-，							      |	点
-							      >	五四；满一
-年								年
-利率							      <
-百分之九点五四						      <
-；							      <
-满							      <
+不								不
+付							      |	付利
+利息							      |	息
+；							      |	；满
+满							      |	半
+半年							      |	年不
+不满							      |	满一年
 一年							      <
-不满								不满
-二年							      |	二
+，								，
+年								年
+利率							      |	利率百
+百分之九点五四						      |	分
+							      >	之九点
+							      >	五
+							      >	四
+；								；
+满								满
+一年							      |	一年不满
+不满							      |	二
+二年							      <
 ，							      <
 年								年
-利率							      |	，年
-百分之十一点五二						      |	利
-；							      |	率
-满							      |	百分
-二年							      |	之
-不满							      |	十
-三年							      |	一点
-							      >	五二；
-							      >	满二年
-							      >	不
-							      >	满三年
-，								，
-年							      |	年利
-利率							      |	率
-百分之十二点六零						      |	百
-。							      |	分
-							      >	之十二点
-							      >	六
-							      >	零。
-INSERTIONS:	11
-DELETIONS:	15
-SUBSTITUTIONS:	29
-NCHANGE:	55
+利率							      |	，年利率
+百分之十一点五二						      |	百
+；							      |	分
+满							      |	之
+二年							      |	十
+不满							      |	一
+三年							      |	点五二
+，							      |	；满二
+年								年
+利率							      |	不
+百分之十二点六零						      |	满三年，年利率百分之十二
+							      >	点
+							      >	六零
+。								。
+INSERTIONS:	8
+DELETIONS:	11
+SUBSTITUTIONS:	30
+NCHANGE:	49
 NTRUTH:	94
-NTEST:	90
-TRUE WORDS RECALL:	0.532
-TEST WORDS PRECISION:	0.556
+NTEST:	91
+TRUE WORDS RECALL:	0.564
+TEST WORDS PRECISION:	0.582
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----2629
 ５							      |	５.
 .							      <
@@ -99435,24 +99396,25 @@ TEST WORDS PRECISION:	0.429
 和								和
 香港特别行政区临时立法会				      |	香港
 议员							      |	特别行
-中							      |	政区
+							      >	政区
 							      >	临时
 							      >	立法
-							      >	会
-							      >	议员中
+							      >	会议
+							      >	员
+中								中
 的								的
-中国							      |	中
-公民							      |	国公
-组成							      |	民
-。							      |	组成。
-INSERTIONS:	17
-DELETIONS:	1
-SUBSTITUTIONS:	16
-NCHANGE:	34
+中国							      |	中国公
+公民							      |	民组成
+组成							      <
+。								。
+INSERTIONS:	18
+DELETIONS:	2
+SUBSTITUTIONS:	13
+NCHANGE:	33
 NTRUTH:	47
 NTEST:	63
-TRUE WORDS RECALL:	0.638
-TEST WORDS PRECISION:	0.476
+TRUE WORDS RECALL:	0.681
+TEST WORDS PRECISION:	0.508
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----2652
 但								但
 本人								本人
@@ -101119,25 +101081,24 @@ TEST WORDS PRECISION:	0.833
 情况								情况
 报							      |	报中
 中国证监会						      |	国证
-							      >	监会
-备案								备案
-，								，
-并								并
-加强							      |	加强对股权
-对							      |	的监督管
-股权							      |	理
+备案							      |	监会备案，并
+，							      |	加强对股权的监
+并							      |	督
+加强							      |	管理。
+对							      <
+股权							      <
 的							      <
 监督							      <
 管理							      <
-。								。
-INSERTIONS:	3
-DELETIONS:	8
-SUBSTITUTIONS:	22
-NCHANGE:	33
+。							      <
+INSERTIONS:	2
+DELETIONS:	11
+SUBSTITUTIONS:	23
+NCHANGE:	36
 NTRUTH:	80
-NTEST:	75
-TRUE WORDS RECALL:	0.625
-TEST WORDS PRECISION:	0.667
+NTEST:	71
+TRUE WORDS RECALL:	0.575
+TEST WORDS PRECISION:	0.648
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----2706
 二								二
 、								、
@@ -101210,53 +101171,59 @@ TEST WORDS PRECISION:	0.667
 征							      |	征得
 得							      <
 省级								省级
-人民政府						      |	人民
-或者							      |	政
-国务院							      |	府或者国务院
-有关							      |	有
-主管							      |	关主管
-部门							      |	部门同意
-同意							      <
-；								；
-其								其
-不满							      |	不
-三年							      |	满三
-的							      |	年的境
-境内							      |	内资产
-资产							      |	，不
-，							      |	得
-不得							      <
-在								在
-境外							      |	境外申请
-申请							      |	发
-发行							      |	行股
-股票							      |	票和
-和							      |	上
-上市							      |	市
-，							      |	，如
-如							      <
+人民政府						      |	人民政
+或者							      |	府
+国务院							      |	或者国
+有关							      |	务院
+主管							      |	有
+部门							      |	关主
+同意							      |	管部门同意；其
+；							      |	不
+其							      |	满
+不满							      <
+三年								三年
+的								的
+境内								境内
+资产							      |	资
+，							      |	产，不得在境
+不得							      |	外
+在							      |	申
+境外							      |	请发
+申请							      |	行股票
+发行							      |	和上市，
+股票							      <
+和							      <
+上市							      <
+，							      <
+如								如
 有								有
-特殊							      |	特殊需
-需要							      |	要
-的							      |	的，报中
-，							      |	国证监
-报							      |	会审
-中国证监会						      |	核
-审核							      |	后，由国务
-后							      |	院证
-，							      |	券委审批
-由							      <
-国务院证券委						      <
-审批							      <
+特殊							      |	特
+							      >	殊
+需要								需要
+的								的
+，								，
+报							      |	报中
+中国证监会						      |	国
+							      >	证
+							      >	监
+							      >	会
+审核								审核
+后							      |	后，
+，							      <
+由								由
+国务院证券委						      |	国
+审批							      |	务
+							      >	院证
+							      >	券委审批
 。								。
-INSERTIONS:	1
+INSERTIONS:	7
 DELETIONS:	10
-SUBSTITUTIONS:	40
+SUBSTITUTIONS:	34
 NCHANGE:	51
 NTRUTH:	109
-NTEST:	100
-TRUE WORDS RECALL:	0.541
-TEST WORDS PRECISION:	0.590
+NTEST:	106
+TRUE WORDS RECALL:	0.596
+TEST WORDS PRECISION:	0.613
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----2707
 上市								上市
 活动								活动
@@ -101354,61 +101321,70 @@ TEST WORDS PRECISION:	0.684
 境内								境内
 企业								企业
 或者								或者
-中								中
-资							      |	资控
-控股							      |	股股
-股东							      |	东的境内
-的							      |	股
-境内							      |	权
-股权							      |	持
-持有							      |	有单位应
-单位							      |	当按
-应当							      |	照隶
-按照							      |	属关
-隶属							      |	系事
-关系							      |	先经
-事先							      |	省
-经							      |	级人
-省级							      |	民政
-人民政府						      |	府或
-或者							      |	者
-国务院							      |	国务
-							      >	院
-有关								有关
-主管							      |	主
-部门							      |	管部
-同意							      |	门同意，并
-，							      <
-并							      <
-报								报
-中国证监会						      |	中
-审核							      |	国证监
-后							      |	会
-，							      |	审核后，
-由							      |	由国务
-国务院证券委						      |	院证
-按							      |	券
-国家							      |	委按国
-产业							      |	家产业政策、
-政策							      |	国
-、							      |	务
-国务院							      |	院有
-有关							      |	关
-规定								规定
-和							      |	和年度
-年度							      <
+中							      |	中资
+资							      |	控
+控股							      |	股
+股东								股东
+的							      |	的境内股权
+境内							      |	持
+股权							      |	有单位应当按照隶
+持有							      |	属
+单位							      |	关
+应当							      |	系事
+按照							      |	先
+隶属							      <
+关系							      <
+事先							      <
+经								经
+省级							      |	省
+人民政府						      |	级
+或者							      |	人民
+国务院							      |	政
+有关							      |	府或
+主管							      |	者
+部门							      |	国
+同意							      |	务
+，							      |	院
+并							      |	有
+报							      |	关
+中国证监会						      |	主
+审核							      |	管
+后							      |	部
+，							      |	门
+由							      |	同
+国务院证券委						      |	意
+按							      |	，并
+国家							      |	报中
+产业							      |	国
+政策							      |	证监
+、							      |	会审核后
+国务院							      |	，由国务院证券
+有关							      |	委
+规定							      |	按国
+和							      |	家
+年度							      |	产
+							      >	业政
+							      >	策、国
+							      >	务院
+							      >	有
+							      >	关
+							      >	规
+							      >	定
+							      >	和年
+							      >	度
 总								总
-规模							      |	规模审
-审批							      |	批
+规模								规模
+审批							      |	审
+							      >	批
 。								。
-INSERTIONS:	2
+INSERTIONS:	11
 DELETIONS:	12
-SUBSTITUTIONS:	54
-NCHANGE:	68
+SUBSTITUTIONS:	55
+NCHANGE:	78
 NTRUTH:	113
-NTEST:	103
-TRUE WORDS RECALL:	0.416
-TEST WORDS PRECISION:	0.456
+NTEST:	112
+TRUE WORDS RECALL:	0.407
+TEST WORDS PRECISION:	0.411
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----2709
 四								四
 、								、
@@ -101540,42 +101516,42 @@ TEST WORDS PRECISION:	0.837
 ；								；
 对								对
 当事								当事
-单位								单位
-和								和
-有关								有关
-中介							      |	中介机
-机构							      |	构
-及								及
-责任							      |	责
-人员							      |	任
-由							      |	人
-中国证监会						      |	员由
-按照							      |	中国证
-《							      |	监会按照《
-股票							      |	股
-发行							      |	票
-与							      |	发
-交易							      |	行
-							      >	与交
-							      >	易
-管理								管理
-暂行条例							      |	暂
-》							      |	行条例
+单位							      |	单位和有
+和							      |	关中介机
+有关							      |	构
+中介							      |	及责任
+机构							      <
+及							      <
+责任							      <
+人员								人员
+由								由
+中国证监会						      |	中国证监
+按照							      |	会
+							      >	按
+							      >	照
+《								《
+股票								股票
+发行							      |	发
+与							      |	行与
+交易								交易
+管理							      |	管
+暂行条例							      |	理暂行
+》							      |	条例
 等							      |	》等
 有关							      |	有
-规定							      |	关规定，
-，							      |	给以处罚。
-给以							      <
-处罚							      <
+规定							      |	关规
+，							      |	定，
+给以							      |	给以处
+处罚							      |	罚。
 。							      <
 INSERTIONS:	6
-DELETIONS:	3
-SUBSTITUTIONS:	23
+DELETIONS:	4
+SUBSTITUTIONS:	22
 NCHANGE:	32
 NTRUTH:	91
-NTEST:	94
+NTEST:	93
 TRUE WORDS RECALL:	0.714
-TEST WORDS PRECISION:	0.691
+TEST WORDS PRECISION:	0.699
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----2711
 各								各
 地方								地方
@@ -103427,35 +103403,36 @@ TEST WORDS PRECISION:	0.784
 如果								如果
 至								至
 被								被
-保险								保险
+保险							      |	保
+							      >	险
 人								人
 自杀								自杀
-时								时
-，								，
-保险							      |	保险合同
-合同							      <
-成立								成立
-不满							      |	不满二年，保
-二年							      |	险公司应退
-，							      |	还
-保险公司						      |	投
-应							      |	保
-退还							      |	人相应
-投保人							      <
-相应							      <
-的								的
-保险费							      |	保险
+时							      |	时，
+，							      <
+保险								保险
+合同							      |	合同成立不
+成立							      |	满
+不满							      |	二年，保
+二年							      |	险
+，							      |	公司
+保险公司						      <
+应								应
+退还								退还
+投保人							      |	投保
+相应							      |	人
+的							      |	相应的保
+保险费							      |	险
 及							      |	费及利
 利息							      |	息
 。								。
-INSERTIONS:	2
-DELETIONS:	7
-SUBSTITUTIONS:	18
-NCHANGE:	27
+INSERTIONS:	3
+DELETIONS:	6
+SUBSTITUTIONS:	21
+NCHANGE:	30
 NTRUTH:	90
-NTEST:	85
-TRUE WORDS RECALL:	0.722
-TEST WORDS PRECISION:	0.765
+NTEST:	87
+TRUE WORDS RECALL:	0.700
+TEST WORDS PRECISION:	0.724
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----2763
 由此可见						      |	由此
 							      >	可见
@@ -103741,73 +103718,57 @@ TEST WORDS PRECISION:	0.714
 很							      |	很大
 大							      <
 的								的
-随意性							      |	随
-							      >	意性
-和								和
-盲目性							      |	盲目
-；							      |	性；
+随意性							      |	随意
+和							      |	性
+盲目性							      |	和盲
+							      >	目
+							      >	性
+；								；
 私设							      |	私
-小金库							      |	设小
-，							      |	金库
-搞							      |	，搞帐外帐，
+小金库							      |	设小金
+							      >	库
+，								，
+搞							      |	搞帐
 帐							      <
-外							      <
-帐							      <
-，							      <
-坐								坐
-支								支
-挪用							      |	挪
-							      >	用等违法
-							      >	违
-							      >	纪现象
-							      >	司
-							      >	空
-							      >	见惯；
-							      >	缺乏监督
-							      >	机制，
-							      >	不合理
-							      >	收
-							      >	费
-							      >	增
-							      >	多
-							      >	，加
-							      >	重了
-							      >	农
-							      >	民
-							      >	群众的负
-							      >	担
-							      >	等
+外								外
+帐							      |	帐，坐
+，							      |	支挪
+坐							      |	用
+支							      <
+挪用							      <
 等								等
-违法							      <
-违纪							      <
-现象							      <
-司空见惯						      <
-；							      <
-缺乏							      <
-监督							      <
-机制							      <
-，							      <
-不							      <
-合理							      <
-收费							      <
-增多							      <
-，							      <
-加重							      <
-了							      <
-农民							      <
-群众							      <
-的							      <
-负担							      <
+违法							      |	违
+违纪							      |	法违纪现
+现象							      |	象司
+司空见惯						      |	空见
+；							      |	惯；
+缺乏							      |	缺
+监督							      |	乏
+机制							      |	监
+，							      |	督
+							      >	机制，
+不								不
+合理							      |	合
+收费							      |	理收
+							      >	费
+增多								增多
+，							      |	，加
+加重							      |	重了农民
+了							      |	群
+农民							      |	众
+群众							      |	的负担
+的							      |	等
+负担							      |	等。
 等等							      <
-。								。
-INSERTIONS:	24
-DELETIONS:	29
-SUBSTITUTIONS:	17
-NCHANGE:	70
+。							      <
+INSERTIONS:	8
+DELETIONS:	9
+SUBSTITUTIONS:	36
+NCHANGE:	53
 NTRUTH:	102
-NTEST:	97
-TRUE WORDS RECALL:	0.549
-TEST WORDS PRECISION:	0.577
+NTEST:	101
+TRUE WORDS RECALL:	0.559
+TEST WORDS PRECISION:	0.564
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----2770
 村							      |	村级
 级							      <
@@ -104962,31 +104923,33 @@ TEST WORDS PRECISION:	1.000
 农民								农民
 的								的
 心理								心理
-和							      |	和经
-经济							      |	济承受
-承受							      |	能
-能力							      |	力
-；								；
-透明度							      |	透明度差，
-差							      |	农民不清
-，							      |	楚自
-农民							      |	己
-不							      |	到
-清楚							      |	底应
-自己							      |	负担多
-到底							      |	少
-应							      <
-负担							      <
-多少							      <
+和								和
+经济								经济
+承受							      |	承受能力
+能力							      |	；透明
+；							      |	度
+透明度							      |	差，
+差							      <
+，							      <
+农民								农民
+不								不
+清楚							      |	清
+自己							      |	楚
+到底							      |	自己到
+应							      |	底应
+负担							      |	负
+多少							      |	担
+							      >	多
+							      >	少
 。								。
-INSERTIONS:	9
-DELETIONS:	6
-SUBSTITUTIONS:	24
-NCHANGE:	39
+INSERTIONS:	11
+DELETIONS:	5
+SUBSTITUTIONS:	22
+NCHANGE:	38
 NTRUTH:	93
-NTEST:	96
-TRUE WORDS RECALL:	0.677
-TEST WORDS PRECISION:	0.656
+NTEST:	99
+TRUE WORDS RECALL:	0.710
+TEST WORDS PRECISION:	0.667
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----2802
 要								要
 从								从
@@ -106772,17 +106735,17 @@ TEST WORDS PRECISION:	0.571
 							      >	者
 的								的
 权益							      |	权
-没有							      |	益没有
-保障								保障
-。								。
+没有							      |	益
+保障							      |	没有保障。
+。							      <
 INSERTIONS:	8
-DELETIONS:	2
-SUBSTITUTIONS:	11
-NCHANGE:	21
+DELETIONS:	3
+SUBSTITUTIONS:	12
+NCHANGE:	23
 NTRUTH:	67
-NTEST:	73
-TRUE WORDS RECALL:	0.806
-TEST WORDS PRECISION:	0.740
+NTEST:	72
+TRUE WORDS RECALL:	0.776
+TEST WORDS PRECISION:	0.722
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----2855
 当								当
 消费者							      |	消费
@@ -110731,33 +110694,27 @@ TEST WORDS PRECISION:	0.810
 以内								以内
 的								的
 ，								，
-由								由
-省								省
-							      >	、自
-							      >	治区
-、								、
-自治区							      |	直
-、							      |	辖市
-直辖市							      <
-的								的
-交通							      |	交
-主管							      |	通主
-							      >	管
-部门								部门
-组织								组织
-综合平衡						      |	综
-							      >	合
-							      >	平
-							      >	衡
+由							      |	由省
+省							      |	、自治区、
+、							      |	直辖
+自治区							      |	市的交通主管部门
+、							      |	组
+直辖市							      |	织综合平衡
+的							      <
+交通							      <
+主管							      <
+部门							      <
+组织							      <
+综合平衡						      <
 。								。
-INSERTIONS:	10
-DELETIONS:	4
-SUBSTITUTIONS:	14
+INSERTIONS:	4
+DELETIONS:	9
+SUBSTITUTIONS:	15
 NCHANGE:	28
 NTRUTH:	74
-NTEST:	80
-TRUE WORDS RECALL:	0.757
-TEST WORDS PRECISION:	0.700
+NTEST:	69
+TRUE WORDS RECALL:	0.676
+TEST WORDS PRECISION:	0.725
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----2968
 第十七条						      |	第十七条经综合平衡
 经							      <
@@ -113453,36 +113410,36 @@ TEST WORDS PRECISION:	0.706
 和								和
 具有								具有
 一定								一定
-规模							      |	规
-的							      |	模
-工业							      |	的工
-和							      |	业
-贸易							      |	和贸易投资控
-投资							      |	股
-控股							      <
-公司								公司
-，							      |	，及
-及							      <
-金融								金融
-、							      |	、保
-保险							      |	险、
-、							      <
-电脑								电脑
-、								、
-旅行社							      |	旅
+规模							      |	规模的工
+的							      |	业
+工业							      <
+和								和
+贸易								贸易
+投资								投资
+控股								控股
+公司							      |	公司，及
+，							      |	金
+及							      |	融、保险、
+金融							      |	电脑、旅
 、							      |	行社、
-酒店								酒店
-等							      |	等业务。
+保险							      |	酒店等业
+、							      |	务。
+电脑							      <
+、							      <
+旅行社							      <
+、							      <
+酒店							      <
+等							      <
 业务							      <
 。							      <
 INSERTIONS:	4
-DELETIONS:	9
-SUBSTITUTIONS:	20
-NCHANGE:	33
+DELETIONS:	13
+SUBSTITUTIONS:	17
+NCHANGE:	34
 NTRUTH:	93
-NTEST:	88
-TRUE WORDS RECALL:	0.688
-TEST WORDS PRECISION:	0.727
+NTEST:	84
+TRUE WORDS RECALL:	0.677
+TEST WORDS PRECISION:	0.750
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----3040
 资产								资产
 总值								总值
@@ -115842,125 +115799,116 @@ TEST WORDS PRECISION:	0.731
 ；								；
 从								从
 实现								实现
-两个							      |	两
-“							      |	个
-服务							      |	“服务
-”							      |	”的
-的							      |	目
-目标							      |	标看，
+两个							      |	两个“服务
+“							      |	”的目标看，
+服务							      <
+”							      <
+的							      <
+目标							      <
 看							      <
 ，							      <
 驻								驻
-港							      |	港中资企
-中							      |	业只有充分
-资							      |	利
-企业							      |	用十五
-只有							      |	大所创造的
-充分							      |	大
-利用							      |	好
-十五大							      |	时
-所							      |	机，
-创造							      <
-的							      <
-大好							      <
-时机							      <
-，							      <
-及								及
-在								在
-香港							      |	香
-这个							      |	港
-成熟							      |	这
-的							      |	个
-国际							      |	成
-市场							      |	熟
-运作							      |	的国际
-的							      |	市场运作
-有利							      |	的有利
-条件							      |	条
-，							      |	件，深化改
-深化							      |	革，
-改革							      |	及
-，							      |	时
-及时							      |	转
-转换							      |	换经
-经营							      |	营机制，建立现代
-机制							      <
-，							      <
-建立							      <
-现代							      <
+港								港
+中								中
+资								资
 企业								企业
-制度								制度
-，								，
-使							      |	使企业不
-企业							      |	断发展
-不断							      |	壮
-发展							      |	大
-壮大							      |	，才
-，							      <
-才							      <
-能								能
-有效							      |	有
-支持							      |	效
-内地							      |	支
-							      >	持
-							      >	内
-							      >	地
-经济								经济
-建设							      |	建
-，							      |	设
-为							      <
+只有								只有
+充分							      |	充
+							      >	分
+利用								利用
+十五大							      |	十五
+							      >	大
+所								所
+创造							      |	创造的
+的							      |	大
+大好							      |	好
+时机							      |	时
+，							      |	机，及
+及							      |	在香
+在							      |	港这
+香港							      |	个
+这个							      |	成
+成熟							      |	熟的国际
+的							      |	市
+国际							      |	场
+市场							      |	运
+运作							      |	作的有利
+的							      <
+有利							      <
+条件								条件
+，							      |	，深化
+深化							      |	改
+改革							      |	革
+，							      |	，
+及时							      |	及时转
+转换							      |	换经
+经营							      |	营机
+机制							      |	制
+，							      |	，
+建立							      |	建
+现代							      |	立
+企业							      |	现
+制度							      |	代
+，							      |	企
+使							      |	业制度
+企业							      |	，使企业
+不断								不断
+发展							      |	发展壮大
+壮大							      |	，才能
+，							      |	有
+才							      |	效支
+能							      |	持
+有效							      |	内
+支持							      |	地经济
 内地							      <
-国企							      <
-改革							      <
+经济							      <
+建设								建设
+，								，
+							      >	为内
+							      >	地
+							      >	国
+							      >	企改
+							      >	革提供经验，
+为								为
+内地							      |	国
+国企							      |	企
+改革							      |	发展提供
 提供							      <
 经验							      <
-，								，
-为								为
-国企							      |	内
-发展							      |	地
-提供							      |	国
-融资							      |	企改
-							      >	革
-							      >	提
-							      >	供经
-							      >	验
-							      >	，为
-							      >	国企发
-							      >	展
-							      >	提
-							      >	供
-							      >	融
-							      >	资
-渠道								渠道
+，							      <
+为							      <
+国企							      <
+发展							      <
+提供							      <
+融资								融资
+渠道							      |	渠
+							      >	道
 ，								，
 并								并
 为								为
 保持							      |	保
-香港							      |	持
-的							      |	香
-繁荣							      |	港的
-稳定							      |	繁
-、							      |	荣
-贯彻							      |	稳
-落实							      |	定
-“							      |	、贯
-一国两制						      |	彻落
-”							      |	实“
-多							      |	一
-做							      |	国两
-贡献							      |	制”
-							      >	多做
-							      >	贡
-							      >	献
+香港							      |	持香
+的							      |	港
+繁荣							      |	的繁荣稳定
+稳定							      <
+、								、
+贯彻							      |	贯
+落实							      |	彻落
+“							      |	实
+一国两制						      |	“一国两制”多做
+”							      <
+多							      <
+做							      <
+贡献								贡献
 。								。
-INSERTIONS:	22
-DELETIONS:	21
-SUBSTITUTIONS:	67
-NCHANGE:	110
+INSERTIONS:	13
+DELETIONS:	23
+SUBSTITUTIONS:	60
+NCHANGE:	96
 NTRUTH:	166
-NTEST:	167
-TRUE WORDS RECALL:	0.470
-TEST WORDS PRECISION:	0.467
+NTEST:	156
+TRUE WORDS RECALL:	0.500
+TEST WORDS PRECISION:	0.532
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----3102
 其次								其次
 ，								，
@@ -116128,28 +116076,32 @@ TEST WORDS PRECISION:	0.833
 将								将
 继续								继续
 支持							      |	支
-他们							      |	持他们
+他们							      |	持他
+							      >	们
 按								按
 有关							      |	有
-上市							      |	关上市的
-的							      |	规则要
-规则							      |	求进
-要求							      |	行改
-进行							      |	造，
-改造							      |	以
-，							      |	便尽早
-以便							      |	上
-尽早							      |	市。
+上市							      |	关上
+的							      |	市的
+规则							      |	规
+要求							      |	则
+进行							      |	要
+							      >	求
+							      >	进
+							      >	行
+改造								改造
+，							      |	，以
+以便							      |	便尽早上市
+尽早							      <
 上市							      <
-。							      <
-INSERTIONS:	5
+。								。
+INSERTIONS:	9
 DELETIONS:	4
-SUBSTITUTIONS:	23
-NCHANGE:	32
+SUBSTITUTIONS:	21
+NCHANGE:	34
 NTRUTH:	80
-NTEST:	81
-TRUE WORDS RECALL:	0.662
-TEST WORDS PRECISION:	0.654
+NTEST:	85
+TRUE WORDS RECALL:	0.688
+TEST WORDS PRECISION:	0.647
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----3106
 对于								对于
 已经							      |	已
@@ -116443,36 +116395,33 @@ TEST WORDS PRECISION:	0.842
 制度								制度
 ，								，
 做好								做好
-人才							      |	人才培训
-培训							      |	工
-工作							      |	作；
-；							      <
-逐步								逐步
-建立								建立
-和							      |	和完
-完善							      |	善
+人才								人才
+培训								培训
+工作							      |	工
+							      >	作
+；								；
+逐步							      |	逐步建
+建立							      |	立
+和							      |	和完善
+完善							      <
 企业								企业
-内部							      |	内
-激励							      |	部激
-							      >	励
-机制								机制
-，								，
-逐渐							      |	逐
-融入							      |	渐
-当地							      |	融
-社会							      |	入
-							      >	当
-							      >	地社
-							      >	会
+内部							      |	内部激励
+激励							      |	机
+机制							      |	制，逐渐
+，							      |	融入当
+逐渐							      |	地
+融入							      |	社
+当地							      |	会
+社会							      <
 。								。
-INSERTIONS:	6
-DELETIONS:	2
+INSERTIONS:	3
+DELETIONS:	3
 SUBSTITUTIONS:	14
-NCHANGE:	22
+NCHANGE:	20
 NTRUTH:	88
-NTEST:	92
-TRUE WORDS RECALL:	0.818
-TEST WORDS PRECISION:	0.783
+NTEST:	88
+TRUE WORDS RECALL:	0.807
+TEST WORDS PRECISION:	0.807
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----3113
 事实								事实
 证明								证明
@@ -117222,19 +117171,20 @@ TEST WORDS PRECISION:	0.700
 -								-
 访								访
 东大软件集团						      |	东大
-							      >	软件
-							      >	集团
-董事长								董事长
-刘积仁							      |	刘积
+董事长							      |	软件
+刘积仁							      |	集团
+							      >	董事
+							      >	长
+							      >	刘积
 							      >	仁
-INSERTIONS:	3
+INSERTIONS:	4
 DELETIONS:	2
-SUBSTITUTIONS:	3
-NCHANGE:	8
+SUBSTITUTIONS:	4
+NCHANGE:	10
 NTRUTH:	12
-NTEST:	13
-TRUE WORDS RECALL:	0.583
-TEST WORDS PRECISION:	0.538
+NTEST:	14
+TRUE WORDS RECALL:	0.500
+TEST WORDS PRECISION:	0.429
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----3132
 本报								本报
 记者								记者
@@ -117846,21 +117796,22 @@ TEST WORDS PRECISION:	0.913
 时								时
 ，								，
 比较								比较
-之后							      |	之
-毅然							      |	后毅然选
-选择							      |	择
-了							      |	了我们。
+之后								之后
+毅然							      |	毅
+							      >	然
+选择								选择
+了							      |	了我们。”
 我们							      <
 。							      <
-”								”
-INSERTIONS:	8
-DELETIONS:	3
-SUBSTITUTIONS:	14
+”							      <
+INSERTIONS:	9
+DELETIONS:	4
+SUBSTITUTIONS:	12
 NCHANGE:	25
 NTRUTH:	67
 NTEST:	72
-TRUE WORDS RECALL:	0.746
-TEST WORDS PRECISION:	0.694
+TRUE WORDS RECALL:	0.761
+TEST WORDS PRECISION:	0.708
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----3150
 中国								中国
 搞								搞
@@ -118663,22 +118614,21 @@ TEST WORDS PRECISION:	1.000
 国内								国内
 市场								市场
 竞争								竞争
-中								中
-负重								负重
-起飞								起飞
-，								，
-已经							      |	已经初
-初具规模						      |	具
-							      >	规模
+中							      |	中负
+负重							      |	重起
+起飞							      |	飞
+，							      |	，已经初
+已经							      |	具规模
+初具规模						      <
 。								。
-INSERTIONS:	14
-DELETIONS:	0
-SUBSTITUTIONS:	11
-NCHANGE:	25
+INSERTIONS:	13
+DELETIONS:	1
+SUBSTITUTIONS:	14
+NCHANGE:	28
 NTRUTH:	55
-NTEST:	69
-TRUE WORDS RECALL:	0.800
-TEST WORDS PRECISION:	0.638
+NTEST:	67
+TRUE WORDS RECALL:	0.727
+TEST WORDS PRECISION:	0.597
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----3168
 此次								此次
 被								被
@@ -121901,27 +121851,27 @@ TEST WORDS PRECISION:	0.778
 开刀								开刀
 接骨								接骨
 ，								，
-还要							      |	还要打钢
-打							      |	针、上
-钢针							      <
-、							      <
-上							      <
-石膏								石膏
-，							      |	，至少
-至少							      |	两
-两个月							      |	个月
-才								才
-能							      |	能出院
+还要							      |	还
+打							      |	要打
+钢针								钢针
+、								、
+上							      |	上石
+石膏							      |	膏，至
+，							      |	少
+至少							      |	两个月才能出院！
+两个月							      <
+才							      <
+能							      <
 出院							      <
-！								！
+！							      <
 INSERTIONS:	4
-DELETIONS:	6
+DELETIONS:	7
 SUBSTITUTIONS:	16
-NCHANGE:	26
+NCHANGE:	27
 NTRUTH:	74
-NTEST:	72
-TRUE WORDS RECALL:	0.703
-TEST WORDS PRECISION:	0.722
+NTEST:	71
+TRUE WORDS RECALL:	0.689
+TEST WORDS PRECISION:	0.718
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----3258
 出师								出师
 未							      |	未捷
@@ -122988,27 +122938,27 @@ TEST WORDS PRECISION:	0.692
 仿真								仿真
 事业								事业
 的								的
-发展								发展
-，								，
-成为							      |	成为亚
-亚洲							      |	洲最大
-最大							      |	的仿
-的							      |	真技
-仿真							      |	术
-技术							      |	产
-产品							      |	品开
-开发							      |	发
-生产								生产
-基地								基地
-。								。
+发展							      |	发展，成为
+，							      |	亚洲最大
+成为							      <
+亚洲							      <
+最大							      <
+的								的
+仿真								仿真
+技术								技术
+产品								产品
+开发							      |	开发生
+生产							      |	产基地。
+基地							      <
+。							      <
 INSERTIONS:	1
-DELETIONS:	2
-SUBSTITUTIONS:	11
-NCHANGE:	14
+DELETIONS:	7
+SUBSTITUTIONS:	7
+NCHANGE:	15
 NTRUTH:	82
-NTEST:	81
-TRUE WORDS RECALL:	0.841
-TEST WORDS PRECISION:	0.852
+NTEST:	76
+TRUE WORDS RECALL:	0.829
+TEST WORDS PRECISION:	0.895
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----3283
 他们								他们
 共								共
@@ -125682,25 +125632,25 @@ TEST WORDS PRECISION:	0.652
 美国								美国
 合作								合作
 的								的
-中国							      |	中
-商情							      |	国商
-信息							      |	情信
-光盘							      |	息
-亦							      |	光
-在							      |	盘亦
-北美							      |	在北美和
-和							      |	西
-西欧							      |	欧
+中国								中国
+商情								商情
+信息							      |	信
+光盘							      |	息光
+亦							      |	盘亦
+在							      |	在北
+北美							      |	美和
+和							      <
+西欧								西欧
 上市							      |	上市。
 。							      <
 INSERTIONS:	3
-DELETIONS:	3
-SUBSTITUTIONS:	17
-NCHANGE:	23
+DELETIONS:	4
+SUBSTITUTIONS:	13
+NCHANGE:	20
 NTRUTH:	47
-NTEST:	47
-TRUE WORDS RECALL:	0.574
-TEST WORDS PRECISION:	0.574
+NTEST:	46
+TRUE WORDS RECALL:	0.638
+TEST WORDS PRECISION:	0.652
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----3360
 万方数据公司						      |	万方
 							      >	数据
@@ -125989,29 +125939,27 @@ TEST WORDS PRECISION:	0.611
 信息								信息
 资源								资源
 ，								，
-又								又
-能								能
-方便							      |	方
-查寻							      |	便查
-信息							      |	寻
-							      >	信
-							      >	息
-的								的
-全国性							      |	全国性信息
-信息							      |	服务网
-服务							      |	络开
-网络							      |	通了
-开通							      <
+又							      |	又能方便
+能							      <
+方便							      <
+查寻								查寻
+信息							      |	信
+的							      |	息的全
+全国性							      |	国性信
+信息							      |	息
+服务							      |	服
+网络							      |	务网络
+开通							      |	开通了
 了							      <
 。								。
-INSERTIONS:	12
-DELETIONS:	4
-SUBSTITUTIONS:	19
+INSERTIONS:	10
+DELETIONS:	5
+SUBSTITUTIONS:	20
 NCHANGE:	35
 NTRUTH:	77
-NTEST:	85
-TRUE WORDS RECALL:	0.701
-TEST WORDS PRECISION:	0.635
+NTEST:	82
+TRUE WORDS RECALL:	0.675
+TEST WORDS PRECISION:	0.634
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----3367
 重组								重组
 后								后
@@ -126553,23 +126501,23 @@ TEST WORDS PRECISION:	0.667
 ，								，
 亲自								亲自
 创业								创业
-并								并
-领导							      |	领导一个
-一个							      |	十分出色的高科技
-十分							      |	企
-出色							      |	业。
-的							      <
-高科技							      <
-企业							      <
-。							      <
+并							      |	并领
+领导							      |	导一个十分
+一个							      |	出
+十分							      |	色
+出色							      |	的
+的							      |	高
+高科技							      |	科技
+企业							      |	企
+。							      |	业。
 INSERTIONS:	3
-DELETIONS:	9
-SUBSTITUTIONS:	15
-NCHANGE:	27
+DELETIONS:	5
+SUBSTITUTIONS:	20
+NCHANGE:	28
 NTRUTH:	73
-NTEST:	67
-TRUE WORDS RECALL:	0.671
-TEST WORDS PRECISION:	0.731
+NTEST:	71
+TRUE WORDS RECALL:	0.658
+TEST WORDS PRECISION:	0.676
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----3381
 王常力								王常力
 出生								出生
@@ -126907,24 +126855,25 @@ TEST WORDS PRECISION:	0.857
 十							      <
 上百倍							      <
 地								地
-增长							      |	增长，受到工业
-，							      |	界广大用
-受到							      |	户
-工业界							      |	特
-广大							      |	别的
-用户							      |	青睐。
+增长								增长
+，								，
+受到							      |	受
+工业界							      |	到工
+							      >	业界
+广大								广大
+用户							      |	用户特别的青睐
 特别							      <
 的							      <
 青睐							      <
-。							      <
-INSERTIONS:	3
-DELETIONS:	11
-SUBSTITUTIONS:	16
-NCHANGE:	30
+。								。
+INSERTIONS:	4
+DELETIONS:	10
+SUBSTITUTIONS:	13
+NCHANGE:	27
 NTRUTH:	75
-NTEST:	67
-TRUE WORDS RECALL:	0.640
-TEST WORDS PRECISION:	0.716
+NTEST:	69
+TRUE WORDS RECALL:	0.693
+TEST WORDS PRECISION:	0.754
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----3389
 目前								目前
 ，								，
@@ -127388,28 +127337,33 @@ TEST WORDS PRECISION:	0.571
 高技术							      |	列高
 难题							      |	技术
 ，							      |	难
-终于							      |	题，终于研
-研制							      |	制成功
-成功							      |	达到国内
-达到							      |	领
-国内							      |	先
-领先							      |	、国际
-、							      |	９０年
-国际							      |	代
-９０年代						      |	水平的
-水平							      <
-的							      <
-ｄｃｓ								ｄｃｓ
-系统							      |	系统。
-。							      <
-INSERTIONS:	4
-DELETIONS:	4
-SUBSTITUTIONS:	22
-NCHANGE:	30
+终于							      |	题
+研制							      |	，终
+成功							      |	于
+达到							      |	研
+国内							      |	制成功达到
+领先							      |	国
+、							      |	内领
+国际							      |	先、
+９０年代						      |	国际９
+水平							      |	０
+的							      |	年
+ｄｃｓ							      |	代
+系统							      |	水
+							      >	平
+							      >	的ｄ
+							      >	ｃｓ
+							      >	系
+							      >	统
+。								。
+INSERTIONS:	9
+DELETIONS:	1
+SUBSTITUTIONS:	25
+NCHANGE:	35
 NTRUTH:	83
-NTEST:	83
+NTEST:	91
 TRUE WORDS RECALL:	0.687
-TEST WORDS PRECISION:	0.687
+TEST WORDS PRECISION:	0.626
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----3400
 有							      |	有位
 位							      <
@@ -127503,31 +127457,30 @@ TEST WORDS PRECISION:	0.743
 反之							      |	反
 ，							      |	之，
 则								则
-对								对
-生产							      |	生
-造成							      |	产
-极大							      |	造
-							      >	成极
-							      >	大
-损失								损失
-，							      |	，甚
-甚至							      |	至还
-还							      |	会造
-会							      |	成事故危及人身
-造成							      |	安
-事故							      |	全。
+对							      |	对生产
+生产							      <
+造成								造成
+极大								极大
+损失							      |	损
+							      >	失
+，								，
+甚至							      |	甚至还会
+还							      |	造成事
+会							      |	故危及人
+造成							      |	身安
+事故							      |	全
 危及							      <
 人身							      <
 安全							      <
-。							      <
-INSERTIONS:	4
+。								。
+INSERTIONS:	3
 DELETIONS:	7
-SUBSTITUTIONS:	15
-NCHANGE:	26
+SUBSTITUTIONS:	13
+NCHANGE:	23
 NTRUTH:	59
-NTEST:	56
-TRUE WORDS RECALL:	0.627
-TEST WORDS PRECISION:	0.661
+NTEST:	55
+TRUE WORDS RECALL:	0.661
+TEST WORDS PRECISION:	0.709
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----3402
 为了							      |	为
 							      >	了
@@ -128359,20 +128312,19 @@ TEST WORDS PRECISION:	0.667
 他								他
 本人								本人
 出任								出任
-法人								法人
-代表								代表
-和								和
-总经理							      |	总经
-							      >	理
+法人							      |	法人代表
+代表							      |	和总
+和							      |	经
+总经理							      |	理
 。								。
-INSERTIONS:	4
+INSERTIONS:	3
 DELETIONS:	0
-SUBSTITUTIONS:	11
-NCHANGE:	15
+SUBSTITUTIONS:	14
+NCHANGE:	17
 NTRUTH:	69
-NTEST:	73
-TRUE WORDS RECALL:	0.841
-TEST WORDS PRECISION:	0.795
+NTEST:	72
+TRUE WORDS RECALL:	0.797
+TEST WORDS PRECISION:	0.764
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----3426
 激光								激光
 全息								全息
@@ -129350,36 +129302,36 @@ TEST WORDS PRECISION:	0.943
 ，								，
 目前								目前
 在								在
-欧							      |	欧、美
-、							      |	、日
-美							      |	等发达
-、							      |	国
-日							      |	家
-等							      <
-发达国家						      <
-也是								也是
-刚刚							      |	刚
-开始							      |	刚开
-							      >	始
-应用								应用
-于								于
-精品							      |	精
-包装							      |	品包
-，							      |	装
-具有							      |	，具有广
-广阔							      |	阔的市场
-的							      |	前景。
-市场							      <
-前景							      <
-。							      <
+欧								欧
+、								、
+美								美
+、								、
+日								日
+等								等
+发达国家						      |	发
+也是							      |	达国
+刚刚							      |	家
+开始							      |	也
+应用							      |	是
+于							      |	刚
+精品							      |	刚
+包装							      |	开
+，							      |	始应
+具有							      |	用
+广阔							      |	于精品包装，具有广
+的							      |	阔
+市场							      |	的市
+							      >	场
+前景								前景
+。								。
 INSERTIONS:	2
-DELETIONS:	7
+DELETIONS:	2
 SUBSTITUTIONS:	16
-NCHANGE:	25
+NCHANGE:	20
 NTRUTH:	88
-NTEST:	83
-TRUE WORDS RECALL:	0.739
-TEST WORDS PRECISION:	0.783
+NTEST:	88
+TRUE WORDS RECALL:	0.795
+TEST WORDS PRECISION:	0.795
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----3449
 相对								相对
 于								于
@@ -129534,41 +129486,39 @@ TEST WORDS PRECISION:	0.759
 也								也
 在								在
 华工园							      |	华
-新							      |	工园
-落成							      |	新落
-的							      |	成的激光
-激光全息大楼						      |	全
-内							      |	息大
-正式							      |	楼
-投入							      |	内正
-运转							      |	式投入运转
-，							      |	，长
-长沙							      |	沙
-“							      |	“猴
-猴王							      |	王
-”							      <
-再次							      <
+							      >	工园
+新								新
+落成								落成
+的								的
+激光全息大楼						      |	激
+内							      |	光全
+							      >	息
+							      >	大楼内
+正式								正式
+投入							      |	投
+运转							      |	入运转，
+，							      |	长沙“猴王
+长沙							      |	”再次成为“第
+“							      |	一
+猴王							      |	个
+”							      |	吃螃
+再次							      |	蟹者”。
 成为							      <
 “							      <
 第一个						      <
 吃							      <
 螃蟹							      <
 者							      <
-”								”
-。							      |	再
-							      >	次成为“第
-							      >	一
-							      >	个
-							      >	吃螃蟹者
-							      >	”。
-INSERTIONS:	13
+”							      <
+。							      <
+INSERTIONS:	11
 DELETIONS:	12
-SUBSTITUTIONS:	24
-NCHANGE:	49
+SUBSTITUTIONS:	21
+NCHANGE:	44
 NTRUTH:	76
-NTEST:	77
-TRUE WORDS RECALL:	0.526
-TEST WORDS PRECISION:	0.519
+NTEST:	75
+TRUE WORDS RECALL:	0.566
+TEST WORDS PRECISION:	0.573
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----3453
 图片								图片
 ：								：
@@ -134725,23 +134675,23 @@ TEST WORDS PRECISION:	0.571
 有								有
 知识								知识
 有								有
-文化							      |	文化有
-有							      |	专
-专业							      |	业
-特长							      |	特
-的							      |	长的年轻知
-年轻							      |	识
-知识分子							      |	分子组成
-组成							      <
+文化								文化
+有							      |	有专业特
+专业							      |	长的年
+特长							      |	轻
+的							      |	知识分
+年轻							      |	子
+知识分子							      |	组
+组成							      |	成
 。								。
 INSERTIONS:	3
-DELETIONS:	8
+DELETIONS:	7
 SUBSTITUTIONS:	22
-NCHANGE:	33
+NCHANGE:	32
 NTRUTH:	74
-NTEST:	69
-TRUE WORDS RECALL:	0.595
-TEST WORDS PRECISION:	0.638
+NTEST:	70
+TRUE WORDS RECALL:	0.608
+TEST WORDS PRECISION:	0.643
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----3607
 他们								他们
 朝气蓬勃							      |	朝气
@@ -136834,43 +136784,44 @@ TEST WORDS PRECISION:	0.833
 了								了
 “								“
 莱州市							      |	莱州市２１世纪项
-２１世纪						      |	目库”，并
+２１世纪						      |	目库
 项目							      <
 库							      <
-”							      <
-，							      <
-并							      <
-实施								实施
-项目								项目
-动态								动态
-管理							      |	管
-，							      |	理，
-免费							      |	免费为本
-为							      |	市企
-本							      |	业提供
-市							      |	项目信
-企业							      |	息服务，目前
-提供							      <
-项目							      <
-信息							      <
-服务							      <
-，							      <
-目前							      <
-已								已
-有							      |	有３项
-３项							      |	达成转
-达成							      |	让
-转让							      |	协
-协议							      |	议。
-。							      <
-INSERTIONS:	3
-DELETIONS:	16
-SUBSTITUTIONS:	26
-NCHANGE:	45
+”								”
+，								，
+并							      |	并实
+实施							      |	施
+项目							      |	项目动
+动态							      |	态管
+管理							      |	理，免
+，							      |	费
+免费							      <
+为								为
+本							      |	本市企
+市							      |	业
+企业							      |	提
+提供							      |	供项目
+项目							      |	信
+信息							      |	息
+服务							      |	服务，目
+，							      |	前已有３
+目前							      |	项
+已							      <
+有							      <
+３项							      <
+达成								达成
+转让							      |	转
+协议							      |	让
+。							      |	协
+							      >	议。
+INSERTIONS:	4
+DELETIONS:	10
+SUBSTITUTIONS:	32
+NCHANGE:	46
 NTRUTH:	85
-NTEST:	72
+NTEST:	79
 TRUE WORDS RECALL:	0.506
-TEST WORDS PRECISION:	0.597
+TEST WORDS PRECISION:	0.544
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----3656
 今年７月						      |	今年
 							      >	７月
@@ -137536,22 +137487,22 @@ TEST WORDS PRECISION:	0.686
 经济								经济
 发展								发展
 建立								建立
-在								在
-坚实								坚实
-的							      |	的物质技术
-物质							      |	基
-技术							      |	础
-基础							      |	之上。
+在							      |	在坚
+坚实							      |	实的物质技术基础
+的							      |	之上。
+物质							      <
+技术							      <
+基础							      <
 之上							      <
 。							      <
 INSERTIONS:	4
-DELETIONS:	2
-SUBSTITUTIONS:	9
-NCHANGE:	15
+DELETIONS:	5
+SUBSTITUTIONS:	8
+NCHANGE:	17
 NTRUTH:	76
-NTEST:	78
-TRUE WORDS RECALL:	0.855
-TEST WORDS PRECISION:	0.833
+NTEST:	75
+TRUE WORDS RECALL:	0.829
+TEST WORDS PRECISION:	0.840
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----3669
 北大方正集团公司					      |	北大
 							      >	方正
@@ -137621,38 +137572,39 @@ TEST WORDS PRECISION:	0.833
 、								、
 计算机								计算机
 硬件								硬件
-设备								设备
-制造								制造
+设备							      |	设备制
+制造							      |	造
 、								、
 信息系统						      |	信
-集成							      |	息
-及							      |	系
-指纹							      |	统集成及
-自动							      |	指
-识别							      |	纹自
-							      >	动识别
+集成							      |	息系统集成及
+及							      |	指纹自
+指纹							      |	动识别
+自动							      <
+识别							      <
 等								等
 领域							      |	领
-取得							      |	域
-了							      |	取得了重
-重大							      |	大业绩
-业绩							      |	，在
-，							      |	国
-在							      |	内外
-国内外							      |	赢得了竞争
+取得							      |	域取
+了							      |	得
+重大							      <
+业绩							      <
+，							      <
+在							      <
+国内外							      <
 赢得							      <
-了							      <
-竞争							      <
+了								了
+竞争							      |	重大业绩，在
+							      >	国内外赢得了竞
+							      >	争
 优势								优势
 。								。
-INSERTIONS:	11
-DELETIONS:	8
-SUBSTITUTIONS:	27
-NCHANGE:	46
+INSERTIONS:	12
+DELETIONS:	13
+SUBSTITUTIONS:	23
+NCHANGE:	48
 NTRUTH:	81
-NTEST:	84
-TRUE WORDS RECALL:	0.568
-TEST WORDS PRECISION:	0.548
+NTEST:	80
+TRUE WORDS RECALL:	0.556
+TEST WORDS PRECISION:	0.562
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----3670
 今年								今年
 ，								，
@@ -138074,97 +138026,93 @@ TEST WORDS PRECISION:	0.806
 的								的
 应用								应用
 软件								软件
-系统							      |	系
-；							      |	统；
-信息								信息
-网络							      |	网
-，							      |	络，
-主要								主要
-指							      |	指各
-各种							      |	种
-信息系统						      <
-所							      <
-构成							      <
-的							      <
-信息								信息
-网络							      |	系统
-体系							      |	所构
-以及							      |	成
-为了							      <
-支持							      <
-这个							      <
+系统							      |	系统；信
+；							      |	息网络，
+信息							      |	主要指各种信息系
+网络							      |	统所构
+，							      |	成
+主要							      |	的
+指							      |	信
+各种							      |	息网
+信息系统						      |	络
+所							      |	体
+构成							      |	系以及为了支
+的							      |	持
+信息							      <
 网络							      <
 体系							      <
-有效							      <
-运转							      <
-所							      <
-需要							      <
-的								的
-网络							      |	信息网
-标准							      |	络
--							      |	体
--							      |	系
--							      |	以
-通信							      |	及为
-协议							      |	了支
--							      |	持这
--							      |	个网络
--							      |	体
-操作规程							      |	系
-							      >	有效运
-							      >	转
-							      >	所需
-							      >	要
-							      >	的网络标准
--								-
--								-
--								-
-							      >	通信协议--
-							      >	-操
-							      >	作
-							      >	规
-							      >	程---
-传输								传输
-编码							      |	编码等；信
-等							      |	息
+以及							      <
+为了							      <
+支持							      <
+这个								这个
+网络							      |	网络体
+体系							      |	系有效运转所需要
+有效							      |	的网
+运转							      |	络标
+所							      |	准-
+需要							      |	-
+的							      |	-
+网络							      |	通信协议--
+标准							      |	-
+-							      |	操
+-							      |	作规程-
+-							      |	-
+通信							      |	-传输编码
+协议							      |	等；
+-							      |	信
+-							      |	息
+-							      <
+操作规程							      <
+-							      <
+-							      <
+-							      <
+传输							      <
+编码							      <
+等							      <
 ；							      <
 信息							      <
 主体								主体
-，								，
-主要							      |	主要指各
-指							      |	种
+，							      |	，主
+主要							      |	要
+指								指
 各种各样							      |	各
-的							      |	样
-信息							      |	的
-资源							      |	信
-的							      |	息资
-开放							      |	源的开
-者							      |	放
--							      |	者-
--							      |	--提供者
--							      |	---
-提供							      |	管
-							      >	理
+的							      |	种
+信息							      |	各样
+资源							      |	的
+							      >	信
+							      >	息
+							      >	资
+							      >	源
+的								的
+开放							      |	开
+							      >	放
 者								者
+							      >	---
+							      >	提供者
 -								-
 -							      |	--
--							      |	利
-管理							      |	用者
-者							      <
+-							      |	管
+提供							      |	理
+者							      |	者-
+-							      |	-
+-							      |	-利用
+-							      |	者以及对
+管理							      |	他
+者							      |	们
 -							      <
 -							      <
 -							      <
 利用							      <
 者							      <
-以及								以及
-对							      |	对他们
+以及							      <
+对							      <
 他们							      <
 所								所
-进行							      |	进行的
-的							      |	必
-必要							      |	要的教育，如
-的							      |	文
-教育							      |	化
+进行							      |	进行的必要的教育，如文
+的							      |	化
+必要							      <
+的							      <
+教育							      <
 ，							      <
 如							      <
 文化							      <
@@ -138176,16 +138124,17 @@ TEST WORDS PRECISION:	0.806
 、								、
 法律							      |	道
 教育							      |	德、法律教
-等							      |	育
-。							      |	等。
-INSERTIONS:	17
-DELETIONS:	29
+							      >	育
+等								等
+。								。
+INSERTIONS:	14
+DELETIONS:	34
 SUBSTITUTIONS:	58
-NCHANGE:	104
+NCHANGE:	106
 NTRUTH:	154
-NTEST:	142
-TRUE WORDS RECALL:	0.435
-TEST WORDS PRECISION:	0.472
+NTEST:	134
+TRUE WORDS RECALL:	0.403
+TEST WORDS PRECISION:	0.463
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----3682
 一些								一些
 学者								学者
@@ -139277,136 +139226,139 @@ TEST WORDS PRECISION:	0.818
 ；								；
 信息								信息
 高速公路						      |	高速
-的							      |	公
-开通							      |	路的
-，							      |	开
-带来							      |	通
-							      >	，带来
+							      >	公路
+的								的
+开通							      |	开通，
+，							      |	带
+带来							      |	来
 了								了
-家庭							      |	家庭银
-银行							      |	行
-，							      |	，无人银
-无人							      |	行
-银行							      <
+家庭							      |	家
+银行							      |	庭银
+，							      |	行
+无人							      |	，无人银
+银行							      |	行，
+，							      |	电
+电脑							      |	脑经纪
+经纪人						      |	人
+，							      |	，自
+自动化							      |	动化
+工厂							      |	工厂，跨
+，							      |	国
+跨国							      |	“组合
+“							      |	式
+组合式							      <
+”								”
+公司							      |	公司，全
+，							      |	球实
+全球							      |	验室，
+实验室							      |	家
+，							      |	庭
+家庭							      |	大学，世
+大学							      |	界通
+，							      |	用教
+世界							      |	材
+通用							      |	，
+教材							      |	智能汽车、飞机
+，							      |	、轮船
+智能							      |	，国
+汽车							      |	际
+、							      |	医疗会
+飞机							      |	诊，
+、							      |	电
+轮船							      |	脑
+，							      |	图
+国际							      |	书，
+医疗							      <
+会诊							      <
+，							      <
+电脑							      <
+图书							      <
+，							      <
+电子								电子
+报刊								报刊
 ，								，
-电脑								电脑
-经纪人						      |	经纪
-							      >	人
+虚拟							      |	虚
+真实							      |	拟真
+							      >	实
+世界								世界
 ，								，
-自动化							      |	自动
-							      >	化
-工厂								工厂
-，								，
-跨国							      |	跨国“
-“							      |	组
-组合式							      |	合
-”							      |	式”公司
-公司							      |	，全球实验
-，							      |	室
-全球							      |	，
-实验室							      |	家庭大
-，							      |	学
-家庭							      |	，世
-大学							      |	界通用教
-，							      |	材，
-世界							      |	智
-通用							      |	能汽
-教材							      |	车
-，							      |	、飞
-智能							      |	机
-汽车							      <
-、							      <
-飞机							      <
-、								、
-轮船								轮船
-，							      |	，国
-国际							      |	际
-医疗								医疗
-会诊							      |	会
-，							      |	诊，电脑
-电脑							      |	图书，电
-图书							      |	子
-，							      |	报刊，虚拟真
-电子							      |	实
-报刊							      |	世
-，							      |	界
-虚拟							      |	，电
-真实							      |	视
-世界							      |	会
-，							      |	议
-电视							      <
+电视								电视
 会议							      <
-等等								等等
-新							      |	新事
-事物							      |	物
-、								、
-新产品							      |	新
-，							      |	产
-从而							      |	品，
-不仅							      |	从而不
-会							      |	仅会
-从							      |	从根
-根本上							      |	本
-							      >	上
+等等							      <
+新							      <
+事物							      <
+、							      <
+新产品							      <
+，							      <
+从而							      <
+不仅							      <
+会								会
+从							      |	议
+根本上							      |	等等新事物、
+							      >	新
+							      >	产
+							      >	品，从而不仅
+							      >	会从
+							      >	根
+							      >	本上
 改变								改变
 现有								现有
-的							      |	的生
-生产							      |	产
-							      >	结
-							      >	构
-							      >	、产
-							      >	业
+的								的
+生产							      |	生
+结构							      |	产
+、							      <
+产业							      <
 结构								结构
 、								、
-产业							      |	劳动结构
-结构							      <
-、							      <
-劳动							      <
-结构							      <
+劳动							      |	产
+结构							      |	业
+							      >	结构、劳
+							      >	动结
+							      >	构
 和								和
-消费							      |	消
-							      >	费
+消费								消费
 结构								结构
-，							      |	，而
-而且							      |	且
-也								也
-将							      |	将极大地
-极大							      |	改变人
-地							      |	们
-改变							      |	的
-人们							      |	生
-的							      |	活
-生活							      |	、学
-、							      |	习、工作
-学习							      |	、交往和
-、							      |	思
-工作							      |	维
-、							      |	的方式
-交往							      |	，引起
-和							      |	人们价
-思维							      |	值
-的							      <
-方式							      <
-，							      <
-引起							      <
+，								，
+而且								而且
+也							      |	也将极
+将							      |	大
+极大							      <
+地								地
+改变								改变
+人们							      |	人
+的							      |	们
+生活							      |	的生
+、							      |	活、
+学习							      |	学
+、							      |	习
+工作							      |	、工作
+、							      |	、
+交往							      |	交往和思维
+和							      |	的
+思维							      |	方式，引起
+的							      |	人
+方式							      |	们
+，							      |	价
+引起							      |	值
 人们							      <
 价值观							      <
 和							      <
 伦理							      <
 观								观
-的							      |	和伦理
-深刻							      |	观的
-变革							      |	深
-。							      |	刻
-							      >	变革。
-INSERTIONS:	18
-DELETIONS:	19
-SUBSTITUTIONS:	86
-NCHANGE:	123
+的							      |	和伦理观的
+深刻							      |	深
+变革							      |	刻
+							      >	变
+							      >	革
+。								。
+INSERTIONS:	21
+DELETIONS:	24
+SUBSTITUTIONS:	76
+NCHANGE:	121
 NTRUTH:	181
-NTEST:	180
-TRUE WORDS RECALL:	0.420
-TEST WORDS PRECISION:	0.422
+NTEST:	178
+TRUE WORDS RECALL:	0.448
+TEST WORDS PRECISION:	0.455
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----3708
 与会者							      |	与
 							      >	会者
@@ -139994,33 +139946,34 @@ TEST WORDS PRECISION:	0.846
 ，								，
 随着								随着
 微型计算机						      |	微型
-的							      |	计算
-技术							      |	机的
-进步							      |	技
-，							      |	术进步，超
-超							      |	巨
-巨型计算机						      |	型
-的							      |	计算
-研制							      |	机的研制
-，							      |	，
+							      >	计算机
+的								的
+技术							      |	技术进步
+进步							      <
+，								，
+超								超
+巨型计算机						      |	巨
+的							      |	型计
+研制							      |	算机的研
+，							      |	制，
 通讯卫星							      |	通
-的							      |	讯卫
-发展							      |	星的
-，							      |	发展，大容
-大							      |	量
-容量							      |	程
-程控交换机						      |	控
-的							      |	交
-广泛							      |	换机的广泛
-使用							      |	使用和互联网的
-和							      |	出
-互联网							      |	现，
-的							      |	使人类面临着
-出现							      |	信息
-，							      |	化
-使							      |	进
-人类							      |	程
-面临							      |	的一次新
+的							      |	讯
+发展							      |	卫
+，							      |	星
+大							      |	的发
+容量							      |	展，大容
+程控交换机						      |	量程
+的							      |	控交
+广泛							      |	换机的
+使用							      |	广
+和							      |	泛使用
+互联网							      |	和互联网的出
+的							      |	现，使人类
+出现							      |	面
+，							      |	临着信息化进程的
+使							      |	一次新
+人类							      <
+面临							      <
 着							      <
 信息化							      <
 进程							      <
@@ -140029,14 +139982,14 @@ TEST WORDS PRECISION:	0.846
 新							      <
 飞跃								飞跃
 。								。
-INSERTIONS:	5
-DELETIONS:	10
-SUBSTITUTIONS:	38
-NCHANGE:	53
+INSERTIONS:	6
+DELETIONS:	13
+SUBSTITUTIONS:	32
+NCHANGE:	51
 NTRUTH:	88
-NTEST:	83
-TRUE WORDS RECALL:	0.455
-TEST WORDS PRECISION:	0.482
+NTEST:	81
+TRUE WORDS RECALL:	0.489
+TEST WORDS PRECISION:	0.531
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----3727
 世界								世界
 新								新
@@ -140429,35 +140382,39 @@ TEST WORDS PRECISION:	0.737
 统一							      |	一
 的								的
 、								、
-联系							      |	联系的、动
-							      >	态
-的								的
-、							      |	观点研究
-动态							      |	系
-的							      |	统
-观点							      |	运
-研究							      |	动过
-系统							      |	程的新
-运动							      |	方法，被人称
-过程							      |	之
-的							      |	为
-新							      |	信
-方法							      |	息方
-，							      |	法
+联系								联系
+的							      |	的、动态
+、							      |	的观
+动态							      |	点研究系统
+的							      |	运动过
+观点							      |	程
+研究							      |	的新
+系统							      <
+运动							      <
+过程							      <
+的							      <
+新							      <
+方法							      <
+，							      <
 被							      <
 人							      <
 称之为						      <
 信息							      <
-方法							      <
+方法								方法
+							      >	，被人
+							      >	称
+							      >	之
+							      >	为信
+							      >	息方法
 。								。
-INSERTIONS:	5
-DELETIONS:	6
-SUBSTITUTIONS:	21
-NCHANGE:	32
+INSERTIONS:	9
+DELETIONS:	12
+SUBSTITUTIONS:	14
+NCHANGE:	35
 NTRUTH:	91
-NTEST:	90
-TRUE WORDS RECALL:	0.703
-TEST WORDS PRECISION:	0.711
+NTEST:	88
+TRUE WORDS RECALL:	0.714
+TEST WORDS PRECISION:	0.739
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----3737
 这是								这是
 把								把
@@ -141551,51 +141508,49 @@ TEST WORDS PRECISION:	0.920
 							      >	同性
 …								…
 …								…
-显然							      |	显
-，							      |	然，他
-他们							      |	们的
-的							      <
-目的								目的
-不仅							      |	不
-要							      |	仅
-使							      |	要使自
-自己							      |	己的
-的							      |	经
-经济							      |	济
-、								、
-科技								科技
+显然								显然
+，							      |	，他
+他们							      |	们的目的
+的							      |	不
+目的							      |	仅要
+不仅							      <
+要							      <
+使								使
+自己								自己
+的							      |	的经济、科
+经济							      |	技
+、							      <
+科技							      <
 在								在
-下个世纪						      |	下个
-站							      |	世
-在							      |	纪
-世界							      |	站在世界
-的							      |	的前
-前沿							      |	沿，
-，							      |	而
-而且							      |	且
-要								要
-使							      |	使自
-自己							      |	己的政
-的							      |	治
-政治							      <
-、								、
-文化							      |	文
-成为							      |	化
-全球							      |	成
-公认							      |	为全
-的							      |	球
-准则							      |	公
-。							      |	认的
-							      >	准
-							      >	则。
-INSERTIONS:	5
-DELETIONS:	3
-SUBSTITUTIONS:	31
-NCHANGE:	39
+下个世纪							下个世纪
+站								站
+在								在
+世界							      |	世
+的							      |	界
+前沿							      |	的前
+，							      |	沿，
+而且							      |	而
+要							      |	且
+使							      |	要使自
+自己							      |	己
+的							      |	的
+政治							      |	政
+、							      |	治
+文化							      |	、文化成为全
+成为							      |	球公
+全球							      |	认
+公认							      |	的准则
+的							      <
+准则							      <
+。								。
+INSERTIONS:	3
+DELETIONS:	7
+SUBSTITUTIONS:	25
+NCHANGE:	35
 NTRUTH:	111
-NTEST:	113
-TRUE WORDS RECALL:	0.694
-TEST WORDS PRECISION:	0.681
+NTEST:	107
+TRUE WORDS RECALL:	0.712
+TEST WORDS PRECISION:	0.738
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----3761
 我国								我国
 作为								作为
@@ -142419,62 +142374,61 @@ TEST WORDS PRECISION:	0.842
 使用								使用
 专门								专门
 的								的
-过滤							      |	过
-软件							      |	滤
-；							      |	软
-三							      |	件；三
-是								是
-网络							      |	网络管
-管理							      |	理
-人员							      |	人员加
-加强							      |	强对传播
-对							      |	黄
-传播							      |	色
-黄色							      |	信
-信息							      |	息的
-的							      |	组
+过滤							      |	过滤软
+软件							      |	件；三是
+；							      |	网络管
+三							      |	理人
+是							      |	员
+网络							      <
+管理							      <
+人员							      <
+加强								加强
+对								对
+传播								传播
+黄色							      |	黄
+信息							      |	色
+的							      |	信息的组
 组织							      |	织加以
-加以							      |	堵
-堵塞							      |	塞；四
-；							      <
+加以							      <
+堵塞								堵塞
+；							      |	；四
 四							      <
 是								是
-加强								加强
-对							      |	对在线
-在线							      |	电
-电话							      |	话
-的							      |	的
-管理							      |	管
-，							      |	理，
-通过							      |	通
-警方							      |	过
-							      >	警
-							      >	方
+加强							      |	加
+对							      |	强对在线电话
+在线							      |	的管
+电话							      |	理
+的							      <
+管理							      <
+，								，
+通过							      |	通过警
+警方							      |	方
 与								与
 社团							      |	社
 合作							      |	团
 、							      |	合作、
 举报							      |	举
-等							      |	报等手
-手段							      |	段
-打击							      |	打击个人或有
-个人							      |	组
-或							      |	织的
-有							      |	电
-组织							      |	脑犯
-的							      |	罪活动。
-电脑							      <
-犯罪							      <
-活动							      <
-。							      <
-INSERTIONS:	2
-DELETIONS:	8
-SUBSTITUTIONS:	38
-NCHANGE:	48
+等							      |	报等
+手段							      |	手
+打击							      |	段打
+个人							      |	击
+或							      |	个
+有							      |	人
+组织							      |	或有
+的							      |	组织的
+电脑							      |	电
+犯罪							      |	脑犯
+活动							      |	罪活
+							      >	动
+。								。
+INSERTIONS:	1
+DELETIONS:	9
+SUBSTITUTIONS:	33
+NCHANGE:	43
 NTRUTH:	113
-NTEST:	107
-TRUE WORDS RECALL:	0.593
-TEST WORDS PRECISION:	0.626
+NTEST:	105
+TRUE WORDS RECALL:	0.628
+TEST WORDS PRECISION:	0.676
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----3783
 为								为
 防止								防止
@@ -144915,16 +144869,16 @@ TEST WORDS PRECISION:	0.738
 办法								办法
 的								的
 主要								主要
-原因								原因
-。								。
+原因							      |	原
+。							      |	因。
 INSERTIONS:	4
 DELETIONS:	3
-SUBSTITUTIONS:	9
-NCHANGE:	16
+SUBSTITUTIONS:	11
+NCHANGE:	18
 NTRUTH:	70
 NTEST:	71
-TRUE WORDS RECALL:	0.829
-TEST WORDS PRECISION:	0.817
+TRUE WORDS RECALL:	0.800
+TEST WORDS PRECISION:	0.789
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----3855
 今日								今日
 的								的
@@ -146195,50 +146149,51 @@ TEST WORDS PRECISION:	0.900
 提高								提高
 了								了
 学生								学生
-抽象思维						      |	抽象思
-和							      |	维
-自学							      |	和自学的能力；后
-的							      |	者使
-能力							      |	印
-；							      |	刷物的书
-后者							      |	籍、课本
-使							      |	成
-印刷							      |	为
-物							      |	文
-的							      |	化的主
-书籍							      |	要
-、							      <
-课本							      <
-成为							      <
-文化							      <
-的							      <
-主要							      <
-载体								载体
-，								，
-由此							      |	由
-推动							      |	此
-了							      |	推动了
-文化							      |	文
-的							      |	化
-传播							      |	的
-和							      |	传
-近							      |	播和近、
-、							      |	现
-现代							      |	代
-教育							      |	教
-							      >	育
+抽象思维						      |	抽象
+和							      |	思
+自学							      |	维和
+的							      |	自
+能力							      |	学的
+							      >	能
+							      >	力
+；								；
+后者							      |	后
+							      >	者
+使								使
+印刷							      |	印刷物
+物							      <
 的								的
-普及							      |	普
-							      >	及
+书籍							      |	书籍、课
+、							      |	本
+课本							      |	成为文化的主要
+成为							      |	载
+文化							      |	体，由此
+的							      |	推
+主要							      |	动了
+载体							      <
+，							      <
+由此							      <
+推动							      <
+了							      <
+文化								文化
+的								的
+传播								传播
+和								和
+近							      |	近、
+、							      |	现
+现代							      |	代教
+教育							      |	育
+的								的
+普及								普及
 。								。
-INSERTIONS:	3
+INSERTIONS:	4
 DELETIONS:	7
-SUBSTITUTIONS:	26
-NCHANGE:	36
+SUBSTITUTIONS:	20
+NCHANGE:	31
 NTRUTH:	106
-NTEST:	102
-TRUE WORDS RECALL:	0.689
-TEST WORDS PRECISION:	0.716
+NTEST:	103
+TRUE WORDS RECALL:	0.745
+TEST WORDS PRECISION:	0.767
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----3894
 进入							      |	进入９０年代
 ９０年代						      <
@@ -146772,53 +146727,51 @@ TEST WORDS PRECISION:	0.960
 ”								”
 ）								）
 ，								，
-短短								短短
-６秒钟							      |	６秒
-之后							      |	钟之后
-，								，
-电脑								电脑
-就								就
-会								会
-在							      |	在通
-通读							      |	读
-二十五史							      |	二十五
-全文							      |	史全
-的							      |	文的
-基础								基础
+短短							      |	短
+６秒钟							      |	短６
+之后							      |	秒钟之后，电脑就会在
+，							      |	通
+电脑							      |	读二十五史全
+就							      |	文
+会							      <
+在							      <
+通读							      <
+二十五史							      <
+全文							      <
+的								的
+基础							      |	基
+							      >	础
 上								上
 为								为
 你							      |	你筛
-筛选							      |	选出
-出							      |	１
-１０９６８段						      |	０９
-相关							      |	６８
-资料							      |	段相
-和							      |	关
-１４９１８个						      |	资
-词							      |	料
-目							      |	和１
-，							      |	４
-组成							      |	９１８
-							      >	个
-							      >	词目，组
-							      >	成
-一个								一个
-特殊							      |	特
-							      >	殊
-的								的
-文本								文本
-供								供
-你							      |	你阅读
+筛选							      |	选
+出							      |	出１０
+１０９６８段						      |	９
+相关							      |	６８段相
+资料							      |	关
+和							      |	资
+１４９１８个						      |	料
+词							      |	和１
+目							      |	４９１８个
+							      >	词目
+，								，
+组成								组成
+一个							      |	一
+特殊							      |	个
+的							      |	特
+文本							      |	殊的文本供
+供							      |	你阅
+你							      |	读
 阅读							      <
 。								。
-INSERTIONS:	8
-DELETIONS:	3
-SUBSTITUTIONS:	31
-NCHANGE:	42
+INSERTIONS:	6
+DELETIONS:	8
+SUBSTITUTIONS:	33
+NCHANGE:	47
 NTRUTH:	108
-NTEST:	113
-TRUE WORDS RECALL:	0.685
-TEST WORDS PRECISION:	0.655
+NTEST:	106
+TRUE WORDS RECALL:	0.620
+TEST WORDS PRECISION:	0.632
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----3908
 你								你
 若								若
@@ -147623,25 +147576,25 @@ TEST WORDS PRECISION:	0.793
 的								的
 智慧								智慧
 实现								实现
-跨							      |	跨时空
-时空							      |	的“
-的							      |	联
-“							      |	网
-联网							      |	”与“
-”							      |	激发”。
-与							      <
-“							      <
-激发							      <
+跨								跨
+时空							      |	时空的
+的							      <
+“								“
+联网							      |	联网”
 ”							      <
-。							      <
+与								与
+“								“
+激发							      |	激发”
+”							      <
+。								。
 INSERTIONS:	7
-DELETIONS:	5
-SUBSTITUTIONS:	13
-NCHANGE:	25
+DELETIONS:	3
+SUBSTITUTIONS:	10
+NCHANGE:	20
 NTRUTH:	77
-NTEST:	79
-TRUE WORDS RECALL:	0.766
-TEST WORDS PRECISION:	0.747
+NTEST:	81
+TRUE WORDS RECALL:	0.831
+TEST WORDS PRECISION:	0.790
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----3927
 在								在
 这样								这样
@@ -148982,24 +148935,24 @@ TEST WORDS PRECISION:	0.727
 目前								目前
 为止								为止
 ，								，
-西方								西方
-文化							      |	文
-仍然							      |	化仍然
+西方							      |	西方文化
+文化							      |	仍
+仍然							      |	然
 占据								占据
-着							      |	着计算机
-计算机							      |	文化的主
-文化							      |	体。
-的							      <
+着								着
+计算机							      |	计算
+文化							      |	机文化的
+的							      |	主体。
 主体							      <
 。							      <
 INSERTIONS:	3
-DELETIONS:	5
-SUBSTITUTIONS:	13
+DELETIONS:	4
+SUBSTITUTIONS:	14
 NCHANGE:	21
 NTRUTH:	78
-NTEST:	76
+NTEST:	77
 TRUE WORDS RECALL:	0.769
-TEST WORDS PRECISION:	0.789
+TEST WORDS PRECISION:	0.779
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----3962
 对于								对于
 中国								中国
@@ -149067,24 +149020,25 @@ TEST WORDS PRECISION:	0.789
 如鱼得水						      |	如鱼
 							      >	得水
 ，								，
-并且							      |	并且紧紧
-紧紧							      <
+并且								并且
+紧紧								紧紧
 跟								跟
 上								上
-技术								技术
-进步							      |	进
+技术							      |	技
+进步							      |	术
+的							      |	进
+步伐							      |	步的
 							      >	步
-的								的
-步伐								步伐
+							      >	伐
 。								。
-INSERTIONS:	5
-DELETIONS:	4
-SUBSTITUTIONS:	26
-NCHANGE:	35
+INSERTIONS:	6
+DELETIONS:	3
+SUBSTITUTIONS:	28
+NCHANGE:	37
 NTRUTH:	71
-NTEST:	72
-TRUE WORDS RECALL:	0.577
-TEST WORDS PRECISION:	0.569
+NTEST:	74
+TRUE WORDS RECALL:	0.563
+TEST WORDS PRECISION:	0.541
 --../data/icwb2-data/gold/msr_test_gold.utf8-------../result/hmm/msr_test_seg_result.utf8----3963
 对								对
 西文								西文
@@ -150041,16 +149995,16 @@ NTEST:	44
 TRUE WORDS RECALL:	0.822
 TEST WORDS PRECISION:	0.841
 === SUMMARY:
-=== TOTAL INSERTIONS:	7304
-=== TOTAL DELETIONS:	5671
-=== TOTAL SUBSTITUTIONS:	17396
-=== TOTAL NCHANGE:	30371
+=== TOTAL INSERTIONS:	7258
+=== TOTAL DELETIONS:	5710
+=== TOTAL SUBSTITUTIONS:	17360
+=== TOTAL NCHANGE:	30328
 === TOTAL TRUE WORD COUNT:	106873
-=== TOTAL TEST WORD COUNT:	108506
+=== TOTAL TEST WORD COUNT:	108421
 === TOTAL TRUE WORDS RECALL:	0.784
-=== TOTAL TEST WORDS PRECISION:	0.772
+=== TOTAL TEST WORDS PRECISION:	0.773
 === F MEASURE:	0.778
 === OOV Rate:	0.026
-=== OOV Recall Rate:	0.363
+=== OOV Recall Rate:	0.362
 === IV Recall Rate:	0.796
-###	../result/hmm/msr_test_seg_result.utf8	7304	5671	17396	30371	106873	108506	0.784	0.772	0.778	0.026	0.363	0.796
+###	../result/hmm/msr_test_seg_result.utf8	7258	5710	17360	30328	106873	108421	0.784	0.773	0.778	0.026	0.362	0.796

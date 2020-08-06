@@ -21,7 +21,6 @@ import pickle
 import os
 from tqdm import tqdm
 from module.core.segmentation import Segmentation
-from module.core.data_tools import DataTools
 from module.core.exception import exception_handling, ParameterError, FileNotFoundException, UnknownError
 from module.core.writer import Writer
 from module.core.threads import MultiThreading
@@ -80,17 +79,16 @@ class CRFSegmentation(Segmentation):
         return features
 
     @staticmethod
-    def encoding(sent, split_lab=" "):
+    def encoding(sent):
         """
-        编码。将采用" " 或 "／" 分词文本转换成 "BMES" 格式。
+        编码。转换成 "BMES" 分词格式
         例如：
-            输入："小明 是 中国人"
+            输入："小明, 是, 中国人"
             输出：['B','E','S','B','M','E']
         :param sent: (str, mandatory)
-        :param split_lab: (str, optional，default="  ") 分词标签。
         :return: (list of str) 列表字符
         """
-        sent = sent.strip().split(split_lab)
+        # sent = sent.strip().split(split_lab)
         label = list()
         for word in sent:
             if word == "" or word == " " or len(word) == 0:
@@ -135,27 +133,20 @@ class CRFSegmentation(Segmentation):
         return words
 
     @exception_handling
-    def fit(self, file, split_lab, save_model="crf_segmentation.pickle", del_start_str=None, del_end_str=None,
-            regular_func=None):
+    def fit(self, dataset, save_model="crf_segmentation.pickle"):
         """
         拟合模型
-        :param file: (str, mandatory) 训练数据
-        :param split_lab: (str, mandatory) 训练文本中对词的划分标记
+        :param dataset: (list of list, mandatory) 训练数据
         :param save_model: (str, optional, default='crf_segmentation.pickle') 保存模型的文件名
-        :param del_start_str: (str, optional, default=None) 对于训练数据中的文本句子，是否存在开始标记需要删除，如果有，则输入
-        :param del_end_str: (str, optional, default=None) 对于训练数据中的文本句子，是否存在结束标记需要删除，如果有，则输入
-        :param regular_func: (fun, optional, default=None)> 正则化函数
         :return:
         """
-
-        text = DataTools.Preprocess.read_file_data(file, del_start_str, del_end_str, regular_func)
         train_x, train_y = list(), list()
-        for sent in tqdm(text):
-            feature = CRFSegmentation.extract_feature("".join(sent.split(split_lab)))
-            label = CRFSegmentation.encoding(sent, split_lab=split_lab)
+        for sent in tqdm(dataset):
+            feature = CRFSegmentation.extract_feature("".join(sent))
+            label = CRFSegmentation.encoding(sent)
             if len(feature) != len(label):
                 raise UnknownError(
-                    "Unknown error , Please check code! feature length: {}, label length: {}, sent: {}".format(
+                    "Please check code! feature length: {}, label length: {}, sent: {}".format(
                         len(feature), len(label), sent))
             train_x.append(feature)
             train_y.append(label)
@@ -164,54 +155,46 @@ class CRFSegmentation(Segmentation):
 
         self.save(save_model)
 
-    def eval(self, file, seg_lab="  ", w_file="test.txt", encoding="utf-8", threads=3, del_start_str=None,
-             del_end_str=None, regular_func=None):
+    def eval(self, dataset, seg_lab="  ", w_file="test.txt", encoding="utf-8", threads=3):
         """
         评估。
-        :param file: (str, mandatory) 测试数据
+        :param dataset: (list of list, mandatory) 测试数据
         :param seg_lab: (str, mandatory, default="  ") 分词完成之后使用该标记区分
         :param w_file: (str, optional, default="test.txt") 将分词结果写入文件
         :param encoding: (str, optional, default="utf-8") 写入文件的编码格式
         :param threads: (int optional, default=3) 执行线程数量
-        :param del_start_str: (str, optional, default=None) 对于训练数据中的文本句子，是否存在开始标记需要删除，如果有，则输入
-        :param del_end_str: (str, optional, default=None) 对于训练数据中的文本句子，是否存在结束标记需要删除，如果有，则输入
-        :param regular_func: (fun, optional, default=None)> 正则化函数
         :return:
         """
 
         def handle(data, q):
             result = list()
             for sent in data:
-                feature = CRFSegmentation.extract_feature(sent)
-                predict_label = self.__crf.predict_single(feature)
-                words = CRFSegmentation.decoding(sent, predict_label)
-                value = seg_lab.join(words)
+                # feature = CRFSegmentation.extract_feature(sent)
+                # predict_label = self.__crf.predict_single(feature)
+                # words = CRFSegmentation.decoding(sent, predict_label)
+                # value = seg_lab.join(words)
+                value = self.cut(sent, seg_lab)
                 result.append(value)
 
                 q.put(1)
             return result
 
-        text = DataTools.Preprocess.read_file_data(file, del_start_str, del_end_str, regular_func)
-
         multi_threads = MultiThreading(threads=threads)
-        results = multi_threads.process(text, handle)
+        results = multi_threads.process(dataset, handle)
 
         Writer.writer_file(w_file, results, encoding=encoding)
 
-    def cut(self, text, seg_lab=' ', del_start_str=None, del_end_str=None, regular_func=None):
+    def cut(self, sent, seg_lab=' '):
         """
         分词。
-        :param text: (str, mandatory) 字符文本或句子
+        :param sent: (str, mandatory) 字符文本或句子
         :param seg_lab: (str, optional, default="  ") 分词完成之后使用该标记区分
-        :param del_start_str: (str, optional, default=None) 对于训练数据中的文本句子，是否存在开始标记需要删除，如果有，则输入
-        :param del_end_str: (str, optional, default=None) 对于训练数据中的文本句子，是否存在结束标记需要删除，如果有，则输入
-        :param regular_func: (fun, optional, default=None)> 正则化函数
         :return: (str) 分词句子
         """
-        text = DataTools.Preprocess.processing_text(text, del_start_str, del_end_str, regular_func)
-        feature = CRFSegmentation.extract_feature(text)
+        sent = re.sub('[ ]+', '', sent)
+        feature = CRFSegmentation.extract_feature(sent)
         predict_label = self.__crf.predict_single(feature)
-        words = CRFSegmentation.decoding(text, predict_label)
+        words = CRFSegmentation.decoding(sent, predict_label)
 
         return seg_lab.join(words)
 
@@ -245,28 +228,25 @@ class CRFSegmentation(Segmentation):
         print("Save model over! File: {}".format(file))
 
 
-def test():
-    train_file = "../../../data/msr_training_debug.utf8"
-    # train_file = "../../../data/icwb2-data/training/msr_training.utf8"
-    save_model = "../../../model/crf_segmentation_debug.pickle"
-    crf = CRFSegmentation()
-    crf.fit(train_file, split_lab=" ", save_model=save_model, del_start_str="“")
+def test_module_func():
+    train_dataset = [['这', '首先', '是', '个', '民族', '问题', '，', '的', '感情', '。'],
+                     ['我', '扔', '了', '两颗', '手榴弹', '，', '他', '一下子', '出', '溜', '下去', '。'],
+                     ['他', '要', '与', '中国人', '合作', '。']
+                     ]
+    test_dataset = ['他要与中国人合作。']
+    model_file = "./crf_segmentation_model_debug.pickle"
 
-    w_file = "../../../result/crf_test_debug.utf8"
-    test_file = "../../../data/msr_test_debug.utf8"
-    crf.eval(test_file, seg_lab="  ", w_file=w_file)
+    crf_seg = CRFSegmentation()
+    crf_seg.fit(train_dataset, save_model=model_file)
+    crf_seg.eval(test_dataset, seg_lab='  ', w_file='./test.txt', threads=1)
 
+    sent = "他来到中国，成为第一个访华的大船主。"
+    print("cut : ", crf_seg.cut(sent))
 
-def test_load():
-    save_model = "../../../model/crf_segmentation_debug.pickle"
-    crf = CRFSegmentation.load(save_model)
-
-    sent = "种田要有个明白账，投本要赚利润是起码的道理。"
-    result = crf.cut(sent, seg_lab="/")
-    print("sent: ", sent)
-    print("predict: ", result)
+    load_dict_seg = CRFSegmentation.load(model_file)
+    assert load_dict_seg.cut(sent) == crf_seg.cut(sent), \
+        "{} Error: load model segmentation error".format(CRFSegmentation.load.__name__)
 
 
 if __name__ == "__main__":
-    test()
-    # test_load()
+    test_module_func()
